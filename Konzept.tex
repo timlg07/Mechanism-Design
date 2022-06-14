@@ -1,0 +1,149 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amssymb}
+\usepackage{euler}
+\usepackage{amsmath,amsthm}
+\usepackage{enumerate}
+\usepackage[inner=1.5in,outer=1in]{geometry}
+\usepackage{todonotes}
+\usepackage[ngerman,onelanguage,linesnumbered]{algorithm2e}
+\usepackage{fancyhdr}
+\usepackage{datetime}
+\usepackage[noend]{algpseudocode}
+\usepackage{caption,subcaption}
+\usepackage{url}
+
+\renewcommand{\bar}[1]{\overline{#1}}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\theoremstyle{plain}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Satz}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Korollar}
+
+\theoremstyle{definition}
+\newtheorem{bemerkung}[definition]{Bemerkung}
+\newtheorem*{bemerkung*}{Bemerkung}
+
+\newtheorem{claim}{Behauptung}
+\renewcommand*{\theclaim}{\Alph{claim}}
+
+\parskip=1ex
+\parindent=0ex
+
+
+\title{Einführung in \textit{Mechanism Design} \\ \Large im Seminar ``Algorithmische Spieltheorie''}
+\author{Tim Greller}
+%\date{Sommersemester 2018}
+
+
+\begin{document}
+
+\maketitle
+
+\setcounter{page}{0}
+\pagenumbering{arabic}
+\fancyhead{}
+\fancyhead[ER]{\leftmark}
+\fancyhead[OL]{\rightmark}
+\fancyhead[EL,OR]{\thepage}
+\pagestyle{fancy}
+
+
+- Hauptproblem: umfangreiches Kapitel $\rightarrow$ was weglassen? Aktuell: Teilbereiche, die mir als weniger relevant erschienen sind, weggelassen. Eher Breite abdecken oder bei einzelnen Themen mehr in die Tiefe gehen?
+
+- Aktuell tendenziell zu viel Inhalt, ggf. im Nachhinein kürzen (geht einfacher als neue Themen/ Beweise einfügen).
+
+
+\section{Einleitung, Definitionen}
+\textsmaller{c.a. 4 min; Ähnlich wie bei Kurzvortrag, aber etwas ausführlicher und leichter verständlich.}
+
+- Social Choice: Aggregation von Präferenzen
+
+- Social Welfare Functions, Social Choice Functions
+
+- Strategische Manipulation
+
+- Was ist Mechanism Design?
+
+
+\section{Arrow's Theorem, Gibbard-Satterthwaite}
+\textsmaller{c.a. 11 min; Ähnlich wie bei Kurzvortrag + ausführlicher Beweis zusätzlich.}
+
+- unanimity
+
+- dictators
+
+- IIA (independence of irrelevant alternatives)
+
+- \textbf{Beweis Arrow's Theorem}
+
+- incentive compatible social choice functions: analog zu social welfare functions gilt hier das Gibbard-Satterthwaite Theorem (kein Beweis)
+
+
+\section{\textit{Mechanism Design} mit Geld}
+valuation function: Hinzufügen von Geld als Ausweg um trotz Gibbard-Satterthwaite Theorem incentive compatible social choice functions zu designen.
+
+\subsection{Vickrey's Second Price Auction}
+\textsmaller{nochmal kurz wiederholen, etwa 1 min.}
+
+Fazit: trotz privater Informationen und egoistischem Verhalten wird social welfare erreicht.
+
+Ziel: Dies auch im allgemeinen Fall zu erreichen.
+
+\subsection{Vickrey-Clarke-Groves Mechanisms}
+\textsmaller{c.a. 4 min}
+
+- VCG Mechanismen maximieren social welfare
+
+- jeder Spieler bekommt die Summe der Werte der anderen Spieler ausbezahlt $\Rightarrow$ Ziel der Spieler: social welfare maximieren durch das Sagen der Wahrheit
+
+- \textbf{Beweis Vickrey-Clarke-Groves Theorem:} Jeder VCG Mechanismus ist incentive compatible
+
+\subsection{Clarke Pivot Rule}
+\textsmaller{c.a. 2 min}
+
+- Jeder Spieler zahlt die Differenz zwischen dem social welfare mit und ohne der eigenen Beteiligung.
+
+- VCG Mechanismus mit Clarke Pivot Rule macht keine positiven Transfers
+
+\subsection{Beispiel: Öffentliches Projekt}
+\textsmaller{c.a. 3 min}
+
+- öffentliches Bauprojekt mit Kosten $C$ (hierfür eigener Spieler ''Regierung'')
+
+- Projekt wird umgesetzt, wenn Summe der Werte aller Bürger größer als Kosten C
+
+- Alle Bürger werden Betrag 0 zahlen, außer sie wären ausschlaggebend für Erfolg  des Projekts.
+
+
+% Abschnitte 9.4 - 9.5 werden ausgelassen
+\section{Bayesian-Nesh Implementation}
+\textsmaller{c.a. 12 min, inkl. Beweis für First Price Auction}
+
+-  A-priori-Wahrscheinlichkeit steht als Grundwissen zur Verfügung. Information statt Annahme des worst-case 
+
+\subsection{First Price Auction}
+
+Spieler A und B bieten um Gegenstand. Beide wollen mehr bieten als der andere, aber weniger als ihr Wert
+
+Gesucht: Strategien, die jeweils die beste Antwort auf die andere Strategie sind (Bayesian equilibrium)
+
+\textbf{Für jeweilige a-priori-Verteilung x ist die Strategie x/2 im Bayesian-Nash equilibrium.}
+
+Für den Verkäufer ist der Umsatz von First- \& Second Price Auction identisch (wenn $w_A$, $w_B$ einheitlich gewählt).
+
+
+\section{Zusammenfassung und Ausblick}
+\textsmaller{c.a. 3 min}
+
+- Kurzes Fazit zu Mechanism Design
+
+- Ausblick, weitere Forschung: z. B. Verwendung von Mechanism Design zur Konfliktlösung und Entscheidungsfindung bei autonomen Fahrzeugen (Lovellette \& Hexmoor 2021: \url{https://doi.org/10.1016/j.iot.2020.100356}) 
+
+\end{document}
