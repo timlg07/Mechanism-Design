@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220616133450" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220616195621" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -19457,5 +19457,66 @@ h
 \item Unabhängigkeit von irrelevanten Alternativen erfüllen
 \end{itemize}
 gilt: \textcolor{UPblue}{\textbf{F ist eine Diktatur}}</text>
+</page>
+<page title="Arrow&apos;s Theorem Beweis (1)">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha gamma" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<path layer="alpha" matrix="1 0 0 1.85714 0 -425.143" stroke="UPorange" fill="UPorange20">
+0 496 m
+0 384 l
+768 384 l
+768 496 l
+h
+</path>
+<text matrix="1 0 0 1 16 -22.8718" transformations="translations" pos="0 500" stroke="black" type="minipage" width="736" height="84.8434" depth="79.4416" valign="top">$\forall$ social welfare functions \textcolor{UPblue}{F}, die
+\begin{itemize}
+\item mehr als 2 Kandidaten haben ($|A| \geq 3$)
+\item Einstimmigkeit erfüllen
+\item Unabhängigkeit von irrelevanten Alternativen erfüllen
+\end{itemize}
+gilt: \textcolor{UPblue}{\textbf{F ist eine Diktatur}}</text>
+<path layer="beta" matrix="1 0 0 0.5 0 64" stroke="UPblue" fill="UPblue20">
+0 256 m
+0 128 l
+768 128 l
+768 256 l
+h
+</path>
+<text matrix="1 0 0 1 16 -144" transformations="translations" pos="0 312.843" stroke="black" type="minipage" width="736" height="13.9787" depth="8.4112" valign="top">\textbf{Behauptung:} Wenn $\forall i \in I: a \succ_i b \iff c \succ_i&apos; d$ dann gilt $a \succ b \iff c \succ&apos; d$ </text>
+<text layer="gamma" matrix="1 0 0 1 0 112" pin="h" transformations="translations" pos="0 149.014" stroke="black" type="minipage" width="768" height="25.6234" depth="20.0928" valign="top">Seien $\succ_1,...,\succ_n$ und $\succ_1&apos;,...,\succ_n&apos;$ Spielerprofile.
+
+Sei  $\succ = F(\succ_1,...,\succ_n)$ und  $\succ&apos; = F(\succ_1&apos;,...,\succ_n&apos;)$</text>
+</page>
+<page title="Arrow&apos;s Theorem Beweis (2)">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<path layer="alpha" matrix="1 0 0 0.5 0 304" stroke="UPblue" fill="UPblue20">
+0 256 m
+0 128 l
+768 128 l
+768 256 l
+h
+</path>
+<text matrix="1 0 0 1 16 96" transformations="translations" pos="0 312.843" stroke="black" type="minipage" width="736" height="13.9787" depth="8.4112" valign="top">\textbf{Behauptung:} Wenn $\forall i \in I: a \succ_i b \iff c \succ_i&apos; d$ dann gilt $a \succ b \iff c \succ&apos; d$ </text>
+<text matrix="1 0 0 1 0 352" pin="h" transformations="translations" pos="0 149.014" stroke="black" type="minipage" width="768" height="25.6234" depth="20.0928" valign="top">Seien $\succ_1,...,\succ_n$ und $\succ_1&apos;,...,\succ_n&apos;$ Spielerprofile.
+
+Sei  $\succ = F(\succ_1,...,\succ_n)$ und  $\succ&apos; = F(\succ_1&apos;,...,\succ_n&apos;)$</text>
+<text layer="beta" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 386.453" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">Durch Umbenennen sei allgemein $a \succ b$, $c \neq b$.</text>
+<text layer="gamma" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 335.021" stroke="black" type="minipage" width="768" height="76.8174" depth="71.4" valign="top">Kombiniere $\succ_i$ und $\succ_i&apos;$ zu Präferenz $\succ_i$ durch Platzieren von:
+\begin{itemize}
+\item c direkt über a (außer wenn $c=a$)
+\item d direkt unter b (außer wenn $d=b$)
+\end{itemize}
+Dabei wird die Sortierung von $a$, $b$ und $c$, $d$ beibehalten.
+
+Durch Einstimmigkeit gilt $c \prec a$, $b \prec d$ Daraus folgt transitiv $c \prec d$</text>
 </page>
 </ipe>
