@@ -1,0 +1,82 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amssymb}
+\usepackage{euler}
+\usepackage{amsmath,amsthm}
+\usepackage{enumerate}
+\usepackage[inner=1.5in,outer=1in]{geometry}
+\usepackage{todonotes}
+\usepackage[ngerman,onelanguage,linesnumbered]{algorithm2e}
+\usepackage{fancyhdr}
+\usepackage{datetime}
+\usepackage[noend]{algpseudocode}
+\usepackage{caption,subcaption}
+\usepackage{url}
+
+\renewcommand{\bar}[1]{\overline{#1}}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\theoremstyle{plain}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Satz}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Korollar}
+
+\theoremstyle{definition}
+\newtheorem{bemerkung}[definition]{Bemerkung}
+\newtheorem*{bemerkung*}{Bemerkung}
+
+\newtheorem{claim}{Behauptung}
+\renewcommand*{\theclaim}{\Alph{claim}}
+
+\parskip=1ex
+\parindent=0ex
+
+
+\title{Einführung in \textit{Mechanism Design} \\ \Large im Seminar ``Algorithmische Spieltheorie''}
+\author{Tim Greller}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+	Zusammenfassung: Themen und Hauptergebnis.
+\end{abstract}
+
+\setcounter{page}{0}
+\pagenumbering{arabic}
+\fancyhead{}
+\fancyhead[ER]{\leftmark}
+\fancyhead[OL]{\rightmark}
+\fancyhead[EL,OR]{\thepage}
+\pagestyle{fancy}
+
+
+\section{Einleitung, Definitionen}
+~\cite{nis07}
+~\cite{ste08}
+
+\section{Arrow's Theorem, Gibbard-Satterthwaite}
+~\cite{fey14}
+
+\section{Mechanism Design mit Geld}
+\subsection{Vickrey's Second Price Auction}
+\subsection{Vickrey-Clarke-Groves Mechanisms}
+\subsection{Beispiel: Öffentliches Projekt, Clarke Pivot Rule}
+
+\section{Bayesian-Nesh Implementation}
+\subsection{First Price Auction}
+
+\section{Zusammenfassung und Ausblick}
+~\cite{lov21}
+
+\bibliographystyle{alpha}
+\bibliography{Literatur}
+
+\end{document}
