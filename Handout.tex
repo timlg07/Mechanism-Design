@@ -46,7 +46,7 @@
 \maketitle
 
 \begin{abstract}
-	Zusammenfassung: Themen und Hauptergebnis.
+	Dieses Handout gibt eine kurze Einführung in das Thema Mechanism Design. Dabei stellt der Designer Regeln auf, um möglichst effiziente und faire Ergebnisse zu erzielen. Es werden soziale Gruppenentscheidung für mehrere egoistische Spieler, basierend auf deren Präferenzen, getroffen. Soll diese Entscheidung möglichst nicht strategisch manipulierbar und nicht diktatorisch durch einen Spieler bestimmbar sein, so ist das im Allgemeinen nicht möglich. Um dem entgegenzuwirken und ein für die Allgemeinheit gutes Ergebnis zu erzielen, werden für die einzelnen Spieler Anreize durch Geld geschaffen.
 \end{abstract}
 
 \setcounter{page}{0}
@@ -59,8 +59,14 @@
 
 
 \section{Einleitung, Definitionen}
-~\cite{nis07}
-~\cite{ste08}
+Mechanism Design beschäftigt sich mit dem Aufstellen von Regeln um eine soziale Wahl zu erreichen. Diese soziale Wahl ist eine Gruppenentscheidung, die von den privaten Informationen der Spieler abhängig ist und sich auf alle Spieler auswirkt. Sie soll möglichst effizient für die Gemeinschaft ausfallen. Diesem Ziel steht allerdings das egoistische und unkooperative Verhalten der Spieler gegenüber.~\cite{ste08}
+
+Formal lässt sich die Entscheidung folgendermaßen betrachten:
+Es gibt eine Menge $I$ an $n$-vielen Wählern, die sich zwischen den Alternativen $A$ entscheiden. Die Präferenzen zwischen den Alternativen stellen eine totale Ordnung von $A$ dar; Die Menge $L$ enthält alle möglichen dieser Ordnungen.
+
+Eine Social Welfare Function ist eine Funktion, die ein $n$-Tupel an Ordnungen aus $L$ auf eine einzelne Ordnung aus $L$ abbildet. So können die Präferenzen aller Spieler zu einer einzigen, gemeinsamen Ordnung aggregiert werden.
+
+Social Choice Functions nehmen ebenfalls $n$-viele Elemente aus $L$ als Parameter, bilden diese jedoch auf eine Alternative aus $A$ ab. Die Präferenzen der Spieler werden also zu einem einzigen, gemeinsamen Gewinner aggregiert.~\cite{nis07}
 
 \section{Arrow's Theorem, Gibbard-Satterthwaite}
 ~\cite{fey14}
