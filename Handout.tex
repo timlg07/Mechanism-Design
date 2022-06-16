@@ -59,17 +59,47 @@
 
 
 \section{Einleitung, Definitionen}
-Mechanism Design beschäftigt sich mit dem Aufstellen von Regeln um eine soziale Wahl zu erreichen. Diese soziale Wahl ist eine Gruppenentscheidung, die von den privaten Informationen der Spieler abhängig ist und sich auf alle Spieler auswirkt. Sie soll möglichst effizient für die Gemeinschaft ausfallen. Diesem Ziel steht allerdings das egoistische und unkooperative Verhalten der Spieler gegenüber.~\cite{ste08}
+\emph{Mechanism Design} beschäftigt sich mit dem Aufstellen von Regeln um eine soziale Wahl zu erreichen. Diese soziale Wahl ist eine Gruppenentscheidung, die von den privaten Informationen der Spieler abhängig ist und sich auf alle Spieler auswirkt. Sie soll möglichst effizient für die Gemeinschaft ausfallen. Diesem Ziel steht allerdings das egoistische und unkooperative Verhalten der Spieler gegenüber: Ein Spieler unterstützt kein Ergebnis, wenn es nachteilig für ihn ist.~\cite{ste08}
 
 Formal lässt sich die Entscheidung folgendermaßen betrachten:
-Es gibt eine Menge $I$ an $n$-vielen Wählern, die sich zwischen den Alternativen $A$ entscheiden. Die Präferenzen zwischen den Alternativen stellen eine totale Ordnung von $A$ dar; Die Menge $L$ enthält alle möglichen dieser Ordnungen.
+Es gibt eine Menge $I$ an $n$-vielen \emph{Spielern}/ Wählern, die sich zwischen den \emph{Alternativen} $A$ entscheiden. Die Präferenzen zwischen den Alternativen stellen eine totale Ordnung von $A$ dar; Die Menge $L$ enthält alle möglichen dieser Ordnungen.~\cite{nis07}
 
-Eine Social Welfare Function ist eine Funktion, die ein $n$-Tupel an Ordnungen aus $L$ auf eine einzelne Ordnung aus $L$ abbildet. So können die Präferenzen aller Spieler zu einer einzigen, gemeinsamen Ordnung aggregiert werden.
+\begin{definition}
+	\label{def:socialwelfarefunc}
+	Eine \emph{Social Welfare Function} ist eine Funktion, die ein $n$-Tupel an Ordnungen aus $L$ auf eine einzelne Ordnung aus $L$ abbildet. So können die Präferenzen aller Spieler zu einer einzigen, gemeinsamen Ordnung aggregiert werden. Im weiteren Verlauf ist mit der Bezeichnung $F$ immer eine Social Welfare Function gemeint.
+\end{definition}
 
-Social Choice Functions nehmen ebenfalls $n$-viele Elemente aus $L$ als Parameter, bilden diese jedoch auf eine Alternative aus $A$ ab. Die Präferenzen der Spieler werden also zu einem einzigen, gemeinsamen Gewinner aggregiert.~\cite{nis07}
+\begin{definition}
+	\label{def:socialchoicefunc}
+	\emph{Social Choice Functions} nehmen ebenfalls $n$-viele Elemente aus $L$ als Parameter, bilden diese jedoch auf eine Alternative aus $A$ ab. Die Präferenzen der Spieler werden also zu einem einzigen, gemeinsamen Gewinner aggregiert. Im weiteren Verlauf ist mit der Bezeichnung $f$ immer eine Social Choice Function gemeint.
+\end{definition}
 
 \section{Arrow's Theorem, Gibbard-Satterthwaite}
-~\cite{fey14}
+Zunächst werden die Eigenschaften einer Social Welfare Function betrachtet.
+
+\begin{definition}
+	\label{def:einstimmigkeit}
+	\emph{Einstimmigkeit} ist für ein $F$ erfüllt, wenn in dem Fall, dass alle Spieler gleich mit einer Ordnung $\prec \in L$ abstimmen, das Ergebnis genau diese Ordnung ist. Es gilt also: $\forall \prec \in L: F(\prec, \ldots,\prec) = \prec$.
+\end{definition}
+
+\begin{definition}
+	\label{def:diktatur}
+	$F$ ist eine \emph{Diktatur}, wenn ein Spieler $i$ existiert, der Diktator ist. Der Wähler $i$ ist genau dann Diktator, wenn gilt: $\forall \prec_1, \ldots, \prec_n \in L: F(\prec_1, \ldots, \prec_n) = \prec_i$. Das soziale Ergebnis ist also unabhängig von den Präferenzen anderer Spieler immer die Präferenz eines Spielers $i$.
+\end{definition}
+
+\begin{definition}
+	\label{def:IIA}
+	Die \emph{Unabhängigkeit von irrelevanten Alternativen} (englisch: Independence of Irrelevant Alternatives, kurz: IIA) schließt strategisches Manipulieren aus. Gilt für $F$ IIA, so bleibt die soziale Präferenz für alle Alternativen $a, b \in A$ gleich, so lange sich die Präferenzen der Spieler bezüglich $a, b$ nicht ändern -- die  Präferenzen bzgl. aller anderen Alternativen untereinander und zu $a, b$ sind irrelevant.
+\end{definition}
+
+\begin{theorem}
+	Alle Social Welfare Functions, die mehr als 2 Kandidaten haben und Einstimmigkeit sowie IIA erfüllen, sind Diktaturen. (Arrow's Theorem)
+\end{theorem}
+
+
+\begin{proof}
+	~\cite{fey14}
+\end{proof}
 
 \section{Mechanism Design mit Geld}
 \subsection{Vickrey's Second Price Auction}
