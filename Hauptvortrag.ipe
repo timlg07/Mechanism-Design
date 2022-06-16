@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220616125116" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220616125924" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -19225,7 +19225,7 @@ h
 h
 </path>
 <text pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="12.628" depth="7.0448" valign="top"> \textbf{Beispiel:} Wahlen</text>
-<text layer="gamma" matrix="1 0 0 1 0 -6.87179" pin="h" transformations="translations" pos="0 480.327" stroke="black" type="minipage" width="768" height="16.5122" depth="10.9536" valign="top" style="item">Spieler hat Präferenzen  $\textcolor{UPred}{a}&lt; \textcolor{UPgreen}{b}&lt;c$</text>
+<text layer="gamma" matrix="1 0 0 1 0 -6.87179" pin="h" transformations="translations" pos="0 480.327" stroke="black" type="minipage" width="768" height="16.5122" depth="10.9536" valign="top" style="item">Spieler hat Präferenzen  $\textcolor{UPred}{a}\succ\textcolor{UPgreen}{b}\succ c$</text>
 <text layer="delta" matrix="1 0 0 1 0 -22.8718" pin="h" transformations="translations" pos="0 452.861" stroke="black" type="minipage" width="768" height="15.5366" depth="9.968" valign="top" style="item">Er vermutet, dass \textcolor{UPred}{$a$} keine Chance hat</text>
 <text layer="epsilon" matrix="1 0 0 1 0 -38.8718" pin="h" transformations="translations" pos="0 427.357" stroke="black" type="minipage" width="768" height="16.4506" depth="10.8976" valign="top" style="item">Wählt strategisch  \textcolor{UPgreen}{b}</text>
 <text layer="zeta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 361.137" stroke="black" type="minipage" width="768" height="12.628" depth="7.0448" valign="top">\textbf{Beispiel:} Auktion (klassische/ englische)</text>
