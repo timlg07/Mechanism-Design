@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220616195621" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220616205051" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -19495,9 +19495,13 @@ Sei  $\succ = F(\succ_1,...,\succ_n)$ und  $\succ&apos; = F(\succ_1&apos;,...,\s
 <layer name="alpha"/>
 <layer name="beta"/>
 <layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
 <path layer="alpha" matrix="1 0 0 0.5 0 304" stroke="UPblue" fill="UPblue20">
 0 256 m
 0 128 l
@@ -19510,13 +19514,53 @@ h
 
 Sei  $\succ = F(\succ_1,...,\succ_n)$ und  $\succ&apos; = F(\succ_1&apos;,...,\succ_n&apos;)$</text>
 <text layer="beta" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 386.453" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">Durch Umbenennen sei allgemein $a \succ b$, $c \neq b$.</text>
-<text layer="gamma" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 335.021" stroke="black" type="minipage" width="768" height="76.8174" depth="71.4" valign="top">Kombiniere $\succ_i$ und $\succ_i&apos;$ zu Präferenz $\succ_i$ durch Platzieren von:
+<text layer="gamma" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 335.021" stroke="black" type="minipage" width="768" height="64.7326" depth="59.2928" valign="top">Kombiniere $\succ_i$ und $\succ_i&apos;$ zu Präferenz $\succ_i$ durch Platzieren von:
 \begin{itemize}
 \item c direkt über a (außer wenn $c=a$)
 \item d direkt unter b (außer wenn $d=b$)
 \end{itemize}
 Dabei wird die Sortierung von $a$, $b$ und $c$, $d$ beibehalten.
+</text>
+<text layer="delta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 194.996" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">
+Durch Einstimmigkeit gilt $c \prec a$, $b \prec d$.</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -24.2692" pin="h" transformations="translations" pos="0 175.564" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">
+Daraus folgt transitiv $c \prec d$.</text>
+</page>
+<page title="Arrow&apos;s Theorem Beweis (3)">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta zeta" active="gamma"/>
+<view layers="alpha beta gamma zeta" active="delta"/>
+<view layers="alpha beta gamma delta zeta" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<text layer="beta" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="38.052" depth="32.5472" valign="top">Wähle $a,b\in A$, $a\neq b$.
 
-Durch Einstimmigkeit gilt $c \prec a$, $b \prec d$ Daraus folgt transitiv $c \prec d$</text>
+
+Definiere Präferenzprofil $\pi^i$ wobei die ersten i Spieler $a \succ b$ wählen. 
+
+Also $a \succ_j b \iff j \leq i$</text>
+<text layer="gamma" matrix="1 0 0 1 0 -144" pin="h" transformations="translations" pos="0 429.401" stroke="black" type="minipage" width="768" height="47.8778" depth="42.392" valign="top">Durch Einstimmigkeit gilt:
+\begin{itemize}
+\item $F(\pi^0) \Rightarrow b \succ a$
+\item $F(\pi^n) \Rightarrow a \succ b$
+\end{itemize}</text>
+<text layer="delta" matrix="1 0 0 1 0 -144" pin="h" transformations="translations" pos="0 323.131" stroke="black" type="minipage" width="768" height="13.7099" depth="8.1424" valign="top">Bei irgendeinem $F(\pi^{i^*})$ mit $i^* \in I$ wechselt die Präferenz zu $a\succ b$.
+
+</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -144" pin="h" transformations="translations" pos="0 285.279" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">Dieser Spieler $i^*$ ist Diktator.</text>
+<text layer="zeta" matrix="1 0 0 1 0 160" pin="h" transformations="translations" pos="0 249.847" stroke="black" type="minipage" width="768" height="51.8213" depth="46.3456" valign="top">\begin{tabular}{cccccc}
+$\succ_1$ &amp; \ldots &amp; $\succ_{i}$ &amp;
+$\succ_{i+1}$ &amp; \ldots &amp; $\succ_n$ \\
+\hline
+a &amp; \ldots &amp; a &amp; b &amp; \ldots &amp; b \\
+b &amp; \ldots &amp; b &amp; a &amp; \ldots &amp; a \\
+\vdots &amp; \ldots &amp; \vdots &amp; \vdots &amp; \ldots &amp; \vdots \\
+\end{tabular}</text>
 </page>
 </ipe>
