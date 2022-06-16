@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220615003421" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220616125116" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -19146,32 +19146,31 @@ h
 </text>
 <text layer="gamma" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 472.652" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">Jeder Wähler trifft eigene Entscheidung</text>
 <text layer="delta" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 445.304" stroke="black" type="minipage" width="768" height="12.628" depth="7.0448" valign="top">\textbf{Soziale Wahl:} Aggregation zu gemeinsamen Wahlergebnis</text>
-<path layer="epsilon" matrix="1 0 0 1.1 0 -36.8" stroke="black" fill="UPblue20">
+<path layer="epsilon" matrix="1 0 0 1.22713 0 -67.5849" stroke="black" fill="UPblue20">
 0 368 m
 0 208 l
 768 208 l
 768 368 l
 h
 </path>
-<path matrix="1 0 0 1.33333 0 -112" stroke="UPgray120" fill="UPgray50">
+<path matrix="1 0 0 1.33333 0 -96" stroke="UPgray120" fill="UPgray50">
 384 336 m
 384 240 l
 384 240 l
 384 336 l
 h
 </path>
-<text matrix="1 0 0 1 16 -48" transformations="translations" pos="0 393.631" stroke="black" type="minipage" width="368" height="10.6848" depth="5.096" valign="top">\textbf{Formal:}</text>
-<text layer="zeta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 329.85" stroke="black" type="minipage" width="384" height="15.3149" depth="9.744" valign="top" style="item">Kandidaten/ Alternativen \textcolor{UPblue}{\textbf{$A$}}</text>
-<text layer="theta" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 304.791" stroke="black" type="minipage" width="384" height="14.5074" depth="8.9488" valign="top" style="item">$n$-viele Wähler \textcolor{UPblue}{\textbf{$I$}}</text>
-<text layer="kappa" matrix="1 0 0 1 0 -48" transformations="translations" pos="0 281.335" stroke="black" type="minipage" width="384" height="16.4506" depth="10.8976" valign="top" style="item">Lineare Ordnungen \textcolor{UPblue}{\textbf{$L$}}</text>
-<text layer="eta" matrix="1 0 0 1 397.423 57.9626" transformations="translations" pos="0 253.987" stroke="black" type="minipage" width="352" height="12.8285" depth="7.2464" valign="top">$\{a, b, c\}$</text>
-<text layer="iota" matrix="1 0 0 1 -12.5641 -34.5769" transformations="translations" pos="410.155 290.077" stroke="black" type="label" width="76.8118" height="14.896" depth="4.816" valign="baseline" style="math">\{1, 2, 3\}</text>
-<text layer="lambda" matrix="1 0 0 1 -15.141 -49.7179" transformations="translations" pos="412.732 263.448" stroke="black" type="label" width="231.417" height="15.2589" depth="4.816" valign="baseline" style="math">\{ a &lt; b &lt; c,{ }b &lt; c &lt; a, ... \}</text>
+<text matrix="1 0 0 1 16 -32" transformations="translations" pos="0 393.631" stroke="black" type="minipage" width="368" height="10.6848" depth="5.096" valign="top">\textbf{Formal:}</text>
+<text layer="zeta" transformations="translations" pos="0 329.85" stroke="black" type="minipage" width="384" height="15.3149" depth="9.744" valign="top" style="item">Kandidaten/ Alternativen \textcolor{UPblue}{\textbf{$A$}}</text>
+<text layer="theta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 304.791" stroke="black" type="minipage" width="384" height="14.5074" depth="8.9488" valign="top" style="item">$n$-viele Wähler \textcolor{UPblue}{\textbf{$I$}}</text>
+<text layer="kappa" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 281.335" stroke="black" type="minipage" width="384" height="28.5275" depth="22.9936" valign="top" style="item">Lineare Ordnungen \textcolor{UPblue}{\textbf{$L$}} \\\textit{(= totale Ordnung von \textcolor{UPblue}{\textbf{$A$}})}</text>
+<text layer="eta" matrix="1 0 0 1 397.423 73.9626" transformations="translations" pos="0 253.987" stroke="black" type="minipage" width="352" height="12.8285" depth="7.2464" valign="top">$\{a, b, c\}$</text>
+<text layer="iota" matrix="1 0 0 1 -12.5641 -18.5769" transformations="translations" pos="410.155 290.077" stroke="black" type="label" width="76.8118" height="14.896" depth="4.816" valign="baseline" style="math">\{1, 2, 3\}</text>
+<text layer="lambda" matrix="1 0 0 1 -15.141 -33.7179" transformations="translations" pos="412.732 263.448" stroke="black" type="label" width="232.667" height="15.2589" depth="4.816" valign="baseline" style="math">\{ a \succ b  \succ c,{ }b  \succ c  \succ a, ... \}</text>
 <text layer="mu" matrix="0.5 0 0 -0.143929 16 187.634" transformations="translations" pos="0 205.987" stroke="UPgray120" type="minipage" width="320" height="10.6848" depth="5.096" valign="top">\textcolor{UPblue}{\textbf{Social Welfare Funktion}}</text>
 <text layer="nu" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 142.206" stroke="black" type="minipage" width="320" height="10.2234" depth="4.648" valign="top">\textcolor{UPblue}{\textbf{$F : L^n \rightarrow L$}}</text>
 <text layer="xi" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 111.335" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">aggregiert zu gem. Ordnung</text>
-<text matrix="1 0 0 1 -15.141 -49.7179" transformations="translations" pos="412.732 263.448" stroke="black" type="label" width="231.417" height="15.2589" depth="4.816" valign="baseline" style="math">\{ a &lt; b &lt; c,{ }b &lt; c &lt; a, ... \}</text>
-<text layer="omicron" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 76.0203" stroke="black" type="minipage" width="336" height="24.9021" depth="19.3648" valign="top">$F(\{ a &lt;_1 b &lt;_1 c,{ }..., b &lt;_n c &lt;_n a \}) = \{ a &lt; b &lt;  c \}$</text>
+<text layer="omicron" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 76.0203" stroke="black" type="minipage" width="336" height="24.9021" depth="19.3648" valign="top">$F(\{ a \succ_1 b \succ_1 c,{ }..., b \succ_n c \succ_n a \}) = \{ a \succ b \succ  c \}$</text>
 <path layer="pi" matrix="0.958333 0 0 1.1 400 -17.6" stroke="UPorange70" fill="UPorange20">
 0 176 m
 0 16 l
@@ -19182,7 +19181,7 @@ h
 <text matrix="0.5 0 0 -0.143929 416 187.634" transformations="translations" pos="0 205.987" stroke="UPgray120" type="minipage" width="336" height="10.6848" depth="5.096" valign="top">\textcolor{UPblue}{\textbf{Social Choice Funktion}}</text>
 <text layer="rho" matrix="1 0 0 1 416 -16" transformations="translations" pos="0 142.206" stroke="black" type="minipage" width="320" height="10.416" depth="4.8384" valign="top">\textcolor{UPblue}{\textbf{$f : L^n \rightarrow A$}}</text>
 <text layer="sigma" matrix="1 0 0 1 416 -16" transformations="translations" pos="0 111.335" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">aggregiert zu gem. Gewinner</text>
-<text layer="tau" matrix="1 0 0 1 416 -16" transformations="translations" pos="0 76.0203" stroke="black" type="minipage" width="336" height="12.8285" depth="7.2464" valign="top">$f(\{ a &lt;_1 b &lt;_1 c,{ }..., b &lt;_n c &lt;_n a \}) = a$</text>
+<text layer="tau" matrix="1 0 0 1 416 -16" transformations="translations" pos="0 76.0203" stroke="black" type="minipage" width="336" height="12.8285" depth="7.2464" valign="top">$f(\{ a \succ_1 b \succ_1 c,{ }..., b \succ_n c \succ_n a \}) = a$</text>
 </page>
 <page title="Strategische Manipulation">
 <layer name="alpha"/>
