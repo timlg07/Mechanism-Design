@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220616214754" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220616225602" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -19571,8 +19571,104 @@ b &amp; \ldots &amp; b &amp; a &amp; \ldots &amp; a \\
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
 </page>
-<page>
+<page title="Anreizkompatibilität">
 <layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<layer name="eta"/>
+<layer name="theta"/>
+<layer name="iota"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta" active="theta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta iota" active="beta"/>
+<path layer="beta" matrix="1.99111 0 0 0.5 0 408" stroke="UPorange70" fill="UPorange20">
+0 176 m
+0 16 l
+384 16 l
+384 176 l
+h
+</path>
+<text matrix="0.5 0 0 -0.143929 16 507.634" transformations="translations" pos="0 205.987" stroke="UPgray120" type="minipage" width="272" height="10.6848" depth="5.096" valign="top">\textcolor{UPblue}{\textbf{Social Choice Function}}</text>
+<text matrix="1 0 0 1 304 336" transformations="translations" pos="0 142.206" stroke="black" type="minipage" width="112" height="10.416" depth="4.8384" valign="top">\textcolor{UPblue}{\textbf{$f : L^n \rightarrow A$}}</text>
+<text matrix="1 0 0 1 432 368" transformations="translations" pos="0 111.335" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">aggregiert zu gem. Gewinner</text>
+<text matrix="1 0 0 1 16.859 375.731" transformations="translations" pos="0 76.0203" stroke="black" type="minipage" width="736" height="12.8285" depth="7.2464" valign="top">z.B. $f(\{ a \succ_1 b \succ_1 c,{ }..., b \succ_n c \succ_n a \}) = a$</text>
+<path layer="epsilon" matrix="1 0 0 0.1875 0 186.594" stroke="UPblue" fill="UPblue20">
+0 384 m
+0 128 l
+768 128 l
+768 384 l
+h
+</path>
+<text layer="delta" matrix="1 0 0 1 0 50.5938" transformations="translations" pos="0 348.003" stroke="black" type="minipage" width="736" height="64.7942" depth="59.3488" valign="top">Für einen Spieler $i$ und für manche $\prec_1, \ldots, \prec_n, \prec_i&apos; \in L$ mit
+\begin{itemize}
+\item $a = f(\prec_1, \ldots, \prec_i, \ldots, \prec_n)$
+\item $a&apos; = f(\prec_1, \ldots, \prec_i&apos;, \ldots, \prec_n)$
+\end{itemize}
+gilt:</text>
+<text layer="epsilon" matrix="1 0 0 1 16 2.59381" transformations="translations" pos="0 239.86" stroke="black" type="minipage" width="736" height="12.4992" depth="6.9328" valign="top">\textcolor{UPblue}{$f$} kann von $i$ strategisch manipuliert werden, wenn \textcolor{UPblue}{$a \prec_i a&apos;$}</text>
+<text layer="zeta" matrix="1 0 0 1 0 13.44" pin="h" transformations="translations" pos="0 188.428" stroke="black" type="minipage" width="768" height="16.5122" depth="10.9536" valign="top" style="item">$i$ bevorzugt $a&apos;$ über $a$</text>
+<text layer="eta" matrix="1 0 0 1 0 18.5938" pin="h" transformations="translations" pos="0 144.963" stroke="black" type="minipage" width="768" height="17.8741" depth="12.3088" valign="top" style="item">$i$ kann durch Wechsel von $\prec_i$ auf $\prec_i&apos;$ das Ergebnis von \textcolor{UPblue}{$f$} zu $a&apos;$ ändern.</text>
+<text layer="theta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 133.374" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">$\Rightarrow$ besseres Ergebnis durch Angabe falscher Präferenzen erreichbar</text>
+<path layer="iota" matrix="1 0 0 1 0 -416" stroke="UPorange" fill="UPorange20">
+0 496 m
+0 416 l
+768 416 l
+768 496 l
+h
+</path>
+<text matrix="1 0 0 1 17.8546 -368.015" transformations="translations" pos="0 431.676" stroke="UPorange" type="minipage" width="736" height="12.628" depth="7.0448" valign="top">\textcolor{UPblue}{\textbf{Anreizkompatibilität}}</text>
+<text matrix="1 0 0 1 16 -426.42" transformations="translations" pos="0 459.988" stroke="black" type="minipage" width="736" height="12.4992" depth="6.9328" valign="top">\textcolor{UPblue}{$f$ anreizkompatibel} $\iff$ \textcolor{UPblue}{$f$} nicht strategisch manipulierbar </text>
+<path layer="beta" matrix="1.02226 0 0 1.08509 -6.79082 -37.0935" fill="white" opacity="10%" stroke-opacity="opaque">
+0 496 m
+0 416 l
+768 416 l
+768 496 l
+h
+</path>
+</page>
+<page title="Gibbard-Satterthwaite">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<text layer="alpha" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">Analog zu Arrow&apos;s Theorem gilt für \textcolor{UPblue}{$f$}:</text>
+<path layer="beta" stroke="UPorange" fill="UPorange20">
+0 464 m
+0 384 l
+768 384 l
+768 464 l
+h
+</path>
+<text matrix="1 0 0 1 16 -32" transformations="translations" pos="0 480.568" stroke="black" type="minipage" width="736" height="25.0197" depth="19.488" valign="top">\textcolor{UPblue}{\textbf{Gibbard-Satterthwaite Theorem:}}
+
+Sei \textcolor{UPblue}{$f$} anreizkompatibel auf $A$ mit $|A| \geq 3$, dann ist \textcolor{UPblue}{$f$} eine Diktatur.</text>
+<path layer="gamma" matrix="1 0 0 1.2 0 -73.6" stroke="UPblue" fill="UPblue20">
+0 368 m
+0 288 l
+768 288 l
+768 368 l
+h
+</path>
+<text matrix="1 0 0 1 16 -48" transformations="translations" pos="0 404.06" stroke="black" type="minipage" width="736" height="36.7125" depth="31.2032" valign="top">Spieler $i$ ist \textcolor{UPblue}{\textbf{Diktator}} in \textcolor{UPblue}{$f$}, wenn:
+
+$\forall \prec_1, \ldots, \prec_n \in L; a \in A, \forall b \in A$ mit $b \neq a$: 
+
+$a \succ_i b \Rightarrow f(\prec_1, \ldots, \prec_n) = a$</text>
+<text layer="delta" matrix="1 0 0 1 0 -48" pin="h" transformations="translations" pos="0 288.145" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">$\Rightarrow$ Nur triviale Social Choice Functions sind anreizkompatibel.</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 220.83" stroke="black" type="minipage" width="768" height="22.7584" depth="17.2144" valign="top">\textbf{Beweis:} Social Welfare Function konstruieren und auf Arrow&apos;s Theorem zurückführen.</text>
 </page>
 </ipe>
