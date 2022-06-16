@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220616225602" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220617004408" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -19125,7 +19125,7 @@ h
 <view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta" active="theta"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta iota" active="iota"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa" active="kappa"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa" active="iota"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda" active="lambda"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu" active="mu"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu nu" active="nu"/>
@@ -19271,7 +19271,7 @@ h
 <view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda" active="kappa"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu" active="mu"/>
 <text layer="beta" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="12.4365" depth="6.8544" valign="top">betrachte $F:L^n \rightarrow L$, $F(\prec_1,...,\prec_n)=&lt;$ \textcolor{UPgray150}{mit $\prec_i, \prec \in L$ ($1 &lt; i &lt; n$)}</text>
-<text layer="gamma" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 480.709" stroke="black" type="minipage" width="768" height="12.7064" depth="7.1232" valign="top">\textbf{\textcolor{UPblue}{Einstimmigkeit:}} $\forall \prec \in L: F(\prec,...,\prec) = \prec$</text>
+<text layer="gamma" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 480.709" stroke="black" type="minipage" width="768" height="12.7064" depth="7.1232" valign="top">\textbf{\textcolor{UPblue}{Einstimmigkeit:}} $\forall \prec \in L: F(\prec,\ldots, \prec) = \prec$</text>
 <text layer="delta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 428.88" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">alle Wähler haben gleiche Präferenzen $\Rightarrow$ diese sind die soziale Präferenzen</text>
 <text layer="epsilon" matrix="1 0 0 1 0 -48" pin="h" transformations="translations" pos="0 393.565" stroke="black" type="minipage" width="768" height="12.628" depth="7.0448" valign="top">\textbf{\textcolor{UPblue}{Dikatur:}} Es existiert ein Spieler $i$, der Diktator ist</text>
 <text layer="zeta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 325.892" stroke="black" type="minipage" width="768" height="12.4365" depth="6.8544" valign="top">i ist Diktator $\iff$ $\forall \prec_1, ..., \prec_n \in L: F(\prec_1, ..., \prec_n) = \prec_i$</text>
