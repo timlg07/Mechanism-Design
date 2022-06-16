@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220616130848" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220616133450" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -19437,5 +19437,25 @@ h
 768.609 503.274 l
 h
 </path>
+</page>
+<page title="Arrow&apos;s Theorem">
+<layer name="alpha"/>
+<layer name="beta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<path layer="beta" matrix="1 0 0 1.85714 0 -425.143" stroke="UPorange" fill="UPorange20">
+0 496 m
+0 384 l
+768 384 l
+768 496 l
+h
+</path>
+<text matrix="1 0 0 1 16 -22.8718" transformations="translations" pos="0 500" stroke="black" type="minipage" width="736" height="84.8434" depth="79.4416" valign="top">$\forall$ social welfare functions \textcolor{UPblue}{F}, die
+\begin{itemize}
+\item mehr als 2 Kandidaten haben ($|A| \geq 3$)
+\item Einstimmigkeit erfüllen
+\item Unabhängigkeit von irrelevanten Alternativen erfüllen
+\end{itemize}
+gilt: \textcolor{UPblue}{\textbf{F ist eine Diktatur}}</text>
 </page>
 </ipe>
