@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220616125924" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220616130848" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -19354,53 +19354,53 @@ h
 </path>
 <text layer="beta" transformations="translations" pos="0 500" stroke="black" type="minipage" width="256" height="51.128" depth="45.64" valign="top">\begin{tabular}{cc}
 Wähler &amp; Präferenzen \\
-1      &amp;    $a\prec_1 b\prec_1 c \prec_1 d$         \\
-2      &amp;    $b\prec_2 a\prec_2 c \prec_2 d$         \\
-3      &amp;    $b\prec_3 d\prec_3 c \prec_3 a$        
+1      &amp;    $a\succ_1 b\succ_1 c \succ_1 d$         \\
+2      &amp;    $b\succ_2 a\succ_2 c \succ_2 d$         \\
+3      &amp;    $b\succ_3 d\succ_3 c \succ_3 a$        
 \end{tabular}</text>
 <text layer="gamma" matrix="1 0 0 1 302.923 68.8333" transformations="translations" pos="0 403.232" stroke="black" type="minipage" width="464" height="26.9584" depth="21.4256" valign="top">\begin{tabular}{lllll}
-soz. Präferenz:&amp;$b\prec$&amp;$a\prec$&amp;$c\prec$&amp;$d$\\
+soz. Präferenz:&amp;$b\succ$&amp;$a\succ$&amp;$c\succ$&amp;$d$\\
 Borda Count:&amp;$8$&amp;$5$&amp;$3$&amp;$2$
 \end{tabular}</text>
 <text transformations="translations" pos="0 500" stroke="black" type="minipage" width="256" height="51.128" depth="45.64" valign="top">$\left. \begin{tabular}{cc}
 Wähler &amp; Präferenzen \\
-1      &amp;    $a\prec_1 b\prec_1 c \prec_1 d$       \\
-2      &amp;    $b\prec_2 a\prec_2 c \prec_2 d$         \\
-3      &amp;    $b\prec_3 d\prec_3 c \prec_3 a$        
+1      &amp;    $a\succ_1 b\succ_1 c \succ_1 d$       \\
+2      &amp;    $b\succ_2 a\succ_2 c \succ_2 d$         \\
+3      &amp;    $b\succ_3 d\succ_3 c \succ_3 a$        
 \end{tabular}\right\}$</text>
 <text layer="epsilon" matrix="1 0 0 1 302.923 -57.4488" transformations="translations" pos="0 403.232" stroke="black" type="minipage" width="464" height="26.9584" depth="21.4256" valign="top">\begin{tabular}{lllll}
-soz. Präferenz:&amp;$c\prec$&amp;$d\prec$&amp;$b\prec$&amp;$a$\\
+soz. Präferenz:&amp;$c\succ$&amp;$d\succ$&amp;$b\succ$&amp;$a$\\
 Borda Count:&amp;$8$&amp;$7$&amp;$2$&amp;$1$
 \end{tabular}</text>
 <text matrix="1 0 0 1 0 -128" transformations="translations" pos="0 500" stroke="black" type="minipage" width="256" height="51.128" depth="45.64" valign="top">$\left. \begin{tabular}{cc}
 Wähler &amp; Präferenzen \\
-1&apos;      &amp;    $ c \prec_{1&apos;} d \prec_{1&apos;} a \prec_{1&apos;} b$         \\
-2&apos;      &amp;    $ c \prec_{2&apos;} d \prec_{2&apos;} b \prec_{2&apos;} a$        \\
-3&apos;      &amp;    $ d \prec_{3&apos;} c \prec_{3&apos;} b \prec_{3&apos;} a$         
+1&apos;      &amp;    $ c \succ_{1&apos;} d \succ_{1&apos;} a \succ_{1&apos;} b$         \\
+2&apos;      &amp;    $ c \succ_{2&apos;} d \succ_{2&apos;} b \succ_{2&apos;} a$        \\
+3&apos;      &amp;    $ d \succ_{3&apos;} c \succ_{3&apos;} b \succ_{3&apos;} a$         
 \end{tabular}\right\}$</text>
 <text layer="delta" matrix="1 0 0 1 0 -128" transformations="translations" pos="0 500" stroke="black" type="minipage" width="256" height="51.128" depth="45.64" valign="top">\begin{tabular}{cc}
 Wähler &amp; Präferenzen \\
-1&apos;      &amp;    $ c \prec_{1&apos;} d \prec_{1&apos;} a \prec_{1&apos;} b$         \\
-2&apos;      &amp;    $ c \prec_{2&apos;} d \prec_{2&apos;} b \prec_{2&apos;} a$        \\
-3&apos;      &amp;    $ d \prec_{3&apos;} c \prec_{3&apos;} b \prec_{3&apos;} a$         
+1&apos;      &amp;    $ c \succ_{1&apos;} d \succ_{1&apos;} a \succ_{1&apos;} b$         \\
+2&apos;      &amp;    $ c \succ_{2&apos;} d \succ_{2&apos;} b \succ_{2&apos;} a$        \\
+3&apos;      &amp;    $ d \succ_{3&apos;} c \succ_{3&apos;} b \succ_{3&apos;} a$         
 \end{tabular}</text>
 <text layer="zeta" matrix="1 0 0 1 0 -256" transformations="translations" pos="0 500" stroke="black" type="minipage" width="256" height="51.128" depth="45.64" valign="top">\begin{tabular}{cc}
 Wähler &amp; Präferenzen \\
-1&apos;&apos;      &amp;    $ c \prec_{1&apos;&apos;} d \prec_{1&apos;&apos;} a \prec_{1&apos;&apos;} b$         \\
-2&apos;&apos;      &amp;    $ c \prec_{2&apos;&apos;} d \prec_{2&apos;&apos;} b \prec_{2&apos;&apos;} a$         \\
-3&apos;&apos;      &amp;    $ d \prec_{3&apos;&apos;} b \prec_{3&apos;&apos;} a \prec_{3&apos;&apos;} c$        
+1&apos;&apos;      &amp;    $ c \succ_{1&apos;&apos;} d \succ_{1&apos;&apos;} a \succ_{1&apos;&apos;} b$         \\
+2&apos;&apos;      &amp;    $ c \succ_{2&apos;&apos;} d \succ_{2&apos;&apos;} b \succ_{2&apos;&apos;} a$         \\
+3&apos;&apos;      &amp;    $ d \succ_{3&apos;&apos;} b \succ_{3&apos;&apos;} a \succ_{3&apos;&apos;} c$        
 \end{tabular}</text>
 <text layer="eta" matrix="1 0 0 1 301.205 -189.423" transformations="translations" pos="0 403.232" stroke="black" type="minipage" width="464" height="26.9584" depth="21.4256" valign="top">\begin{tabular}{lllll}
-soz. Präferenz:&amp;$d\prec$&amp;$c\prec$&amp;$b\prec$&amp;$a$\\
+soz. Präferenz:&amp;$d\succ$&amp;$c\succ$&amp;$b\succ$&amp;$a$\\
 Borda Count:&amp;$7$&amp;$6$&amp;$3$&amp;$2$
 \end{tabular}</text>
 <text matrix="1 0 0 1 0.858974 -257.397" transformations="translations" pos="0 500" stroke="black" type="minipage" width="256" height="51.128" depth="45.64" valign="top">$\left. \begin{tabular}{cc}
 Wähler &amp; Präferenzen \\
-1&apos;&apos;      &amp;    $ c \prec_{1&apos;&apos;} d \prec_{1&apos;&apos;} a \prec_{1&apos;&apos;} b$         \\
-2&apos;&apos;      &amp;    $ c \prec_{2&apos;&apos;} d \prec_{2&apos;&apos;} b \prec_{2&apos;&apos;} a$         \\
-3&apos;&apos;      &amp;    $ d \prec_{3&apos;&apos;} b \prec_{3&apos;&apos;} a \prec_{3&apos;&apos;} c$        
+1&apos;&apos;      &amp;    $ c \succ_{1&apos;&apos;} d \succ_{1&apos;&apos;} a \succ_{1&apos;&apos;} b$         \\
+2&apos;&apos;      &amp;    $ c \succ_{2&apos;&apos;} d \succ_{2&apos;&apos;} b \succ_{2&apos;&apos;} a$         \\
+3&apos;&apos;      &amp;    $ d \succ_{3&apos;&apos;} b \succ_{3&apos;&apos;} a \succ_{3&apos;&apos;} c$        
 \end{tabular}\right\}$</text>
-<text layer="kappa" matrix="1 0 0 1 16.8344 -100.623" transformations="translations" pos="0 165.699" stroke="black" type="minipage" width="218.257" height="23.8146" depth="18.2784" valign="top">$(a\prec_i b \iff a\prec_i&apos; b) \Rightarrow\\ (a\prec b \iff a\prec&apos; b)$</text>
+<text layer="kappa" matrix="1 0 0 1 16.8344 -100.623" transformations="translations" pos="0 165.699" stroke="black" type="minipage" width="218.257" height="23.8146" depth="18.2784" valign="top">$(a\succ_i b \iff a\succ_i&apos; b) \Rightarrow\\ (a\succ b \iff a\succ&apos; b)$</text>
 <text matrix="1 0 0 1 0 -148.057" transformations="translations" pos="0 255.169" stroke="black" type="minipage" width="768" height="12.7064" depth="7.1232" valign="top">\textbf{\textcolor{UPblue}{Unabhängigkeit von irrelevanten Alternativen:}} </text>
 <path layer="mu" matrix="1 0 0 1 0 2.23186" stroke="white" fill="white" opacity="70%" stroke-opacity="opaque">
 -2.49851 503.274 m
