@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220616205051" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220616214754" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -19562,5 +19562,17 @@ a &amp; \ldots &amp; a &amp; b &amp; \ldots &amp; b \\
 b &amp; \ldots &amp; b &amp; a &amp; \ldots &amp; a \\
 \vdots &amp; \ldots &amp; \vdots &amp; \vdots &amp; \ldots &amp; \vdots \\
 \end{tabular}</text>
+</page>
+<page title="Arrow&apos;s Theorem Beweis (4)">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+</page>
+<page title="Arrow&apos;s Theorem Beweis (5)">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+</page>
+<page>
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
 </page>
 </ipe>
