@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220618164829" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220618171744" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -19272,11 +19272,11 @@ h
 <view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa" active="kappa"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda" active="kappa"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu" active="mu"/>
-<text layer="beta" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="12.4365" depth="6.8544" valign="top">betrachte $F:L^n \rightarrow L$, $F(\prec_1,...,\prec_n)=&lt;$ \textcolor{UPgray150}{mit $\prec_i, \prec \in L$ ($1 &lt; i &lt; n$)}</text>
-<text layer="gamma" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 480.709" stroke="black" type="minipage" width="768" height="12.7064" depth="7.1232" valign="top">\textbf{\textcolor{UPblue}{Einstimmigkeit:}} $\forall \prec \in L: F(\prec,\ldots, \prec) = \prec$</text>
+<text layer="beta" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="12.1755" depth="6.608" valign="top">betrachte $F:L^n \rightarrow L$, $F(\prec_1,...,\prec_n)=\prec$</text>
+<text layer="gamma" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 480.709" stroke="black" type="minipage" width="768" height="12.7064" depth="7.1232" valign="top">\textbf{\textcolor{UPblue}{Einstimmigkeit:}} $F(\prec,\ldots, \prec) = \prec$ $\forall \prec \in L$</text>
 <text layer="delta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 428.88" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">alle Wähler haben gleiche Präferenzen $\Rightarrow$ diese sind die soziale Präferenzen</text>
 <text layer="epsilon" matrix="1 0 0 1 0 -48" pin="h" transformations="translations" pos="0 393.565" stroke="black" type="minipage" width="768" height="12.628" depth="7.0448" valign="top">\textbf{\textcolor{UPblue}{Dikatur:}} Es existiert ein Spieler $i$, der Diktator ist</text>
-<text layer="zeta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 325.892" stroke="black" type="minipage" width="768" height="12.4365" depth="6.8544" valign="top">i ist Diktator $\iff$ $\forall \prec_1, ..., \prec_n \in L: F(\prec_1, ..., \prec_n) = \prec_i$</text>
+<text layer="zeta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 325.892" stroke="black" type="minipage" width="768" height="12.4365" depth="6.8544" valign="top">$i$ ist Diktator $\iff$ $F(\prec_1, ..., \prec_n) = \prec_i$ $\forall \prec_1, ..., \prec_n \in L$</text>
 <text layer="eta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 290.601" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">soziale Präferenz ist immer die von Wähler $i$: Andere werden ignoriert</text>
 <text layer="theta" matrix="1 0 0 1 0 -48" pin="h" transformations="translations" pos="0 255.169" stroke="black" type="minipage" width="768" height="12.7064" depth="7.1232" valign="top">\textbf{\textcolor{UPblue}{Unabhängigkeit von irrelevanten Alternativen:}} </text>
 <text layer="iota" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 187.34" stroke="black" type="minipage" width="768" height="13.6102" depth="8.0304" valign="top">$\forall a, b \in A; \prec_1,...,\prec_n, \prec_1&apos;, ..., \prec_n&apos; \in L$: </text>
@@ -19308,7 +19308,7 @@ h
 <view layers="alpha gamma epsilon eta theta iota kappa" active="eta"/>
 <view layers="alpha gamma epsilon eta theta iota kappa lambda" active="lambda"/>
 <view layers="alpha gamma epsilon eta theta iota kappa lambda mu" active="mu"/>
-<path layer="lambda" matrix="1.21019 0.0456357 -0.102607 0.538242 318.732 -60.1196" fill="UPdarkred50">
+<path layer="lambda" matrix="0.94518 0.0390179 -0.0801379 0.460189 338.282 -22.8196" fill="UPdarkred50">
 29.4065 0 0 29.4065 187.515 473.838 e
 </path>
 <path matrix="0.675565 0.036131 -0.0572783 0.42614 158.745 -49.8648" fill="UPgray20">
@@ -19330,10 +19330,10 @@ h
 257.092 65.8249 l
 h
 </path>
-<path layer="iota" matrix="1.21019 0.0456357 -0.102607 0.538242 322.168 72.1626" fill="UPorange20">
+<path layer="iota" matrix="0.899443 0.0403475 -0.07626 0.475871 345.951 101.726" fill="UPorange20">
 29.4065 0 0 29.4065 187.515 473.838 e
 </path>
-<path matrix="1.21019 0.0456357 -0.102607 0.538242 415.796 198.432" fill="UPorange20">
+<path matrix="0.953042 0.0451147 -0.0808045 0.532097 409.262 200.956" fill="UPorange20">
 29.4065 0 0 29.4065 187.515 473.838 e
 </path>
 <path layer="theta" matrix="1.21019 0.0456357 -0.102607 0.538242 -56.6387 24.9186" fill="UPgray20">
@@ -19360,9 +19360,10 @@ Wähler &amp; Präferenzen \\
 2      &amp;    $b\succ_2 a\succ_2 c \succ_2 d$         \\
 3      &amp;    $b\succ_3 d\succ_3 c \succ_3 a$        
 \end{tabular}</text>
-<text layer="gamma" matrix="1 0 0 1 302.923 68.8333" transformations="translations" pos="0 403.232" stroke="black" type="minipage" width="464" height="26.9584" depth="21.4256" valign="top">\begin{tabular}{lllll}
-soz. Präferenz:&amp;$b\succ$&amp;$a\succ$&amp;$c\succ$&amp;$d$\\
-Borda Count:&amp;$8$&amp;$5$&amp;$3$&amp;$2$
+<text layer="gamma" matrix="1 0 0 1 302.923 68.8333" transformations="translations" pos="0 403.232" stroke="black" type="minipage" width="464" height="26.9584" depth="21.4256" valign="top">\setlength\tabcolsep{1pt}
+\begin{tabular}{lllll}
+soz. Präferenz: &amp;$b\succ$&amp;$a\succ$&amp;$c\succ$&amp;$d$\\
+Borda Count: &amp;$8$&amp;$5$&amp;$3$&amp;$2$
 \end{tabular}</text>
 <text transformations="translations" pos="0 500" stroke="black" type="minipage" width="288" height="51.128" depth="45.64" valign="top">$\left. \begin{tabular}{cc}
 Wähler &amp; Präferenzen \\
@@ -19370,7 +19371,8 @@ Wähler &amp; Präferenzen \\
 2      &amp;    $b\succ_2 a\succ_2 c \succ_2 d$         \\
 3      &amp;    $b\succ_3 d\succ_3 c \succ_3 a$        
 \end{tabular}\right\}$</text>
-<text layer="epsilon" matrix="1 0 0 1 302.923 -57.4488" transformations="translations" pos="0 403.232" stroke="black" type="minipage" width="464" height="26.9584" depth="21.4256" valign="top">\begin{tabular}{lllll}
+<text layer="epsilon" matrix="1 0 0 1 302.923 -57.4488" transformations="translations" pos="0 403.232" stroke="black" type="minipage" width="464" height="26.9584" depth="21.4256" valign="top">\setlength\tabcolsep{1pt}
+\begin{tabular}{lllll}
 soz. Präferenz:&amp;$c\succ$&amp;$d\succ$&amp;$b\succ$&amp;$a$\\
 Borda Count:&amp;$8$&amp;$7$&amp;$2$&amp;$1$
 \end{tabular}</text>
@@ -19392,7 +19394,8 @@ Wähler &amp; Präferenzen \\
 2&apos;&apos;      &amp;    $ c \succ_{2&apos;&apos;} d \succ_{2&apos;&apos;} b \succ_{2&apos;&apos;} a$         \\
 3&apos;&apos;      &amp;    $ d \succ_{3&apos;&apos;} b \succ_{3&apos;&apos;} a \succ_{3&apos;&apos;} c$        
 \end{tabular}</text>
-<text layer="eta" matrix="1 0 0 1 301.205 -189.423" transformations="translations" pos="0 403.232" stroke="black" type="minipage" width="464" height="26.9584" depth="21.4256" valign="top">\begin{tabular}{lllll}
+<text layer="eta" matrix="1 0 0 1 301.205 -189.423" transformations="translations" pos="0 403.232" stroke="black" type="minipage" width="464" height="26.9584" depth="21.4256" valign="top">\setlength\tabcolsep{1pt}
+\begin{tabular}{lllll}
 soz. Präferenz:&amp;$d\succ$&amp;$c\succ$&amp;$b\succ$&amp;$a$\\
 Borda Count:&amp;$7$&amp;$6$&amp;$3$&amp;$2$
 \end{tabular}</text>
