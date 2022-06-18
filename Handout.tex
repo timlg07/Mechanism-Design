@@ -62,16 +62,18 @@
 \emph{Mechanism Design} beschäftigt sich mit dem Aufstellen von Regeln um eine soziale Wahl zu erreichen. Diese soziale Wahl ist eine Gruppenentscheidung, die von den privaten Informationen der Spieler abhängig ist und sich auf alle Spieler auswirkt. Sie soll möglichst effizient für die Gemeinschaft ausfallen. Diesem Ziel steht allerdings das egoistische und unkooperative Verhalten der Spieler gegenüber: Ein Spieler unterstützt kein Ergebnis, wenn es nachteilig für ihn ist.~\cite{ste08}
 
 Formal lässt sich die Entscheidung folgendermaßen betrachten:
-Es gibt eine Menge $I$ an $n$-vielen \emph{Spielern}/ Wählern, die sich zwischen den \emph{Alternativen} $A$ entscheiden. Die Präferenzen zwischen den Alternativen stellen eine totale Ordnung von $A$ dar; Die Menge $L$ enthält alle möglichen dieser Ordnungen.~\cite{nis07}
+Es gibt eine Menge $I$ an $n$-vielen \emph{Spielern}, die sich zwischen den \emph{Alternativen} $A$ entscheiden. Die Präferenzen zwischen den Alternativen stellen eine totale Ordnung von $A$ dar; Die Menge $L$ enthält alle dieser Ordnungen.~\cite{nis07}
 
+Eine \emph{Social Welfare Function} ist eine Funktion, die die Präferenzen aller Spieler zu einer einzigen, gemeinsamen Ordnung aggregiert. Im weiteren Verlauf bezeichnet $F$ immer eine Social Welfare Function.
 \begin{definition}
 	\label{def:socialwelfarefunc}
-	Eine \emph{Social Welfare Function} ist eine Funktion, die ein $n$-Tupel an Ordnungen aus $L$ auf eine einzelne Ordnung aus $L$ abbildet. So können die Präferenzen aller Spieler zu einer einzigen, gemeinsamen Ordnung aggregiert werden. Im weiteren Verlauf ist mit der Bezeichnung $F$ immer eine Social Welfare Function gemeint.
+	Social Welfare Function $F : L^n \rightarrow L$
 \end{definition}
 
+\emph{Social Choice Functions} aggregieren die Präferenzen der Spieler zu einem einzigen, gemeinsamen Gewinner. Im weiteren Verlauf bezeichnet $f$ immer eine Social Choice Function.
 \begin{definition}
 	\label{def:socialchoicefunc}
-	\emph{Social Choice Functions} nehmen ebenfalls $n$-viele Elemente aus $L$ als Parameter, bilden diese jedoch auf eine Alternative aus $A$ ab. Die Präferenzen der Spieler werden also zu einem einzigen, gemeinsamen Gewinner aggregiert. Im weiteren Verlauf ist mit der Bezeichnung $f$ immer eine Social Choice Function gemeint.
+	Social Choice Function $f : L^n \rightarrow A$
 \end{definition}
 
 \section{Arrow's Theorem, Gibbard-Satterthwaite}
