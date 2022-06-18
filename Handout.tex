@@ -14,6 +14,9 @@
 \usepackage[noend]{algpseudocode}
 \usepackage{caption,subcaption}
 \usepackage{url}
+\usepackage{csquotes}
+
+\MakeOuterQuote{"}
 
 \renewcommand{\bar}[1]{\overline{#1}}
 
@@ -57,12 +60,13 @@
 \fancyhead[EL,OR]{\thepage}
 \pagestyle{fancy}
 
-
 \section{Einleitung, Definitionen}
+Dieses Handout basiert auf dem Kapitel "Introduction to Mechanism Design (for Computer Scientists)" ~\cite{nis07}.
+
 \emph{Mechanism Design} beschäftigt sich mit dem Aufstellen von Regeln um eine soziale Wahl zu erreichen. Diese soziale Wahl ist eine Gruppenentscheidung, die von den privaten Informationen der Spieler abhängig ist und sich auf alle Spieler auswirkt. Sie soll möglichst effizient für die Gemeinschaft ausfallen. Diesem Ziel steht allerdings das egoistische und unkooperative Verhalten der Spieler gegenüber: Ein Spieler unterstützt kein Ergebnis, wenn es nachteilig für ihn ist.~\cite{ste08}
 
 Formal lässt sich die Entscheidung folgendermaßen betrachten:
-Es gibt eine Menge $I$ an $n$-vielen \emph{Spielern}, die sich zwischen den \emph{Alternativen} $A$ entscheiden. Die Präferenzen zwischen den Alternativen stellen eine totale Ordnung von $A$ dar; Die Menge $L$ enthält alle dieser Ordnungen.~\cite{nis07}
+Es gibt eine Menge $I$ an $n$-vielen \emph{Spielern}, die sich zwischen den \emph{Alternativen} $A$ entscheiden. Die Präferenzen zwischen den Alternativen stellen eine totale Ordnung von $A$ dar; Die Menge $L$ enthält alle dieser Ordnungen.
 
 Eine \emph{Social Welfare Function} ist eine Funktion, die die Präferenzen aller Spieler zu einer einzigen, gemeinsamen Ordnung aggregiert. Im weiteren Verlauf bezeichnet $F$ immer eine Social Welfare Function.
 \begin{definition}
