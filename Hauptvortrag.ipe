@@ -1,14 +1,16 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220618171744" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220619011946" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
 
 \usepackage{ngerman}
 \usepackage{amssymb}
+\usepackage{stmaryrd}
 \usepackage{eurosym}
+
 \newcommand{\eps}{\varepsilon}
 
 \DeclareUnicodeCharacter{20AC}{\euro}
@@ -19463,14 +19465,12 @@ h
 \end{itemize}
 gilt: \textcolor{UPblue}{\textbf{F ist eine Diktatur}}</text>
 </page>
-<page title="Arrow&apos;s Theorem Beweis (1)">
+<page title="Arrow&apos;s Theorem Beweisschritte">
 <layer name="alpha"/>
 <layer name="beta"/>
-<layer name="gamma"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha gamma" active="beta"/>
-<view layers="alpha beta gamma" active="gamma"/>
-<path layer="alpha" matrix="1 0 0 1.85714 0 -425.143" stroke="UPorange" fill="UPorange20">
+<view layers="alpha beta" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<path layer="beta" matrix="1 0 0 1.85714 0 -425.143" stroke="UPorange" fill="UPorange20">
 0 496 m
 0 384 l
 768 384 l
@@ -19484,95 +19484,70 @@ h
 \item Unabhängigkeit von irrelevanten Alternativen erfüllen
 \end{itemize}
 gilt: \textcolor{UPblue}{\textbf{F ist eine Diktatur}}</text>
-<path layer="beta" matrix="1 0 0 0.5 0 64" stroke="UPblue" fill="UPblue20">
-0 256 m
-0 128 l
-768 128 l
-768 256 l
-h
-</path>
-<text matrix="1 0 0 1 16 -144" transformations="translations" pos="0 312.843" stroke="black" type="minipage" width="736" height="13.9787" depth="8.4112" valign="top">\textbf{Behauptung:} Wenn $\forall i \in I: a \succ_i b \iff c \succ_i&apos; d$ dann gilt $a \succ b \iff c \succ&apos; d$ </text>
-<text layer="gamma" matrix="1 0 0 1 0 112" pin="h" transformations="translations" pos="0 149.014" stroke="black" type="minipage" width="768" height="25.6234" depth="20.0928" valign="top">Seien $\succ_1,...,\succ_n$ und $\succ_1&apos;,...,\succ_n&apos;$ Spielerprofile.
-
-Sei  $\succ = F(\succ_1,...,\succ_n)$ und  $\succ&apos; = F(\succ_1&apos;,...,\succ_n&apos;)$</text>
-</page>
-<page title="Arrow&apos;s Theorem Beweis (2)">
-<layer name="alpha"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
-<view layers="alpha beta gamma" active="gamma"/>
-<view layers="alpha beta gamma delta" active="delta"/>
-<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
-<path layer="alpha" matrix="1 0 0 0.5 0 304" stroke="UPblue" fill="UPblue20">
-0 256 m
-0 128 l
-768 128 l
-768 256 l
-h
-</path>
-<text matrix="1 0 0 1 16 96" transformations="translations" pos="0 312.843" stroke="black" type="minipage" width="736" height="13.9787" depth="8.4112" valign="top">\textbf{Behauptung:} Wenn $\forall i \in I: a \succ_i b \iff c \succ_i&apos; d$ dann gilt $a \succ b \iff c \succ&apos; d$ </text>
-<text matrix="1 0 0 1 0 352" pin="h" transformations="translations" pos="0 149.014" stroke="black" type="minipage" width="768" height="25.6234" depth="20.0928" valign="top">Seien $\succ_1,...,\succ_n$ und $\succ_1&apos;,...,\succ_n&apos;$ Spielerprofile.
-
-Sei  $\succ = F(\succ_1,...,\succ_n)$ und  $\succ&apos; = F(\succ_1&apos;,...,\succ_n&apos;)$</text>
-<text layer="beta" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 386.453" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">Durch Umbenennen sei allgemein $a \succ b$, $c \neq b$.</text>
-<text layer="gamma" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 335.021" stroke="black" type="minipage" width="768" height="64.7326" depth="59.2928" valign="top">Kombiniere $\succ_i$ und $\succ_i&apos;$ zu Präferenz $\succ_i$ durch Platzieren von:
+<text matrix="1 0 0 1 0 -56.6923" pin="h" transformations="translations" pos="0 312.843" stroke="black" type="minipage" width="768" height="88.8563" depth="83.4624" valign="top">Folgende Behauptungen werden nacheinander gezeigt:
 \begin{itemize}
-\item c direkt über a (außer wenn $c=a$)
-\item d direkt unter b (außer wenn $d=b$)
-\end{itemize}
-Dabei wird die Sortierung von $a$, $b$ und $c$, $d$ beibehalten.
-</text>
-<text layer="delta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 194.996" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">
-Durch Einstimmigkeit gilt $c \prec a$, $b \prec d$.</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -24.2692" pin="h" transformations="translations" pos="0 175.564" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">
-Daraus folgt transitiv $c \prec d$.</text>
+\item Extrementscheidung aller Wähler führt zu gem. Extrementscheidung
+\item Es gibt dabei einen Wähler, der ausschlaggebend ist
+\item Dieser Wähler ist Diktator für alle anderen Alternativen
+\item Es gibt weitere Diktatoren. Alle Diktatoren sind der gleiche Spieler.
+\end{itemize}</text>
 </page>
-<page title="Arrow&apos;s Theorem Beweis (3)">
+<page title="Arrow&apos;s Theorem Beweis (1)">
 <layer name="alpha"/>
 <layer name="beta"/>
 <layer name="gamma"/>
 <layer name="delta"/>
 <layer name="epsilon"/>
 <layer name="zeta"/>
+<layer name="eta"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
-<view layers="alpha beta zeta" active="gamma"/>
-<view layers="alpha beta gamma zeta" active="delta"/>
-<view layers="alpha beta gamma delta zeta" active="epsilon"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
 <view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
-<text layer="beta" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="38.052" depth="32.5472" valign="top">Wähle $a,b\in A$, $a\neq b$.
-
-
-Definiere Präferenzprofil $\pi^i$ wobei die ersten i Spieler $a \succ b$ wählen. 
-
-Also $a \succ_j b \iff j \leq i$</text>
-<text layer="gamma" matrix="1 0 0 1 0 -144" pin="h" transformations="translations" pos="0 429.401" stroke="black" type="minipage" width="768" height="47.8778" depth="42.392" valign="top">Durch Einstimmigkeit gilt:
-\begin{itemize}
-\item $F(\pi^0) \Rightarrow b \succ a$
-\item $F(\pi^n) \Rightarrow a \succ b$
-\end{itemize}</text>
-<text layer="delta" matrix="1 0 0 1 0 -144" pin="h" transformations="translations" pos="0 323.131" stroke="black" type="minipage" width="768" height="13.7099" depth="8.1424" valign="top">Bei irgendeinem $F(\pi^{i^*})$ mit $i^* \in I$ wechselt die Präferenz zu $a\succ b$.
-
-</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -144" pin="h" transformations="translations" pos="0 285.279" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">Dieser Spieler $i^*$ ist Diktator.</text>
-<text layer="zeta" matrix="1 0 0 1 0 160" pin="h" transformations="translations" pos="0 249.847" stroke="black" type="minipage" width="768" height="51.8213" depth="46.3456" valign="top">\begin{tabular}{cccccc}
-$\succ_1$ &amp; \ldots &amp; $\succ_{i}$ &amp;
-$\succ_{i+1}$ &amp; \ldots &amp; $\succ_n$ \\
+<view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
+<text layer="alpha" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="22.7584" depth="17.2144" valign="top">\textbf{Gegeben:} Profil $\pi_0$, wobei $b \in A$ jeweils entweder vor oder nach allen anderen Alternativen steht</text>
+<text layer="beta" matrix="1 0 0 1 0 -16.2457" transformations="translations" pos="0 460.027" stroke="black" type="minipage" width="256" height="52.7744" depth="47.2976" valign="top">\begin{tabular}{ccccc}
+$\succ_1$	&amp; $\succ_{2}$&amp; $\ldots$&amp;$\succ_{n-1}$	&amp; $\succ_n$	\\
 \hline
-a &amp; \ldots &amp; a &amp; b &amp; \ldots &amp; b \\
-b &amp; \ldots &amp; b &amp; a &amp; \ldots &amp; a \\
-\vdots &amp; \ldots &amp; \vdots &amp; \vdots &amp; \ldots &amp; \vdots \\
+b	&amp; \vdots	&amp; \ldots 	&amp; b 	&amp; \vdots	\\
+\vdots	&amp; \vdots 	&amp; \ldots 	&amp; \vdots 	&amp; \vdots	\\
+\vdots	&amp; b 	&amp; \ldots 	&amp; \vdots 	&amp; b	\\
 \end{tabular}</text>
+<path layer="gamma" matrix="1.07692 0 0 0.6 -22.1538 158.546" stroke="UPblue" fill="UPblue20">
+288 432 m
+288 352 l
+704 352 l
+704 432 l
+h
+</path>
+<text matrix="1 0 0 1 304 59.7051" transformations="translations" pos="0 343.955" stroke="black" type="minipage" width="416" height="12.7064" depth="7.1232" valign="top">\textbf{Behauptung:} $x \prec b$ oder $x \succ b$ $\forall x \in A$</text>
+<text layer="delta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 343.71" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">Angenommen dies gilt nicht. Dann existieren $a, c$, sodass $c \succ b \succ a$.</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 308.278" stroke="black" type="minipage" width="768" height="13.7995" depth="8.232" valign="top">Erstelle ein neues Profil $\pi_1$, identisch zu $\pi_0$, außer dass $a \succ_i&apos; c$</text>
+<text matrix="1 0 0 1 0 -208.246" transformations="translations" pos="0 460.027" stroke="black" type="minipage" width="256" height="77.4155" depth="71.9936" valign="top">\begin{tabular}{ccccc}
+$\succ_1$	&amp; $\succ_{2}$&amp; $\ldots$&amp;$\succ_{n-1}$	&amp; $\succ_n$	\\
+\hline
+b	&amp; \vdots	&amp; \ldots 	&amp; b 	&amp; \vdots	\\
+\vdots	&amp; a 	&amp; \ldots 	&amp; \vdots 	&amp; a	\\
+a	&amp; c 	&amp; \ldots 	&amp; a 	&amp; c	\\
+c	&amp; \vdots 	&amp; \ldots 	&amp; c 	&amp; \vdots	\\
+\vdots	&amp; b 	&amp; \ldots 	&amp; \vdots 	&amp; b	\\
+\end{tabular}</text>
+<path layer="zeta" matrix="1.07692 0 0 1.75788 -22.1538 -512.013" stroke="UPblue" fill="UPblue20">
+288 432 m
+288 352 l
+704 352 l
+704 432 l
+h
+</path>
+<text matrix="1 0 0 1 304 -116.295" transformations="translations" pos="0 343.955" stroke="black" type="minipage" width="416" height="24.584" depth="19.04" valign="top">Präferenzen $a, b$ und $a, c$ sind für alle $i$ bei beiden Profilen gleich.</text>
+<text matrix="1 0 0 1 304 -180.295" transformations="translations" pos="0 343.955" stroke="black" type="minipage" width="416" height="22.8738" depth="17.3264" valign="top">
+Durch \textcolor{UPblue}{IIA} folgt: $c \succ&apos; b$ und $b \succ&apos; a$. Transitiv also auch \textcolor{UPred}{$c \succ&apos; a$}.</text>
+<text layer="eta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 102.372" stroke="black" type="minipage" width="768" height="13.9787" depth="8.4112" valign="top">\textbf{Aber:} Es gilt $a \succ_i&apos; c$ $\forall i \in I$ und daher durch \textcolor{UPblue}{Einstimmigkeit} auch \textcolor{UPred}{$a \succ&apos; c$} </text>
+<text matrix="-5.31691 0 0 1.82974 4037.75 -55.8277" transformations="translations" pos="624 48" stroke="UPred" type="label" width="16.9658" height="19.283" depth="5.1968" valign="baseline" size="Huge" style="math">\lightning</text>
 </page>
-<page title="Arrow&apos;s Theorem Beweis (4)">
-<layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
-</page>
-<page title="Arrow&apos;s Theorem Beweis (5)">
+<page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
 </page>
