@@ -112,6 +112,13 @@ Im folgenden wird bewiesen, dass dies ab $|A| > 2$ auch die einzige Lösung ist.
 	
 \end{proof}
 
+Analog zu Social Welfare Functions kann strategische Manipulation auch bei Social Choice Functions ausgeschlossen werden.
+\begin{definition}
+	\label{def:anreizkompatibel}
+	$f$ ist \emph{anreizkompatibel}$\iff$$f$ nicht strategisch manipulierbar.
+\end{definition}
+Strategisch manipulierbar ist $f$, wenn für einen Spieler $i$, für $\prec_1, \ldots, \prec_n, \prec_i' \in L$ und $a = f(\prec_1, \ldots, \prec_i, \ldots, \prec_n)$, $a' = f(\prec_1, \ldots, \prec_i', \ldots, \prec_n)$ gilt: $a \prec_i a'$. In diesem Fall bevorzugt Spieler $i$ das Ergebnis $a'$, welches er durch taktisches Abweichen von seiner ursprünglichen Präferenz $\prec_i$ erreichen kann.
+
 \section{Mechanism Design mit Geld}
 \subsection{Vickrey's Second Price Auction}
 \subsection{Vickrey-Clarke-Groves Mechanisms}
