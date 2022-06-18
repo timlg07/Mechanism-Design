@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220617004408" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220618164829" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -19166,11 +19166,11 @@ h
 <text layer="kappa" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 281.335" stroke="black" type="minipage" width="384" height="28.5275" depth="22.9936" valign="top" style="item">Lineare Ordnungen \textcolor{UPblue}{\textbf{$L$}} \\\textit{(= totale Ordnung von \textcolor{UPblue}{\textbf{$A$}})}</text>
 <text layer="eta" matrix="1 0 0 1 397.423 73.9626" transformations="translations" pos="0 253.987" stroke="black" type="minipage" width="352" height="12.8285" depth="7.2464" valign="top">$\{a, b, c\}$</text>
 <text layer="iota" matrix="1 0 0 1 -12.5641 -18.5769" transformations="translations" pos="410.155 290.077" stroke="black" type="label" width="76.8118" height="14.896" depth="4.816" valign="baseline" style="math">\{1, 2, 3\}</text>
-<text layer="lambda" matrix="1 0 0 1 -15.141 -33.7179" transformations="translations" pos="412.732 263.448" stroke="black" type="label" width="232.667" height="15.2589" depth="4.816" valign="baseline" style="math">\{ a \succ b  \succ c,{ }b  \succ c  \succ a, ... \}</text>
+<text layer="lambda" matrix="1 0 0 1 -15.141 -33.7179" transformations="translations" pos="412.732 263.448" stroke="black" type="label" width="238.843" height="15.2589" depth="4.816" valign="baseline" style="math">\{ a \succ b  \succ c$, $b  \succ c  \succ a, \ldots \}</text>
 <text layer="mu" matrix="0.5 0 0 -0.143929 16 187.634" transformations="translations" pos="0 205.987" stroke="UPgray120" type="minipage" width="320" height="10.6848" depth="5.096" valign="top">\textcolor{UPblue}{\textbf{Social Welfare Funktion}}</text>
 <text layer="nu" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 142.206" stroke="black" type="minipage" width="320" height="10.2234" depth="4.648" valign="top">\textcolor{UPblue}{\textbf{$F : L^n \rightarrow L$}}</text>
 <text layer="xi" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 111.335" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">aggregiert zu gem. Ordnung</text>
-<text layer="omicron" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 76.0203" stroke="black" type="minipage" width="336" height="24.9021" depth="19.3648" valign="top">$F(\{ a \succ_1 b \succ_1 c,{ }..., b \succ_n c \succ_n a \}) = \{ a \succ b \succ  c \}$</text>
+<text layer="omicron" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 76.0203" stroke="black" type="minipage" width="336" height="12.8285" depth="7.2464" valign="top">$F(\succ_1, \ldots, \succ_n \}) = \succ$</text>
 <path layer="pi" matrix="0.958333 0 0 1.1 400 -17.6" stroke="UPorange70" fill="UPorange20">
 0 176 m
 0 16 l
@@ -19181,7 +19181,9 @@ h
 <text matrix="0.5 0 0 -0.143929 416 187.634" transformations="translations" pos="0 205.987" stroke="UPgray120" type="minipage" width="336" height="10.6848" depth="5.096" valign="top">\textcolor{UPblue}{\textbf{Social Choice Funktion}}</text>
 <text layer="rho" matrix="1 0 0 1 416 -16" transformations="translations" pos="0 142.206" stroke="black" type="minipage" width="320" height="10.416" depth="4.8384" valign="top">\textcolor{UPblue}{\textbf{$f : L^n \rightarrow A$}}</text>
 <text layer="sigma" matrix="1 0 0 1 416 -16" transformations="translations" pos="0 111.335" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">aggregiert zu gem. Gewinner</text>
-<text layer="tau" matrix="1 0 0 1 416 -16" transformations="translations" pos="0 76.0203" stroke="black" type="minipage" width="336" height="12.8285" depth="7.2464" valign="top">$f(\{ a \succ_1 b \succ_1 c,{ }..., b \succ_n c \succ_n a \}) = a$</text>
+<text layer="tau" matrix="1 0 0 1 416 -16" transformations="translations" pos="0 76.0203" stroke="black" type="minipage" width="336" height="12.8285" depth="7.2464" valign="top">$f(\{ \succ_1, \ldots, \succ_n \}) = a$</text>
+<text layer="omicron" matrix="1 0 0 1 0 -11.7051" transformations="translations" pos="16 32" stroke="black" type="label" width="339.447" height="12.7075" depth="4.0208" valign="baseline" size="small">$F(\{ a \succ_1 b \succ_1 c,$ $b \succ_2 c \succ_2 a \}) = \{ b \succ a \succ  c \}$</text>
+<text layer="tau" matrix="1 0 0 1 400.628 -17.1025" transformations="translations" pos="16 32" stroke="black" type="label" width="259.253" height="12.7075" depth="4.0208" valign="baseline" size="small">$f(\{ a \succ_1 b \succ_1 c,$ $b \succ_2 c \succ_2 a \}) = b$</text>
 </page>
 <page title="Strategische Manipulation">
 <layer name="alpha"/>
@@ -19362,7 +19364,7 @@ Wähler &amp; Präferenzen \\
 soz. Präferenz:&amp;$b\succ$&amp;$a\succ$&amp;$c\succ$&amp;$d$\\
 Borda Count:&amp;$8$&amp;$5$&amp;$3$&amp;$2$
 \end{tabular}</text>
-<text transformations="translations" pos="0 500" stroke="black" type="minipage" width="256" height="51.128" depth="45.64" valign="top">$\left. \begin{tabular}{cc}
+<text transformations="translations" pos="0 500" stroke="black" type="minipage" width="288" height="51.128" depth="45.64" valign="top">$\left. \begin{tabular}{cc}
 Wähler &amp; Präferenzen \\
 1      &amp;    $a\succ_1 b\succ_1 c \succ_1 d$       \\
 2      &amp;    $b\succ_2 a\succ_2 c \succ_2 d$         \\
@@ -19372,19 +19374,19 @@ Wähler &amp; Präferenzen \\
 soz. Präferenz:&amp;$c\succ$&amp;$d\succ$&amp;$b\succ$&amp;$a$\\
 Borda Count:&amp;$8$&amp;$7$&amp;$2$&amp;$1$
 \end{tabular}</text>
-<text matrix="1 0 0 1 0 -128" transformations="translations" pos="0 500" stroke="black" type="minipage" width="256" height="51.128" depth="45.64" valign="top">$\left. \begin{tabular}{cc}
+<text matrix="1 0 0 1 0 -128" transformations="translations" pos="0 500" stroke="black" type="minipage" width="288" height="51.128" depth="45.64" valign="top">$\left. \begin{tabular}{cc}
 Wähler &amp; Präferenzen \\
 1&apos;      &amp;    $ c \succ_{1&apos;} d \succ_{1&apos;} a \succ_{1&apos;} b$         \\
 2&apos;      &amp;    $ c \succ_{2&apos;} d \succ_{2&apos;} b \succ_{2&apos;} a$        \\
 3&apos;      &amp;    $ d \succ_{3&apos;} c \succ_{3&apos;} b \succ_{3&apos;} a$         
 \end{tabular}\right\}$</text>
-<text layer="delta" matrix="1 0 0 1 0 -128" transformations="translations" pos="0 500" stroke="black" type="minipage" width="256" height="51.128" depth="45.64" valign="top">\begin{tabular}{cc}
+<text layer="delta" matrix="1 0 0 1 0 -128" transformations="translations" pos="0 500" stroke="black" type="minipage" width="288" height="51.128" depth="45.64" valign="top">\begin{tabular}{cc}
 Wähler &amp; Präferenzen \\
 1&apos;      &amp;    $ c \succ_{1&apos;} d \succ_{1&apos;} a \succ_{1&apos;} b$         \\
 2&apos;      &amp;    $ c \succ_{2&apos;} d \succ_{2&apos;} b \succ_{2&apos;} a$        \\
 3&apos;      &amp;    $ d \succ_{3&apos;} c \succ_{3&apos;} b \succ_{3&apos;} a$         
 \end{tabular}</text>
-<text layer="zeta" matrix="1 0 0 1 0 -256" transformations="translations" pos="0 500" stroke="black" type="minipage" width="256" height="51.128" depth="45.64" valign="top">\begin{tabular}{cc}
+<text layer="zeta" matrix="1 0 0 1 0 -256" transformations="translations" pos="0 500" stroke="black" type="minipage" width="288" height="51.128" depth="45.64" valign="top">\begin{tabular}{cc}
 Wähler &amp; Präferenzen \\
 1&apos;&apos;      &amp;    $ c \succ_{1&apos;&apos;} d \succ_{1&apos;&apos;} a \succ_{1&apos;&apos;} b$         \\
 2&apos;&apos;      &amp;    $ c \succ_{2&apos;&apos;} d \succ_{2&apos;&apos;} b \succ_{2&apos;&apos;} a$         \\
@@ -19394,7 +19396,7 @@ Wähler &amp; Präferenzen \\
 soz. Präferenz:&amp;$d\succ$&amp;$c\succ$&amp;$b\succ$&amp;$a$\\
 Borda Count:&amp;$7$&amp;$6$&amp;$3$&amp;$2$
 \end{tabular}</text>
-<text matrix="1 0 0 1 0.858974 -257.397" transformations="translations" pos="0 500" stroke="black" type="minipage" width="256" height="51.128" depth="45.64" valign="top">$\left. \begin{tabular}{cc}
+<text matrix="1 0 0 1 0.858974 -257.397" transformations="translations" pos="0 500" stroke="black" type="minipage" width="304" height="51.128" depth="45.64" valign="top">$\left. \begin{tabular}{cc}
 Wähler &amp; Präferenzen \\
 1&apos;&apos;      &amp;    $ c \succ_{1&apos;&apos;} d \succ_{1&apos;&apos;} a \succ_{1&apos;&apos;} b$         \\
 2&apos;&apos;      &amp;    $ c \succ_{2&apos;&apos;} d \succ_{2&apos;&apos;} b \succ_{2&apos;&apos;} a$         \\
@@ -19450,7 +19452,7 @@ h
 768 496 l
 h
 </path>
-<text matrix="1 0 0 1 16 -22.8718" transformations="translations" pos="0 500" stroke="black" type="minipage" width="736" height="84.8434" depth="79.4416" valign="top">$\forall$ social welfare functions \textcolor{UPblue}{F}, die
+<text matrix="1 0 0 1 16 -22.8718" transformations="translations" pos="0 500" stroke="black" type="minipage" width="736" height="84.8434" depth="79.4416" valign="top">Für alle Social Welfare Funktionen \textcolor{UPblue}{F}, die
 \begin{itemize}
 \item mehr als 2 Kandidaten haben ($|A| \geq 3$)
 \item Einstimmigkeit erfüllen
@@ -19472,7 +19474,7 @@ gilt: \textcolor{UPblue}{\textbf{F ist eine Diktatur}}</text>
 768 496 l
 h
 </path>
-<text matrix="1 0 0 1 16 -22.8718" transformations="translations" pos="0 500" stroke="black" type="minipage" width="736" height="84.8434" depth="79.4416" valign="top">$\forall$ social welfare functions \textcolor{UPblue}{F}, die
+<text matrix="1 0 0 1 16 -22.8718" transformations="translations" pos="0 500" stroke="black" type="minipage" width="736" height="84.8434" depth="79.4416" valign="top">Für alle Social Welfare Funktionen \textcolor{UPblue}{F}, die
 \begin{itemize}
 \item mehr als 2 Kandidaten haben ($|A| \geq 3$)
 \item Einstimmigkeit erfüllen
@@ -19607,7 +19609,7 @@ h
 768 384 l
 h
 </path>
-<text layer="delta" matrix="1 0 0 1 0 50.5938" transformations="translations" pos="0 348.003" stroke="black" type="minipage" width="736" height="64.7942" depth="59.3488" valign="top">Für einen Spieler $i$ und für manche $\prec_1, \ldots, \prec_n, \prec_i&apos; \in L$ mit
+<text layer="delta" matrix="1 0 0 1 0 50.5938" transformations="translations" pos="0 348.003" stroke="black" type="minipage" width="736" height="64.7942" depth="59.3488" valign="top">Für einen Spieler $i$ und für $\prec_1, \ldots, \prec_n, \prec_i&apos; \in L$ mit
 \begin{itemize}
 \item $a = f(\prec_1, \ldots, \prec_i, \ldots, \prec_n)$
 \item $a&apos; = f(\prec_1, \ldots, \prec_i&apos;, \ldots, \prec_n)$
