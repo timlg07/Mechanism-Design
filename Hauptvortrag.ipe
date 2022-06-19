@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220619011946" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220619092647" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -19523,15 +19523,15 @@ b	&amp; \vdots	&amp; \ldots 	&amp; b 	&amp; \vdots	\\
 h
 </path>
 <text matrix="1 0 0 1 304 59.7051" transformations="translations" pos="0 343.955" stroke="black" type="minipage" width="416" height="12.7064" depth="7.1232" valign="top">\textbf{Behauptung:} $x \prec b$ oder $x \succ b$ $\forall x \in A$</text>
-<text layer="delta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 343.71" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">Angenommen dies gilt nicht. Dann existieren $a, c$, sodass $c \succ b \succ a$.</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 308.278" stroke="black" type="minipage" width="768" height="13.7995" depth="8.232" valign="top">Erstelle ein neues Profil $\pi_1$, identisch zu $\pi_0$, außer dass $a \succ_i&apos; c$</text>
+<text layer="delta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 343.71" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">Angenommen dies gilt nicht. Dann existieren $a, c$, sodass $a \succ b \succ c$.</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 308.278" stroke="black" type="minipage" width="768" height="13.7995" depth="8.232" valign="top">Erstelle ein neues Profil $\pi_1$, identisch zu $\pi_0$, außer dass $c \succ_i&apos; a$</text>
 <text matrix="1 0 0 1 0 -208.246" transformations="translations" pos="0 460.027" stroke="black" type="minipage" width="256" height="77.4155" depth="71.9936" valign="top">\begin{tabular}{ccccc}
 $\succ_1$	&amp; $\succ_{2}$&amp; $\ldots$&amp;$\succ_{n-1}$	&amp; $\succ_n$	\\
 \hline
 b	&amp; \vdots	&amp; \ldots 	&amp; b 	&amp; \vdots	\\
-\vdots	&amp; a 	&amp; \ldots 	&amp; \vdots 	&amp; a	\\
-a	&amp; c 	&amp; \ldots 	&amp; a 	&amp; c	\\
-c	&amp; \vdots 	&amp; \ldots 	&amp; c 	&amp; \vdots	\\
+\vdots	&amp; c 	&amp; \ldots 	&amp; \vdots 	&amp; c	\\
+c	&amp; a 	&amp; \ldots 	&amp; c 	&amp; a	\\
+a	&amp; \vdots 	&amp; \ldots 	&amp; a 	&amp; \vdots	\\
 \vdots	&amp; b 	&amp; \ldots 	&amp; \vdots 	&amp; b	\\
 \end{tabular}</text>
 <path layer="zeta" matrix="1.07692 0 0 1.75788 -22.1538 -512.013" stroke="UPblue" fill="UPblue20">
@@ -19543,13 +19543,72 @@ h
 </path>
 <text matrix="1 0 0 1 304 -116.295" transformations="translations" pos="0 343.955" stroke="black" type="minipage" width="416" height="24.584" depth="19.04" valign="top">Präferenzen $a, b$ und $a, c$ sind für alle $i$ bei beiden Profilen gleich.</text>
 <text matrix="1 0 0 1 304 -180.295" transformations="translations" pos="0 343.955" stroke="black" type="minipage" width="416" height="22.8738" depth="17.3264" valign="top">
-Durch \textcolor{UPblue}{IIA} folgt: $c \succ&apos; b$ und $b \succ&apos; a$. Transitiv also auch \textcolor{UPred}{$c \succ&apos; a$}.</text>
-<text layer="eta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 102.372" stroke="black" type="minipage" width="768" height="13.9787" depth="8.4112" valign="top">\textbf{Aber:} Es gilt $a \succ_i&apos; c$ $\forall i \in I$ und daher durch \textcolor{UPblue}{Einstimmigkeit} auch \textcolor{UPred}{$a \succ&apos; c$} </text>
+Durch \textcolor{UPblue}{IIA} folgt: $a \succ&apos; b$ und $b \succ&apos; c$. Transitiv also auch \textcolor{UPred}{$a \succ&apos; c$}.</text>
+<text layer="eta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 102.372" stroke="black" type="minipage" width="768" height="13.9787" depth="8.4112" valign="top">\textbf{Aber:} Es gilt $c \succ_i&apos; a$ $\forall i \in I$ und daher durch \textcolor{UPblue}{Einstimmigkeit} auch \textcolor{UPred}{$c \succ&apos; a$} </text>
 <text matrix="-5.31691 0 0 1.82974 4037.75 -55.8277" transformations="translations" pos="624 48" stroke="UPred" type="label" width="16.9658" height="19.283" depth="5.1968" valign="baseline" size="Huge" style="math">\lightning</text>
 </page>
-<page>
+<page title="Arrow&apos;s Theorem Beweis (2)">
 <layer name="alpha"/>
+<layer name="beta"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<path layer="beta" matrix="0.983688 0 0 0.905472 -6.27863 -296.237" stroke="black" fill="UPgray20">
+96 448 m
+96 336 l
+240 336 l
+240 448 l
+h
+</path>
+<path matrix="2.24206 0 0 0.897576 -215.237 -182.131" stroke="black" fill="UPgray20">
+96 448 m
+96 336 l
+240 336 l
+240 448 l
+h
+</path>
+<path matrix="2.26938 0 0 0.946224 -217.861 -85.6761" stroke="black" fill="UPgray20">
+96 448 m
+96 336 l
+240 336 l
+240 448 l
+h
+</path>
+<path matrix="0.856383 0 0 0.905142 13.7872 40.7" stroke="black" fill="UPgray20">
+96 448 m
+96 336 l
+240 336 l
+240 448 l
+h
+</path>
+<text layer="alpha" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="22.6408" depth="17.0912" valign="top">Finde Wähler $j$, der $b$ in der gem. Präferenz von ganz unten nach ganz oben verschieben kann.</text>
+<text layer="beta" matrix="1 0 0 1 96 -16" transformations="translations" pos="0 460.268" stroke="black" type="minipage" width="144" height="52.2928" depth="46.8272" valign="top">\begin{tabular}{ccccccc}
+$\succ_1$	&amp; \ldots	&amp; $\succ_n$	\\
+\hline
+b 		&amp; \ldots		&amp; b 		\\
+\vdots 		&amp; \ldots		&amp; \vdots 		\\
+\vdots		&amp; \ldots		&amp; \vdots 	\\
+\end{tabular}</text>
+<text matrix="1 0 0 1 8 -240" transformations="translations" pos="0 460.268" stroke="black" type="minipage" width="320" height="52.7744" depth="47.2976" valign="top">\begin{tabular}{ccccccc}
+$\succ_1$	&amp; \ldots	&amp; $\succ_{j-1}$	&amp; $\succ_{j}$ &amp; $\succ_{j+1}$	&amp; \ldots	&amp; $\succ_n$	\\
+\hline
+b 		&amp; \ldots	&amp; b               &amp; \vdots 	&amp; \vdots 	                     &amp; \ldots 	&amp; \vdots 		\\
+\vdots 		&amp; \ldots	&amp; \vdots 	&amp; \vdots 	&amp; \vdots 	                     &amp; \ldots 	&amp; \vdots 		\\
+\vdots		&amp; \ldots	&amp; \vdots 	&amp; b 	&amp; b 	                     &amp; \ldots 	&amp; b 	\\
+\end{tabular}</text>
+<text matrix="1 0 0 1 96 -352" transformations="translations" pos="0 460.268" stroke="black" type="minipage" width="125.962" height="52.2928" depth="46.8272" valign="top">\begin{tabular}{ccccccc}
+$\succ_1$	&amp; \ldots	&amp; $\succ_n$	\\
+\hline
+\vdots 		&amp; \ldots		&amp; \vdots 		\\
+\vdots		&amp; \ldots		&amp; \vdots 	\\
+b 		&amp; \ldots		&amp; b 		\\
+\end{tabular}</text>
+<text matrix="1 0 0 1 8 -128" transformations="translations" pos="0 460.268" stroke="black" type="minipage" width="320" height="52.7744" depth="47.2976" valign="top">\begin{tabular}{ccccccc}
+$\succ_1$	&amp; \ldots	&amp; $\succ_{j-1}$	&amp; $\succ_{j}$ &amp; $\succ_{j+1}$	&amp; \ldots	&amp; $\succ_n$	\\
+\hline
+b 		&amp; \ldots	&amp; b               &amp; b 	&amp; \vdots 	                     &amp; \ldots 	&amp; \vdots 		\\
+\vdots 		&amp; \ldots	&amp; \vdots 	&amp; \vdots 	&amp; \vdots 	                     &amp; \ldots 	&amp; \vdots 		\\
+\vdots		&amp; \ldots	&amp; \vdots 	&amp; \vdots 	&amp; b 	                     &amp; \ldots 	&amp; b 	\\
+\end{tabular}</text>
 </page>
 <page title="Anreizkompatibilität">
 <layer name="alpha"/>
