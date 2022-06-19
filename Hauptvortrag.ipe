@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220619162010" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220619173913" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -19743,13 +19743,109 @@ Für beliebiges Profil kann eines konstruiert werden mit Ordnung $a, c$ identisc
 
 Durch \textcolor{UPblue}{IIA} muss $a, c$ gleich geordnet werden.</text>
 </page>
-<page>
+<page title="Arrow&apos;s Theorem Beweis (4)">
 <layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<layer name="eta"/>
+<layer name="theta"/>
+<layer name="iota"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta" active="theta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta iota" active="iota"/>
+<text layer="alpha" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="12.7064" depth="7.1232" valign="top">\textbf{Behauptung:} \textcolor{UPgreen}{$j$} ist Diktator für $a, b$</text>
+<text layer="beta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 480.17" stroke="black" type="minipage" width="768" height="12.8285" depth="7.2464" valign="top">Benutze Vorraussetzung \textcolor{UPblue}{$|A| \geq 3$} $\Rightarrow \exists c \in A: c \neq a, c \neq b$</text>
+<text layer="gamma" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 444.096" stroke="black" type="minipage" width="768" height="12.8285" depth="7.2464" valign="top">Finde analog zu (3) ein \textcolor{UPorange}{$j^*$}, der Diktator $\forall a, b \in A \setminus \{c\}$</text>
+<text layer="delta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 408.021" stroke="black" type="minipage" width="768" height="12.7064" depth="7.1232" valign="top">\textbf{Behauptung:} $\textcolor{UPgreen}{j} = \textcolor{UPorange}{j^*}$</text>
+<path layer="epsilon" matrix="2.67159 0 0 1.1162 -256.472 -166.679" stroke="black" fill="UPgray20">
+96 448 m
+96 336 l
+240 336 l
+240 448 l
+h
+</path>
+<path matrix="1.03971 0 0 1.19937 66.6744 -70.6609" stroke="UPgreen" fill="UPgreen20">
+137.987 337.181 m
+137.987 233.245 l
+176.641 233.245 l
+176.641 337.181 l
+h
+</path>
+<path matrix="1.03971 0 0 1.19937 -63.8894 -71.5201" stroke="UPgreen" fill="UPorange20">
+137.987 337.181 m
+137.987 233.245 l
+176.641 233.245 l
+176.641 337.181 l
+h
+</path>
+<text matrix="1 0 0 1 1.12821 -127.462" transformations="translations" pos="0 460.268" stroke="black" type="minipage" width="382.705" height="65.3307" depth="59.8864" valign="top">\begin{tabular}{ccccccccc}
+$\succ_1$	&amp; \ldots	&amp; $\succ_{j^*}$ &amp; \ldots	&amp; $\succ_{j-1}$	&amp; $\succ_{j}$   &amp; $\succ_{j+1}$	    &amp; \ldots	&amp; $\succ_n$		\\
+\hline
+b 		&amp; \ldots	&amp; b 		&amp; \ldots	&amp; b             &amp; \vdots 	    &amp; \vdots 	        &amp; \ldots 	&amp; \vdots 		\\
+\vdots 		&amp; \ldots	&amp; \vdots 			&amp; \ldots	&amp; \vdots 		&amp; \vdots 	    &amp; \vdots 	        &amp; \ldots 	&amp; \vdots 		\\
+\vdots 		&amp; \ldots	&amp;  a		&amp; \ldots	&amp; \vdots 		&amp; \vdots 	    &amp; \vdots 	        &amp; \ldots 	&amp; \vdots 		\\
+\vdots		&amp; \ldots	&amp; \vdots				&amp; \ldots	&amp; \vdots 		&amp; b 		    &amp; b 	            &amp; \ldots 	&amp; b 			\\
+\end{tabular}</text>
+<text layer="zeta" matrix="1 0 0 1 401.141 318.867" transformations="translations" pos="0 9.148" stroke="black" type="minipage" width="367.371" height="60.5416" depth="55.0928" valign="top">\textcolor{UPorange}{$j^*$}  Diktator für $a, b$ $\Rightarrow b \succ a$\\
+
+\textbf{Aber:} 
+
+\textcolor{UPgreen}{$j$} ausschlaggebend für $b$. 
+
+$\Rightarrow x \succ b$ $\forall x$ $\Rightarrow a \succ b$ $\lightning$</text>
+<path layer="eta" matrix="2.67159 0 0 1.1162 -255.613 -326.448" stroke="black" fill="UPgray20">
+96 448 m
+96 336 l
+240 336 l
+240 448 l
+h
+</path>
+<path matrix="1.03971 0 0 1.19937 -12.3512 -230.43" stroke="UPgreen" fill="UPgreen20">
+137.987 337.181 m
+137.987 233.245 l
+176.641 233.245 l
+176.641 337.181 l
+h
+</path>
+<path matrix="1.03971 0 0 1.19937 117.354 -231.289" stroke="UPgreen" fill="UPorange20">
+137.987 337.181 m
+137.987 233.245 l
+176.641 233.245 l
+176.641 337.181 l
+h
+</path>
+<text matrix="1 0 0 1 1.98718 -287.231" transformations="translations" pos="0 460.268" stroke="black" type="minipage" width="382.705" height="65.3307" depth="59.8864" valign="top">\begin{tabular}{ccccccccc}
+$\succ_1$	&amp; \ldots	&amp; $\succ_{j-1}$	&amp; $\succ_{j}$ &amp; $\succ_{j+1}$	&amp; \ldots	&amp; $\succ_{j^*}$  	&amp; \ldots	&amp; $\succ_n$	\\
+\hline
+b 		&amp; \ldots	&amp; b               &amp; b 	&amp; \vdots 	                     &amp; \ldots 	&amp; \vdots 		&amp; \ldots	&amp; \vdots 		\\
+\vdots 		&amp; \ldots	&amp; \vdots 	&amp; \vdots 	&amp; \vdots 	                     &amp; \ldots 	&amp; a 		&amp; \ldots	&amp; \vdots 		\\
+\vdots 		&amp; \ldots	&amp; \vdots 	&amp; \vdots 	&amp; \vdots 	                     &amp; \ldots 	&amp; \vdots 		&amp; \ldots	&amp; \vdots 		\\
+\vdots		&amp; \ldots	&amp; \vdots 	&amp; \vdots 	&amp; b 	                     &amp; \ldots 	&amp; b		&amp; \ldots	&amp; b 		\\
+\end{tabular}</text>
+<text layer="theta" matrix="1 0 0 1 402 159.098" transformations="translations" pos="0 9.148" stroke="black" type="minipage" width="367.371" height="60.5416" depth="55.0928" valign="top">\textcolor{UPorange}{$j^*$}  Diktator für $a, b$ $\Rightarrow a \succ b$\\
+
+\textbf{Aber:} 
+
+\textcolor{UPgreen}{$j$} ausschlaggebend für $b$. 
+
+$\Rightarrow b \succ x$ $\forall x$ $\Rightarrow b \succ a$ $\lightning$</text>
+<text layer="epsilon" matrix="1 0 0 1 0 150.321" pin="h" transformations="translations" pos="0 207.589" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">Fall $\textcolor{UPorange}{j^*} &lt; \textcolor{UPgreen}{j}$</text>
+<text layer="eta" matrix="1 0 0 1 0 -10.3075" pin="h" transformations="translations" pos="0 207.589" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">Fall $\textcolor{UPorange}{j^*} &gt; \textcolor{UPgreen}{j}$</text>
+<text layer="iota" matrix="1 0 0 1 0 -14.6026" pin="h" transformations="translations" pos="0 47.8201" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">$\textcolor{UPgreen}{j} &lt; \textcolor{UPorange}{j^*}$ sowie $\textcolor{UPgreen}{j} &gt; \textcolor{UPorange}{j^*}$ führen zu $\lightning$. $\Rightarrow$ $\textcolor{UPgreen}{j} = \textcolor{UPorange}{j^*}$</text>
 </page>
-<page>
+<page title="Arrow&apos;s Theorem Beweis (5)">
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
+<text layer="alpha" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="11.5237" depth="5.9472" valign="top">----- Beweis zusammenfassen, Fazit ----</text>
 </page>
 <page title="Anreizkompatibilität">
 <layer name="alpha"/>
