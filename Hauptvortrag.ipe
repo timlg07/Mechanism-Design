@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220619092647" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220619151103" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -19550,8 +19550,14 @@ Durch \textcolor{UPblue}{IIA} folgt: $a \succ&apos; b$ und $b \succ&apos; c$. Tr
 <page title="Arrow&apos;s Theorem Beweis (2)">
 <layer name="alpha"/>
 <layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
 <path layer="beta" matrix="0.983688 0 0 0.905472 -6.27863 -296.237" stroke="black" fill="UPgray20">
 96 448 m
 96 336 l
@@ -19580,7 +19586,7 @@ h
 240 448 l
 h
 </path>
-<text layer="alpha" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="22.6408" depth="17.0912" valign="top">Finde Wähler $j$, der $b$ in der gem. Präferenz von ganz unten nach ganz oben verschieben kann.</text>
+<text layer="alpha" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="24.584" depth="19.04" valign="top">Finde beliebigen Wähler \textcolor{UPgreen}{$j$}, der $b$ in der gem. Präferenz von ganz unten nach ganz oben verschieben kann.</text>
 <text layer="beta" matrix="1 0 0 1 96 -16" transformations="translations" pos="0 460.268" stroke="black" type="minipage" width="144" height="52.2928" depth="46.8272" valign="top">\begin{tabular}{ccccccc}
 $\succ_1$	&amp; \ldots	&amp; $\succ_n$	\\
 \hline
@@ -19588,7 +19594,14 @@ b 		&amp; \ldots		&amp; b 		\\
 \vdots 		&amp; \ldots		&amp; \vdots 		\\
 \vdots		&amp; \ldots		&amp; \vdots 	\\
 \end{tabular}</text>
-<text matrix="1 0 0 1 8 -240" transformations="translations" pos="0 460.268" stroke="black" type="minipage" width="320" height="52.7744" depth="47.2976" valign="top">\begin{tabular}{ccccccc}
+<path layer="epsilon" matrix="1 0 0 0.966942 -0.858974 -106.519" stroke="UPgreen" fill="UPgreen20">
+137.987 337.181 m
+137.987 233.245 l
+176.641 233.245 l
+176.641 337.181 l
+h
+</path>
+<text layer="beta" matrix="1 0 0 1 8 -240" transformations="translations" pos="0 460.268" stroke="black" type="minipage" width="320" height="52.7744" depth="47.2976" valign="top">\begin{tabular}{ccccccc}
 $\succ_1$	&amp; \ldots	&amp; $\succ_{j-1}$	&amp; $\succ_{j}$ &amp; $\succ_{j+1}$	&amp; \ldots	&amp; $\succ_n$	\\
 \hline
 b 		&amp; \ldots	&amp; b               &amp; \vdots 	&amp; \vdots 	                     &amp; \ldots 	&amp; \vdots 		\\
@@ -19602,13 +19615,97 @@ $\succ_1$	&amp; \ldots	&amp; $\succ_n$	\\
 \vdots		&amp; \ldots		&amp; \vdots 	\\
 b 		&amp; \ldots		&amp; b 		\\
 \end{tabular}</text>
-<text matrix="1 0 0 1 8 -128" transformations="translations" pos="0 460.268" stroke="black" type="minipage" width="320" height="52.7744" depth="47.2976" valign="top">\begin{tabular}{ccccccc}
+<path layer="epsilon" stroke="UPgreen" fill="UPgreen20">
+137.987 337.181 m
+137.987 233.245 l
+176.641 233.245 l
+176.641 337.181 l
+h
+</path>
+<text layer="beta" matrix="1 0 0 1 8 -128" transformations="translations" pos="0 460.268" stroke="black" type="minipage" width="320" height="52.7744" depth="47.2976" valign="top">\begin{tabular}{ccccccc}
 $\succ_1$	&amp; \ldots	&amp; $\succ_{j-1}$	&amp; $\succ_{j}$ &amp; $\succ_{j+1}$	&amp; \ldots	&amp; $\succ_n$	\\
 \hline
 b 		&amp; \ldots	&amp; b               &amp; b 	&amp; \vdots 	                     &amp; \ldots 	&amp; \vdots 		\\
 \vdots 		&amp; \ldots	&amp; \vdots 	&amp; \vdots 	&amp; \vdots 	                     &amp; \ldots 	&amp; \vdots 		\\
 \vdots		&amp; \ldots	&amp; \vdots 	&amp; \vdots 	&amp; b 	                     &amp; \ldots 	&amp; b 	\\
 \end{tabular}</text>
+<text layer="gamma" matrix="1 0 0 1 359.372 395.276" transformations="translations" pos="0 9.148" stroke="black" type="minipage" width="384.897" height="12.4992" depth="6.9328" valign="top">Durch \textcolor{UPblue}{Einstimmigkeit:} $b \succ x$ $\forall x \in A$</text>
+<text layer="delta" matrix="1 0 0 1 359.372 59.276" transformations="translations" pos="0 9.148" stroke="black" type="minipage" width="384.897" height="12.4992" depth="6.9328" valign="top">Durch \textcolor{UPblue}{Einstimmigkeit:} $x \succ b$ $\forall x \in A$</text>
+<text layer="epsilon" matrix="1 0 0 1 359.372 259.866" transformations="translations" pos="0 9.148" stroke="black" type="minipage" width="400.897" height="24.5224" depth="18.984" valign="top">bereits gezeigt: gem. Entscheidung hat $b$ entweder ganz oben oder ganz unten.
+</text>
+<text matrix="1 0 0 1 359.372 195.866" transformations="translations" pos="0 9.148" stroke="black" type="minipage" width="400.897" height="12.4992" depth="6.9328" valign="top">
+$\Rightarrow$ Wechsel von \textcolor{UPgreen}{$j$} ändert $b \succ x$ zu $x \succ b$.</text>
+<text matrix="1 0 0 1 -7.8115 -14.5071" transformations="translations" pos="342.264 138.096" stroke="UPgray" type="label" width="21.7347" height="9.21872" depth="3.7856" valign="baseline" style="math">\pi_2</text>
+</page>
+<page title="Arrow&apos;s Theorem Beweis (3)">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<text layer="alpha" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="12.9461" depth="7.3696" valign="top">\textbf{Behauptung:} \textcolor{UPgreen}{$j$} ist Diktator für alle Paare $a, c$ mit $a, c \in I \setminus \{b\}$</text>
+<path layer="beta" matrix="2.24206 0 0 0.897576 -213.313 54.092" stroke="black" fill="UPgray20">
+96 448 m
+96 336 l
+240 336 l
+240 448 l
+h
+</path>
+<text matrix="1 0 0 1 9.924 -3.777" transformations="translations" pos="0 460.268" stroke="black" type="minipage" width="320" height="52.7744" depth="47.2976" valign="top">\begin{tabular}{ccccccc}
+$\succ_1$	&amp; \ldots	&amp; $\succ_{j-1}$	&amp; $\succ_{j}$ &amp; $\succ_{j+1}$	&amp; \ldots	&amp; $\succ_n$	\\
+\hline
+b 		&amp; \ldots	&amp; b               &amp; \vdots 	&amp; \vdots 	                     &amp; \ldots 	&amp; \vdots 		\\
+\vdots 		&amp; \ldots	&amp; \vdots 	&amp; \vdots 	&amp; \vdots 	                     &amp; \ldots 	&amp; \vdots 		\\
+\vdots		&amp; \ldots	&amp; \vdots 	&amp; b 	&amp; b 	                     &amp; \ldots 	&amp; b 	\\
+\end{tabular}</text>
+<text matrix="1 0 0 1 -5.8875 221.716" transformations="translations" pos="342.264 138.096" stroke="black" type="label" width="21.7347" height="9.21872" depth="3.7856" valign="baseline" style="math">\pi_2</text>
+<text matrix="1 0 0 1 375.372 417.407" transformations="translations" pos="0 9.148" stroke="black" type="minipage" width="144.897" height="22.8738" depth="17.3264" valign="top">$\succ = F(\pi_2)$
+
+$b \prec x$ $\forall x \in I$</text>
+<path layer="gamma" matrix="2.24206 0 0 0.897576 -213.313 -73.908" stroke="black" fill="UPgray20">
+96 448 m
+96 336 l
+240 336 l
+240 448 l
+h
+</path>
+<text matrix="1 0 0 1 9.924 -131.777" transformations="translations" pos="0 460.268" stroke="black" type="minipage" width="320" height="52.7744" depth="47.2976" valign="top">\begin{tabular}{ccccccc}
+$\succ_1$	&amp; \ldots	&amp; $\succ_{j-1}$	&amp; $\succ_{j}$ &amp; $\succ_{j+1}$	&amp; \ldots	&amp; $\succ_n$	\\
+\hline
+b 		&amp; \ldots	&amp; b               &amp; b 	&amp; \vdots 	                     &amp; \ldots 	&amp; \vdots 		\\
+\vdots 		&amp; \ldots	&amp; \vdots 	&amp; a 	&amp; \vdots 	                     &amp; \ldots 	&amp; \vdots 		\\
+\vdots		&amp; \ldots	&amp; \vdots 	&amp; c 	&amp; b 	                     &amp; \ldots 	&amp; b 	\\
+\end{tabular}</text>
+<text matrix="1 0 0 1 -5.8875 93.716" transformations="translations" pos="342.264 138.096" stroke="black" type="label" width="21.7347" height="9.21648" depth="3.9872" valign="baseline" style="math">\pi_3</text>
+<text matrix="1 0 0 1 375.372 288.894" transformations="translations" pos="0 9.148" stroke="black" type="minipage" width="144.897" height="22.8738" depth="17.3264" valign="top">$\succ&apos; = F(\pi_3)$
+
+$b \succ&apos; x$ $\forall x \in I$</text>
+<path layer="delta" matrix="2.24206 0 0 0.897576 -213.313 -201.908" stroke="black" fill="UPgray20">
+96 448 m
+96 336 l
+240 336 l
+240 448 l
+h
+</path>
+<text matrix="1 0 0 1 9.924 -259.777" transformations="translations" pos="0 460.268" stroke="black" type="minipage" width="320" height="52.7744" depth="47.2976" valign="top">\begin{tabular}{ccccccc}
+$\succ_1$	&amp; \ldots	&amp; $\succ_{j-1}$	&amp; $\succ_{j}$ &amp; $\succ_{j+1}$	&amp; \ldots	&amp; $\succ_n$	\\
+\hline
+b 		&amp; \ldots	&amp; b               &amp; a 	&amp; \vdots 	                     &amp; \ldots 	&amp; \vdots 		\\
+\vdots 		&amp; \ldots	&amp; \vdots 	&amp; b 	&amp; \vdots 	                     &amp; \ldots 	&amp; \vdots 		\\
+\vdots		&amp; \ldots	&amp; \vdots 	&amp; c 	&amp; b 	                     &amp; \ldots 	&amp; b 	\\
+\end{tabular}</text>
+<text matrix="1 0 0 1 -5.8875 -34.284" transformations="translations" pos="342.264 138.096" stroke="black" type="label" width="21.7347" height="9.2232" depth="3.528" valign="baseline" style="math">\pi_4</text>
+<text matrix="1 0 0 1 375.372 150.186" transformations="translations" pos="0 9.148" stroke="black" type="minipage" width="128.897" height="12.1755" depth="6.608" valign="top">$\succ&apos;&apos; = F(\pi_4)$
+</text>
+</page>
+<page>
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
 </page>
 <page title="Anreizkompatibilität">
 <layer name="alpha"/>
