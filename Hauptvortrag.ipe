@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220620235714" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220621000528" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -20076,9 +20076,17 @@ Jeder wählt ohne Konsequenz ein übertrieben hohes $w_i&apos; \gg w_i$.</text>
 <layer name="alpha"/>
 <layer name="beta"/>
 <layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<layer name="eta"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
-<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta epsilon" active="gamma"/>
+<view layers="alpha beta epsilon zeta" active="zeta"/>
+<view layers="alpha beta delta epsilon zeta" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
 <path layer="beta" matrix="1 0 0 1 16 -32" fill="UPorange">
 32 480 m
 32 352 l
@@ -20106,15 +20114,15 @@ h
 <text matrix="1 0 0 1 13.2101 -40.0658" transformations="translations" pos="48 336" stroke="black" type="label" width="5.57984" height="15.1368" depth="0" valign="baseline">i</text>
 <text matrix="1 0 0 1 77.2101 -37.977" transformations="translations" pos="48 336" stroke="black" type="label" width="5.57984" height="15.1368" depth="4.1776" valign="baseline">j</text>
 <text matrix="1 0 0 1 138.184 -40.0658" transformations="translations" pos="48 336" stroke="black" type="label" width="11.6312" height="15.1368" depth="0" valign="baseline">k</text>
-<image matrix="0.0946946 0 0 0.0946946 53.3469 448.16" rect="0 0 225 225" bitmap="1"/>
-<path matrix="1 0 0 1 -96 -16" stroke="UPdarkred">
+<image layer="epsilon" matrix="0.0946946 0 0 0.0946946 53.3469 448.16" rect="0 0 225 225" bitmap="1"/>
+<path layer="zeta" matrix="1 0 0 1 -96 -16" stroke="UPdarkred">
 128 464 m
 320 464 l
 320 464 l
 </path>
 <text matrix="1 0 0 1 137.45 -21.357" transformations="translations" pos="96 464" stroke="UPdarkred" type="label" width="65.8459" height="14.8915" depth="4.1776" valign="baseline" style="math">p = 40</text>
-<text matrix="1 0 0 1 0 240" transformations="translations" pos="0 261.845" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">Klassische, englische Auktion:</text>
-<path layer="gamma" matrix="1 0 0 0.75 464 56" fill="UPorange">
+<text layer="beta" matrix="1 0 0 1 0 240" transformations="translations" pos="0 261.845" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">Klassische, englische Auktion:</text>
+<path layer="gamma" matrix="1 0 0 1 464 -32" fill="UPorange">
 32 480 m
 32 352 l
 64 352 l
@@ -20142,19 +20150,22 @@ h
 <text matrix="1 0 0 1 525.21 -37.977" transformations="translations" pos="48 336" stroke="black" type="label" width="5.57984" height="15.1368" depth="4.1776" valign="baseline">j</text>
 <text matrix="1 0 0 1 586.184 -40.0658" transformations="translations" pos="48 336" stroke="black" type="label" width="11.6312" height="15.1368" depth="0" valign="baseline">k</text>
 <image matrix="0.0946946 0 0 0.0946946 501.347 448.16" rect="0 0 225 225" bitmap="1"/>
-<path matrix="1 0 0 1 352 -48" stroke="UPdarkred">
+<path layer="eta" matrix="1 0 0 1 352 -48" stroke="UPdarkred">
 128 464 m
 320 464 l
 320 464 l
 </path>
 <text matrix="1 0 0 1 585.219 -53.357" transformations="translations" pos="96 464" stroke="UPdarkred" type="label" width="65.8459" height="14.8915" depth="4.1776" valign="baseline" style="math">p = 30</text>
-<text matrix="1 0 0 1 448 240" transformations="translations" pos="0 261.845" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">Vickrey-Auktion:</text>
-<path fill="UPblue50">
+<text layer="gamma" matrix="1 0 0 1 448 240" transformations="translations" pos="0 261.845" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">Vickrey-Auktion:</text>
+<path layer="eta" fill="UPblue50">
 496 448 m
 496 416 l
 528 416 l
 528 448 l
 h
 </path>
+<text layer="delta" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 293.845" stroke="black" type="minipage" width="320" height="25.9784" depth="20.4288" valign="top">Bester Nutzen für $i$: 
+
+$w_i$ knapp über $w_j$</text>
 </page>
 </ipe>
