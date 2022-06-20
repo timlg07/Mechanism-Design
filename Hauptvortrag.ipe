@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220619173913" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220620102738" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -19916,11 +19916,15 @@ h
 <layer name="gamma"/>
 <layer name="delta"/>
 <layer name="epsilon"/>
+<layer name="zeta"/>
+<layer name="eta"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha beta gamma" active="gamma"/>
 <view layers="alpha beta gamma delta" active="delta"/>
 <view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
 <text layer="alpha" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">Analog zu Arrow&apos;s Theorem gilt für \textcolor{UPblue}{$f$}:</text>
 <path layer="beta" stroke="UPorange" fill="UPorange20">
 0 464 m
@@ -19946,5 +19950,14 @@ $\forall \prec_1, \ldots, \prec_n \in L; a \in A, \forall b \in A$ mit $b \neq a
 $a \succ_i b \Rightarrow f(\prec_1, \ldots, \prec_n) = a$</text>
 <text layer="delta" matrix="1 0 0 1 0 -48" pin="h" transformations="translations" pos="0 288.145" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">$\Rightarrow$ Nur triviale Social Choice Functions sind anreizkompatibel.</text>
 <text layer="epsilon" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 220.83" stroke="black" type="minipage" width="768" height="22.7584" depth="17.2144" valign="top">\textbf{Beweis:} Social Welfare Function konstruieren und auf Arrow&apos;s Theorem zurückführen.</text>
+<text layer="zeta" matrix="1 0 0 1 2.65317 -173" transformations="translations" pos="0 297.37" stroke="black" type="minipage" width="683" height="24.5224" depth="18.984" valign="top">$\rightarrow$ Ziel Mechanism Design:
+
+Trotzdem anreizkompatible Social Choice Funktionen entwerfen
+</text>
+<text layer="eta" matrix="1 0 0 1 -93.3468 -91.3869" transformations="translations" pos="96 144" stroke="black" type="label" width="703.708" height="15.1368" depth="4.1776" valign="baseline">Wie? Anreize für wahrheitsgemäßes Verhalten schaffen, z. B. mit Geld</text>
+</page>
+<page title="Mechanism Design mit Geld">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
 </page>
 </ipe>
