@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220621143322" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220621175131" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -20326,21 +20326,75 @@ h
 \end{itemize} ist die beste Wahl für jeden Spieler die Wahrheit</text>
 <text matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 74.3698" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">&apos;&apos;Der Mechanismus nimmt bereits den bestmöglichen Betrug vor``</text>
 </page>
-<page title="Vickrey-Clarke-Groves-Mechanismen">
+<page title="Anreizkompatible Mechanismen">
 <layer name="alpha"/>
 <layer name="beta"/>
 <layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
-<view layers="alpha beta gamma" active="gamma"/>
-<path layer="beta" stroke="UPorange" fill="UPorange20">
+<view layers="alpha beta gamma" active="delta"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<path layer="delta" matrix="1 0 0 1 0 -102.696" stroke="UPorange" fill="UPorange20">
 0 496 m
 0 320 l
 768 320 l
 768 496 l
 h
 </path>
-<text matrix="1 0 0 1 16 -32" transformations="translations" pos="0 500" stroke="black" type="minipage" width="736" height="12.7064" depth="7.1232" valign="top">$(f, p_1, \ldots, p_n)$ ist \textbf{\textcolor{UPblue}{Vickrey-Clarke-Groves (VCG) -Mechanismus}} falls:</text>
-<text layer="gamma" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 448.17" stroke="black" type="minipage" width="736" height="17.3746" depth="11.8048" valign="top" style="item">$f(v_1,\ldots , v_n) \in \text{argmax}_{a\in A} \sum_i v_i(a)$. (maximale Social Welfare)</text>
+<text matrix="1 0 0 1 16 -128" transformations="translations" pos="0 500" stroke="black" type="minipage" width="736" height="12.628" depth="7.0448" valign="top">$(f, p_1, \ldots, p_n)$ ist \textbf{\textcolor{UPblue}{anreizkompatibel}} falls:</text>
+<text layer="beta" matrix="1 0 0 1 0 208" pin="h" transformations="translations" pos="0 290.991" stroke="black" type="minipage" width="768" height="13.4602" depth="7.8848" valign="top">mögliche Wertungsfunktionen $v_i$ sind in $V_i \subset \mathbb{R}^A$</text>
+<text layer="gamma" matrix="1 0 0 1 0 176" pin="h" transformations="translations" pos="0 290.991" stroke="black" type="minipage" width="768" height="12.1755" depth="6.608" valign="top">\textcolor{UPblue}{Social Choice Funktion} $f : V_1 \times \ldots \times V_n \rightarrow A$</text>
+<text matrix="1 0 0 1 0 144" pin="h" transformations="translations" pos="0 290.991" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">\textcolor{UPblue}{Zahlungsfunktion} $p_i : V_1 \times \ldots \times V_n \rightarrow \mathbb{R}$</text>
+<text layer="epsilon" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 352.327" stroke="black" type="minipage" width="736" height="13.8611" depth="8.288" valign="top">\textcolor{UPblue}{$v_i(a)-p_i(v_i, v_{-i})\geq v_i(a&apos;)-p_i(v_i&apos;, v_{-i})$}</text>
+<text matrix="1 0 0 1 16 -48" transformations="translations" pos="0 352.327" stroke="black" type="minipage" width="736" height="13.8611" depth="8.288" valign="top">$\forall i \in I, v_1\in V_1,\ldots,v_n\in V_n, v_i&apos;\in V_i$</text>
+<text matrix="1 0 0 1 16 -80" transformations="translations" pos="0 352.327" stroke="black" type="minipage" width="736" height="13.8611" depth="8.288" valign="top">mit $a=f(v_i,v_{-i})$ und $a&apos;=f(v_i&apos;,v_{-i})$</text>
+<text layer="zeta" matrix="1 0 0 1 0 -48" pin="h" transformations="translations" pos="0 250.178" stroke="black" type="minipage" width="768" height="13.8611" depth="8.288" valign="top">$\forall i$ führt die Wahrheit $v_i$ zu einem höheren Nutzen als jede Lüge $v_i&apos;$</text>
+</page>
+<page title="Vickrey-Clarke-Groves-Mechanismen">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<path layer="alpha" matrix="1 0 0 1 0 -6.696" stroke="UPorange" fill="UPorange20">
+0 496 m
+0 320 l
+768 320 l
+768 496 l
+h
+</path>
+<path layer="delta" matrix="0.959016 0 0 0.868421 -193.471 71.6803" fill="UPred20">
+479.985 366.668 m
+479.985 324.262 l
+700.939 324.262 l
+700.939 366.668 l
+h
+</path>
+<text layer="alpha" matrix="1 0 0 1 16 -32" transformations="translations" pos="0 500" stroke="black" type="minipage" width="736" height="12.7064" depth="7.1232" valign="top">$(f, p_1, \ldots, p_n)$ ist \textbf{\textcolor{UPblue}{Vickrey-Clarke-Groves (VCG) -Mechanismus}} falls:</text>
+<text layer="beta" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 448.17" stroke="black" type="minipage" width="736" height="17.3746" depth="11.8048" valign="top" style="item">$f(v_1,\ldots , v_n) \in \text{argmax}_{a\in A} \sum_i v_i(a)$. (maximale Social Welfare)</text>
+<path layer="epsilon" matrix="1 0 0 1.03704 -2.23186 -15.3988" fill="UPgreen20">
+193.191 386.754 m
+193.191 355.508 l
+267.958 355.508 l
+267.958 386.754 l
+h
+</path>
+<text layer="gamma" matrix="1 0 0 1 16 80" transformations="translations" pos="0 306.991" stroke="black" type="minipage" width="736" height="33.0915" depth="27.5744" valign="top" style="item">$p_i(v_1,\ldots,v_n)=h_i(v_{-i})) - \sum_{j\neq i}v_j(f(v_1,\ldots,v_n))$ gilt für
+
+ manche $h_1,\ldots,h_n$ mit $h_i:V_{-i}\rightarrow\mathbb{R}$ und $\forall v_1 \in V_1,\ldots,v_n\in V_n$</text>
+<text layer="delta" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 326.325" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">\textcolor{UPdarkred}{Summe der Werte aller anderen Spieler}</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 275.011" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">\textcolor{UPgreen}{Aus Sicht von Spieler $i$: unbeeinflussbare Konstante}</text>
 </page>
 </ipe>
