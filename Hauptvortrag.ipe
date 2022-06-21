@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220621182128" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220621185350" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -20437,5 +20437,32 @@ $=v_i(a)-h_i(v_{-i})+\sum_{j\neq i} v_j(a)$</text>
 <text layer="iota" matrix="1 0 0 1 96 0" transformations="translations" pos="0 98.768" stroke="black" type="minipage" width="368" height="14.8187" depth="9.2512" valign="top">$v_i(a)+\sum_{j\neq i} v_j(a) \geq v_i(a&apos;) + \sum_{j\neq i} v_j(a&apos;)$</text>
 <text layer="theta" matrix="1 0 0 1 184 46.8841" transformations="translations" pos="0 98.768" stroke="black" type="minipage" width="192" height="14.8187" depth="9.2512" valign="top">$\sum_{j} v_j(a) \geq \sum_{j} v_j(a&apos;)$</text>
 <text layer="kappa" matrix="1 0 0 1 16 -48" transformations="translations" pos="0 98.768" stroke="black" type="minipage" width="528" height="14.8187" depth="9.2512" valign="top">$v_i(a)+\sum_{j\neq i} v_j(a) - h_i(v_{-i}) \geq v_i(a&apos;) + \sum_{j\neq i} v_j(a&apos;) - h_i(v_{-i}) $</text>
+</page>
+<page title="Fazit VCG-Mechanismen">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<text layer="beta" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="22.6408" depth="17.0912" valign="top">Die Bezahlung von $i$ hängt nicht direkt von seiner Entscheidung ab, sondern vom Einfluss auf die Anderen</text>
+<text layer="gamma" pin="h" transformations="translations" pos="0 460.268" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">Das Gesamtergebnis zu verschlechtern kostet, das Verbessern wird belohnt</text>
+<text layer="delta" pin="h" transformations="translations" pos="0 440.954" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">Egoismus führt so zur Wahrheitsaussage</text>
+</page>
+<page title="Fazit Mechanism Design">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+</page>
+<page title="Einordnung, Weiterführendes">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+</page>
+<page title="Aktuelle Forschung und Anwendung">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
 </page>
 </ipe>
