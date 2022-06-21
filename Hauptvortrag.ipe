@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220621000528" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220621093538" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -19242,29 +19242,31 @@ h
 <view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda" active="lambda"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu" active="mu"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu nu" active="zeta"/>
-<path layer="zeta" matrix="1.00013 0 0 1.19462 0.640291 -245.133" stroke="UPgray20" fill="UPgray20">
+<path layer="zeta" matrix="1.00013 0 0 1.36626 0.640291 -330.267" stroke="UPgray20" fill="UPgray20">
 0 496 m
 0 352 l
 768 352 l
 768 496 l
 h
 </path>
-<path layer="beta" matrix="1 0 0 1 -0.858974 6.01282" stroke="UPgray20" fill="UPgray20">
+<path layer="beta" matrix="1 0 0 1.02022 0.640291 -1.10344" stroke="UPgray20" fill="UPgray20">
 0 496 m
 0 352 l
 768 352 l
 768 496 l
 h
 </path>
-<text pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="12.628" depth="7.0448" valign="top"> \textbf{Beispiel:} Wahlen</text>
-<text layer="gamma" matrix="1 0 0 1 0 -6.87179" pin="h" transformations="translations" pos="0 480.327" stroke="black" type="minipage" width="768" height="16.5122" depth="10.9536" valign="top" style="item">Spieler hat Präferenzen  $\textcolor{UPred}{a}\succ\textcolor{UPgreen}{b}\succ c$</text>
-<text layer="delta" matrix="1 0 0 1 0 -22.8718" pin="h" transformations="translations" pos="0 452.861" stroke="black" type="minipage" width="768" height="15.5366" depth="9.968" valign="top" style="item">Er vermutet, dass \textcolor{UPred}{$a$} keine Chance hat</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -38.8718" pin="h" transformations="translations" pos="0 427.357" stroke="black" type="minipage" width="768" height="16.4506" depth="10.8976" valign="top" style="item">Wählt strategisch  \textcolor{UPgreen}{b}</text>
-<text layer="zeta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 361.137" stroke="black" type="minipage" width="768" height="12.628" depth="7.0448" valign="top">\textbf{Beispiel:} Auktion (klassische/ englische)</text>
-<text layer="eta" matrix="1 0 0 1 0 -6.87179" pin="h" transformations="translations" pos="0 325.464" stroke="black" type="minipage" width="768" height="16.4506" depth="10.8976" valign="top" style="item">Spieler 1 bietet 50 \euro, Spieler 2 bietet 80 \euro</text>
-<text layer="theta" matrix="1 0 0 1 0 -22.8718" pin="h" transformations="translations" pos="0 298.116" stroke="black" type="minipage" width="768" height="16.4506" depth="10.8976" valign="top" style="item">Spieler 2 setzt nur 40 \euro, hofft trotzdem auf Zuschlag</text>
-<text layer="iota" matrix="1 0 0 1 0 -38.8718" pin="h" transformations="translations" pos="0 270.768" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">Gegenstand geht an Spieler 1. Wert des Guts für 1 geringer </text>
-<text matrix="1 0 0 1 0 -54.8718" pin="h" transformations="translations" pos="0 251.453" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">$\Rightarrow$ Gesamtergbnis schlechter</text>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 500" stroke="black" type="minipage" width="736" height="12.628" depth="7.0448" valign="top"> \textbf{Beispiel:} Wahlen</text>
+<text layer="gamma" matrix="1 0 0 1 16 -6.87179" transformations="translations" pos="0 480.327" stroke="black" type="minipage" width="736" height="16.5122" depth="10.9536" valign="top" style="item">Spieler hat Präferenzen  $\textcolor{UPred}{a}\succ\textcolor{UPgreen}{b}\succ c$</text>
+<text layer="delta" matrix="1 0 0 1 16 -22.8718" transformations="translations" pos="0 452.861" stroke="black" type="minipage" width="736" height="15.5366" depth="9.968" valign="top" style="item">Er vermutet, dass \textcolor{UPred}{$a$} keine Chance hat</text>
+<text layer="epsilon" matrix="1 0 0 1 16 -38.8718" transformations="translations" pos="0 427.357" stroke="black" type="minipage" width="736" height="16.4506" depth="10.8976" valign="top" style="item">Wählt strategisch  \textcolor{UPgreen}{b}</text>
+<text layer="zeta" matrix="1 0 0 1 16 -23.589" transformations="translations" pos="0 361.137" stroke="black" type="minipage" width="736" height="24.7016" depth="19.1632" valign="top">\textbf{Beispiel:} Auktion. 
+
+Ziel: Vergabe an Spieler für den das Gut den höchsten Wert hat</text>
+<text layer="eta" matrix="1 0 0 1 16 -41.9707" transformations="translations" pos="0 325.464" stroke="black" type="minipage" width="736" height="16.4506" depth="10.8976" valign="top" style="item">das Gut hat für Spieler i den Wert 50 \euro, für Spieler j 80 \euro</text>
+<text layer="theta" matrix="1 0 0 1 16 -48.4845" transformations="translations" pos="0 298.116" stroke="black" type="minipage" width="736" height="16.4506" depth="10.8976" valign="top" style="item">j setzt nur 40 \euro, hofft trotzdem auf Zuschlag</text>
+<text layer="iota" matrix="1 0 0 1 16 -60.69" transformations="translations" pos="0 270.768" stroke="black" type="minipage" width="736" height="12.4488" depth="6.8656" valign="top">Gut geht an i. Für i ist das Gut allerdings weniger wert.</text>
+<text matrix="1 0 0 1 16 -76.69" transformations="translations" pos="0 251.453" stroke="black" type="minipage" width="736" height="12.4488" depth="6.8656" valign="top">$\Rightarrow$ Gesamtergbnis schlechter</text>
 <path layer="nu" matrix="0.998448 0 0 0.281627 0 0" stroke="UPorange" fill="UPorange20">
 0 160 m
 0 0 l
@@ -19272,10 +19274,10 @@ h
 768 160 l
 h
 </path>
-<text layer="kappa" matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 144" stroke="black" type="label" width="567.683" height="15.1368" depth="4.1776" valign="baseline">Regeln sollten robust gegen Manipulationsversuche sein</text>
-<text layer="lambda" matrix="1 0 0 1 -16 0" transformations="translations" pos="16 96" stroke="black" type="label" width="751.008" height="15.4952" depth="4.1776" valign="baseline">\textbf{Aber:} Egoist unterstützt effizientes Ergebnis nicht, wenn nachteilig für ihn</text>
+<text layer="kappa" matrix="1 0 0 1 -16 -19.7945" transformations="translations" pos="16 144" stroke="black" type="label" width="567.683" height="15.1368" depth="4.1776" valign="baseline">Regeln sollten robust gegen Manipulationsversuche sein</text>
+<text layer="lambda" matrix="1 0 0 1 -16 -3.79448" transformations="translations" pos="16 96" stroke="black" type="label" width="751.008" height="15.4952" depth="4.1776" valign="baseline">\textbf{Aber:} Egoist unterstützt effizientes Ergebnis nicht, wenn nachteilig für ihn</text>
 <text layer="nu" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 64" stroke="UPblue" type="label" width="738.883" height="15.4952" depth="4.3344" valign="baseline">\textbf{Mechanismus muss Belohnung als Anreiz zur Kooperation stellen}</text>
-<text layer="mu" matrix="1 0 0 1 -16 0" transformations="translations" pos="16 64" stroke="black" type="label" width="436.887" height="15.1368" depth="4.1776" valign="baseline">Interessen von Systemdesigner vs. Akteure</text>
+<text layer="mu" matrix="1 0 0 1 -16 -3.79448" transformations="translations" pos="16 64" stroke="black" type="label" width="436.887" height="15.1368" depth="4.1776" valign="baseline">Interessen von Systemdesigner vs. Akteure</text>
 </page>
 <page title="Eigenschaften einer Wohlfahrtsfunktion">
 <layer name="alpha"/>
@@ -20080,6 +20082,8 @@ Jeder wählt ohne Konsequenz ein übertrieben hohes $w_i&apos; \gg w_i$.</text>
 <layer name="epsilon"/>
 <layer name="zeta"/>
 <layer name="eta"/>
+<layer name="theta"/>
+<layer name="iota"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha beta epsilon" active="gamma"/>
@@ -20087,6 +20091,8 @@ Jeder wählt ohne Konsequenz ein übertrieben hohes $w_i&apos; \gg w_i$.</text>
 <view layers="alpha beta delta epsilon zeta" active="epsilon"/>
 <view layers="alpha beta gamma delta epsilon zeta" active="delta"/>
 <view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta" active="theta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta iota" active="iota"/>
 <path layer="beta" matrix="1 0 0 1 16 -32" fill="UPorange">
 32 480 m
 32 352 l
@@ -20120,52 +20126,74 @@ h
 320 464 l
 320 464 l
 </path>
-<text matrix="1 0 0 1 137.45 -21.357" transformations="translations" pos="96 464" stroke="UPdarkred" type="label" width="65.8459" height="14.8915" depth="4.1776" valign="baseline" style="math">p = 40</text>
+<text matrix="1 0 0 1 137.45 -21.357" transformations="translations" pos="96 464" stroke="UPdarkred" type="label" width="114.278" height="14.8915" depth="4.1776" valign="baseline" style="math">p = w_i = 40</text>
 <text layer="beta" matrix="1 0 0 1 0 240" transformations="translations" pos="0 261.845" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">Klassische, englische Auktion:</text>
-<path layer="gamma" matrix="1 0 0 1 464 -32" fill="UPorange">
+<path layer="gamma" matrix="1 0 0 1 400 -32" fill="UPorange">
 32 480 m
 32 352 l
 64 352 l
 64 480 l
 h
 </path>
-<path matrix="1 0 0 1 464 -32" fill="UPorange50">
+<path matrix="1 0 0 1 400 -32" fill="UPorange50">
 96 448 m
 96 352 l
 128 352 l
 128 448 l
 h
 </path>
-<path matrix="1 0 0 1 464 -32" fill="UPorange50">
+<path matrix="1 0 0 1 400 -32" fill="UPorange50">
 160 400 m
 160 352 l
 192 352 l
 192 400 l
 h
 </path>
-<text matrix="1 0 0 1 451.222 -32" transformations="translations" pos="48 368" stroke="white" type="label" width="25.5562" height="15.1424" depth="0.28" valign="baseline">40</text>
-<text matrix="1 0 0 1 467.222 -47.72" transformations="translations" pos="96 384" stroke="white" type="label" width="25.5562" height="15.1424" depth="0.28" valign="baseline">30</text>
-<text matrix="1 0 0 1 531.222 -47.72" transformations="translations" pos="96 384" stroke="white" type="label" width="25.5562" height="14.3763" depth="0.28" valign="baseline">15</text>
-<text matrix="1 0 0 1 461.21 -40.0658" transformations="translations" pos="48 336" stroke="black" type="label" width="5.57984" height="15.1368" depth="0" valign="baseline">i</text>
-<text matrix="1 0 0 1 525.21 -37.977" transformations="translations" pos="48 336" stroke="black" type="label" width="5.57984" height="15.1368" depth="4.1776" valign="baseline">j</text>
-<text matrix="1 0 0 1 586.184 -40.0658" transformations="translations" pos="48 336" stroke="black" type="label" width="11.6312" height="15.1368" depth="0" valign="baseline">k</text>
-<image matrix="0.0946946 0 0 0.0946946 501.347 448.16" rect="0 0 225 225" bitmap="1"/>
-<path layer="eta" matrix="1 0 0 1 352 -48" stroke="UPdarkred">
-128 464 m
-320 464 l
-320 464 l
-</path>
-<text matrix="1 0 0 1 585.219 -53.357" transformations="translations" pos="96 464" stroke="UPdarkred" type="label" width="65.8459" height="14.8915" depth="4.1776" valign="baseline" style="math">p = 30</text>
-<text layer="gamma" matrix="1 0 0 1 448 240" transformations="translations" pos="0 261.845" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">Vickrey-Auktion:</text>
-<path layer="eta" fill="UPblue50">
+<text matrix="1 0 0 1 387.222 -32" transformations="translations" pos="48 368" stroke="white" type="label" width="25.5562" height="15.1424" depth="0.28" valign="baseline">40</text>
+<text matrix="1 0 0 1 403.222 -47.72" transformations="translations" pos="96 384" stroke="white" type="label" width="25.5562" height="15.1424" depth="0.28" valign="baseline">30</text>
+<text matrix="1 0 0 1 467.222 -47.72" transformations="translations" pos="96 384" stroke="white" type="label" width="25.5562" height="14.3763" depth="0.28" valign="baseline">15</text>
+<text matrix="1 0 0 1 397.21 -40.0658" transformations="translations" pos="48 336" stroke="black" type="label" width="5.57984" height="15.1368" depth="0" valign="baseline">i</text>
+<text matrix="1 0 0 1 461.21 -37.977" transformations="translations" pos="48 336" stroke="black" type="label" width="5.57984" height="15.1368" depth="4.1776" valign="baseline">j</text>
+<text matrix="1 0 0 1 522.184 -40.0658" transformations="translations" pos="48 336" stroke="black" type="label" width="11.6312" height="15.1368" depth="0" valign="baseline">k</text>
+<image matrix="0.0946946 0 0 0.0946946 437.347 448.16" rect="0 0 225 225" bitmap="1"/>
+<text layer="eta" matrix="1 0 0 1 521.219 -53.357" transformations="translations" pos="96 464" stroke="UPdarkred" type="label" width="114.278" height="14.8859" depth="6.9664" valign="baseline" style="math">p = w_j = 30</text>
+<text layer="gamma" matrix="1 0 0 1 384 240" transformations="translations" pos="0 261.845" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">Vickrey-Auktion:</text>
+<path layer="eta" matrix="1 0 0 1 -64 0" fill="UPblue50">
 496 448 m
 496 416 l
 528 416 l
 528 448 l
 h
 </path>
-<text layer="delta" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 293.845" stroke="black" type="minipage" width="320" height="25.9784" depth="20.4288" valign="top">Bester Nutzen für $i$: 
+<text layer="delta" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 293.845" stroke="black" type="minipage" width="320" height="25.9784" depth="20.4288" valign="top">Bester Nutzen für $i$: 
 
-$w_i$ knapp über $w_j$</text>
+$w_i&apos;$ möglichst knapp über $w_j$</text>
+<path layer="eta" matrix="1 0 0 1 288 -48" stroke="UPdarkred">
+128 464 m
+320 464 l
+320 464 l
+</path>
+<text layer="theta" matrix="1 0 0 1 384 -32" transformations="translations" pos="0 293.845" stroke="black" type="minipage" width="384" height="13.8611" depth="8.288" valign="top">Bester Nutzen für $i$: $w_i&apos; = w_i$
+
+</text>
+<text layer="delta" matrix="1 0 0 1 0 -96" transformations="translations" pos="0 293.845" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">$\Rightarrow$ Nicht anreizkompatibel</text>
+<text layer="iota" matrix="1 0 0 1 384 -64" transformations="translations" pos="0 293.845" stroke="black" type="minipage" width="384" height="25.7331" depth="20.1936" valign="top">\textbf{Warum?}
+
+Er macht Gewinn: $u_i(\text{i gew.}) = w_i - w_j$ 
+
+</text>
+<text matrix="1 0 0 1 384 -128" transformations="translations" pos="0 293.845" stroke="black" type="minipage" width="384" height="46.8821" depth="41.384" valign="top">Würde i \textbf{weniger} bieten: 
+\begin{itemize}
+\item Gefahr kein Zuschlag
+\item nicht mehr Gewinn
+\end{itemize}
+</text>
+<text matrix="1 0 0 1 384 -240" transformations="translations" pos="0 293.845" stroke="black" type="minipage" width="384" height="26.7714" depth="21.2352" valign="top">Würde i \textbf{mehr} bieten:
+\begin{itemize}
+\item Gefahr Verlust
+\end{itemize}
+
+
+</text>
 </page>
 </ipe>
