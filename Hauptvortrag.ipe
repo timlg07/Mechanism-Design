@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220621115051" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220621143322" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -20204,7 +20204,7 @@ h
 64 480 l
 h
 </path>
-<path layer="gamma" matrix="1 0 0 2 0 -512" fill="UPgray50">
+<path layer="gamma" matrix="1 0 0 2 0 -512" fill="UPgray20">
 32 496 m
 32 464 l
 64 464 l
@@ -20320,10 +20320,27 @@ h
 768 192 l
 h
 </path>
-<text matrix="1 0 0 1 16 -48.2082" transformations="translations" pos="0 245.838" stroke="black" type="minipage" width="736" height="64.3485" depth="58.912" valign="top">$\Rightarrow$ Trotz \begin{itemize}
+<text matrix="1 0 0 1 16 -48.2082" transformations="translations" pos="0 245.838" stroke="black" type="minipage" width="736" height="64.3485" depth="58.912" valign="top">$\Rightarrow$ Trotz: \begin{itemize}
 \item privater Werte $w_i$
 \item egoistischem Verhalten
 \end{itemize} ist die beste Wahl für jeden Spieler die Wahrheit</text>
-<text matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 74.3698" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">Der Mechanismus nimmt bereits den bestmöglichen Betrug vor</text>
+<text matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 74.3698" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">&apos;&apos;Der Mechanismus nimmt bereits den bestmöglichen Betrug vor``</text>
+</page>
+<page title="Vickrey-Clarke-Groves-Mechanismen">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<path layer="beta" stroke="UPorange" fill="UPorange20">
+0 496 m
+0 320 l
+768 320 l
+768 496 l
+h
+</path>
+<text matrix="1 0 0 1 16 -32" transformations="translations" pos="0 500" stroke="black" type="minipage" width="736" height="12.7064" depth="7.1232" valign="top">$(f, p_1, \ldots, p_n)$ ist \textbf{\textcolor{UPblue}{Vickrey-Clarke-Groves (VCG) -Mechanismus}} falls:</text>
+<text layer="gamma" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 448.17" stroke="black" type="minipage" width="736" height="17.3746" depth="11.8048" valign="top" style="item">$f(v_1,\ldots , v_n) \in \text{argmax}_{a\in A} \sum_i v_i(a)$. (maximale Social Welfare)</text>
 </page>
 </ipe>
