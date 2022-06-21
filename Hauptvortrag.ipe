@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220621181310" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220621182128" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -20369,9 +20369,6 @@ h
 <view layers="alpha beta gamma" active="gamma"/>
 <view layers="alpha beta gamma delta" active="delta"/>
 <view layers="alpha beta gamma delta epsilon" active="epsilon"/>
-<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta" active="theta"/>
 <path layer="alpha" matrix="1 0 0 1 0 -6.696" stroke="UPorange" fill="UPorange20">
 0 496 m
 0 320 l
@@ -20400,15 +20397,45 @@ h
  manche $h_1,\ldots,h_n$ mit $h_i:V_{-i}\rightarrow\mathbb{R}$ und $\forall v_1 \in V_1,\ldots,v_n\in V_n$</text>
 <text layer="delta" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 326.325" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">\textcolor{UPdarkred}{Summe der Werte aller anderen Spieler}</text>
 <text layer="epsilon" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 275.011" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">\textcolor{UPgreen}{Aus Sicht von Spieler $i$: unbeeinflussbare Konstante}</text>
-<text layer="zeta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 239.579" stroke="black" type="minipage" width="768" height="10.6848" depth="5.096" valign="top">\textbf{Beweis:}</text>
-<text layer="eta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 207.798" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">Nutzen $u_i(a)=v_i(a) -p_i(a)$
+</page>
+<page title="Beweis: VCG-Mech. anreizkompatibel">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<layer name="eta"/>
+<layer name="theta"/>
+<layer name="iota"/>
+<layer name="kappa"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta" active="theta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta iota" active="iota"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa" active="kappa"/>
+<path layer="alpha" matrix="1 0 0 1 0 -6.696" stroke="UPorange" fill="UPorange20">
+0 496 m
+0 320 l
+768 320 l
+768 496 l
+h
+</path>
+<text matrix="1 0 0 1 16 -32" transformations="translations" pos="0 500" stroke="black" type="minipage" width="736" height="12.7064" depth="7.1232" valign="top">$(f, p_1, \ldots, p_n)$ ist \textbf{\textcolor{UPblue}{Vickrey-Clarke-Groves (VCG) -Mechanismus}} falls:</text>
+<text layer="beta" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 448.17" stroke="black" type="minipage" width="736" height="17.3746" depth="11.8048" valign="top" style="item">$f(v_1,\ldots , v_n) \in \text{argmax}_{a\in A} \sum_i v_i(a)$. (maximale Social Welfare)</text>
+<text layer="gamma" matrix="1 0 0 1 16 80" transformations="translations" pos="0 306.991" stroke="black" type="minipage" width="736" height="33.0915" depth="27.5744" valign="top" style="item">$p_i(v_1,\ldots,v_n)=h_i(v_{-i})) - \sum_{j\neq i}v_j(f(v_1,\ldots,v_n))$ gilt für
+
+ manche $h_1,\ldots,h_n$ mit $h_i:V_{-i}\rightarrow\mathbb{R}$ und $\forall v_1 \in V_1,\ldots,v_n\in V_n$</text>
+<text layer="zeta" matrix="1 0 0 1 0 64" pin="h" transformations="translations" pos="0 239.579" stroke="black" type="minipage" width="768" height="10.6848" depth="5.096" valign="top">\textbf{Beweis:}</text>
+<text layer="eta" matrix="1 0 0 1 0 64" pin="h" transformations="translations" pos="0 207.798" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">Nutzen $u_i(a)=v_i(a) -p_i(a)$
 </text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="128 160" stroke="black" type="label" width="263.995" height="15.2443" depth="8.8256" valign="baseline">
+<text matrix="1 0 0 1 0 64" transformations="translations" pos="128 160" stroke="black" type="label" width="263.995" height="15.2443" depth="8.8256" valign="baseline">
 $=v_i(a)-h_i(v_{-i})+\sum_{j\neq i} v_j(a)$</text>
-<text layer="theta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 135.174" stroke="black" type="minipage" width="768" height="12.992" depth="7.4144" valign="top">Da $a=f(v_i, v_{-i})$ Social Welfare maximiert, gilt:
+<text layer="theta" matrix="1 0 0 1 0 48" pin="h" transformations="translations" pos="0 135.174" stroke="black" type="minipage" width="768" height="12.992" depth="7.4144" valign="top">Da $a=f(v_i, v_{-i})$ Social Welfare maximiert, gilt:
 </text>
-<text matrix="1 0 0 1 80 -32" transformations="translations" pos="0 98.768" stroke="black" type="minipage" width="368" height="14.8187" depth="9.2512" valign="top">$v_i(a)+\sum_{j\neq i} v_j(a) \geq v_i(a&apos;) + \sum_{j\neq i} v_j(a&apos;)$</text>
-<text matrix="1 0 0 1 168 -1.11593" transformations="translations" pos="0 98.768" stroke="black" type="minipage" width="192" height="14.8187" depth="9.2512" valign="top">$\sum_{j} v_j(a) \geq \sum_{j} v_j(a&apos;)$</text>
-<text matrix="1 0 0 1 0 -64" transformations="translations" pos="0 98.768" stroke="black" type="minipage" width="528" height="14.8187" depth="9.2512" valign="top">$v_i(a)+\sum_{j\neq i} v_j(a) - h_i(v_{-i}) \geq v_i(a&apos;) + \sum_{j\neq i} v_j(a&apos;) - h_i(v_{-i}) $</text>
+<text layer="iota" matrix="1 0 0 1 96 0" transformations="translations" pos="0 98.768" stroke="black" type="minipage" width="368" height="14.8187" depth="9.2512" valign="top">$v_i(a)+\sum_{j\neq i} v_j(a) \geq v_i(a&apos;) + \sum_{j\neq i} v_j(a&apos;)$</text>
+<text layer="theta" matrix="1 0 0 1 184 46.8841" transformations="translations" pos="0 98.768" stroke="black" type="minipage" width="192" height="14.8187" depth="9.2512" valign="top">$\sum_{j} v_j(a) \geq \sum_{j} v_j(a&apos;)$</text>
+<text layer="kappa" matrix="1 0 0 1 16 -48" transformations="translations" pos="0 98.768" stroke="black" type="minipage" width="528" height="14.8187" depth="9.2512" valign="top">$v_i(a)+\sum_{j\neq i} v_j(a) - h_i(v_{-i}) \geq v_i(a&apos;) + \sum_{j\neq i} v_j(a&apos;) - h_i(v_{-i}) $</text>
 </page>
 </ipe>
