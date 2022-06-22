@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220622160702" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220622224925" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -23188,7 +23188,7 @@ Trotzdem anreizkompatible Social Choice Funktionen entwerfen
 <view layers="alpha beta gamma delta" active="delta"/>
 <view layers="alpha beta gamma delta epsilon" active="epsilon"/>
 <view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
-<path layer="epsilon" matrix="0.971471 0 0 0.818705 8.38549 58.8721" stroke="UPorange" fill="UPorange20">
+<path layer="epsilon" matrix="1.16 0 0 0.818705 -42.8935 58.8721" stroke="UPorange" fill="UPorange20">
 272 352 m
 272 320 l
 416 320 l
@@ -23207,7 +23207,7 @@ h
 <text layer="delta" matrix="1 0 0 1 16 -23" transformations="translations" pos="0 440.917" stroke="black" type="minipage" width="736" height="24.7016" depth="19.1632" valign="top">\textcolor{UPblue}{\textbf{Wertungsfunktion}} $v_i : A \rightarrow \mathbb{R}$
 
 Jeder Alternative $a$ wird vom Spieler $i$ ein Geldwert $v_{i}(a)$ zugeordnet.</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 374.052" stroke="black" type="minipage" width="768" height="48.6965" depth="43.2208" valign="top">\textbf{\textcolor{UPblue}{Nutzen}} eines Spielers $i$ ist $u_i = v_i(a) + m$ wobei
+<text layer="epsilon" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 374.052" stroke="black" type="minipage" width="768" height="48.6965" depth="43.2208" valign="top">\textbf{\textcolor{UPblue}{Nutzen}} eines Spielers $i$ ist $u_i(a) = v_i(a) + m$ wobei
 \begin{itemize}
 \item $a$ gewählt wird 
 \item $i$ einen Geldbetrag $m$ erhält
