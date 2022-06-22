@@ -137,8 +137,17 @@ Im folgenden wird bewiesen, dass dies ab $|A| > 2$ auch die einzige Lösung ist.
 	
 	Hierzu werden $\pi_2$ und $\pi_3$ nun mit einem weiteren Profil $\pi_4$ verglichen. Dieses unterscheidet sich wieder nur bei Spieler $j$ von den vorherigen. In diesem Fall ordnet er $a$ über $b$ und $b$ über $c$ an. Analog zu den vorherigen Profilen sei $\succ'' = F(\pi_4)$. Da sich die Präferenzen von $I \setminus \{j\}$ nicht verändert haben und $a \succ_j b \iff a \succ_j'' b$ durch $x \succ_j b$ $\forall x \in I \Rightarrow a \succ_j b$ gilt, muss nach IIA auch $a \succ'' b$ gelten. Analog gilt durch $b \succ_j' c \iff b \succ_j'' c$ nach IIA auch $b \succ'' c$. Transitiv ergibt das $a \succ'' c$ und durch IIA gilt auch $a \succ' c$.
 	
+	\begin{claim}
+		Der Spieler $j$ ist auch Diktator für beliebiges Paar $a, b$.
+	\end{claim}
+
+	Da mehr als zwei Alternativen vorausgesetzt werden, existiert zusätzlich zu $a$ und $b$ noch eine Alternative $c$. Auf die gleiche Weise wie bei $j$ kann nun ein Spieler $j^*$ festgestellt werden, der Diktator für alle $a, b \in A \setminus \{c\}$ ist.
 	
+	Zu zeigen bleibt, dass Spieler $j$ und $j^*$ ein und derselbe Akteur sind. 
+	Zum einen kann $j^*$ nicht kleiner als $j$ sein, weil dann im Profil $\pi_{j-1}^*$ durch $j$ erzwungen wird, dass $a \succ b$ und zugleich durch $j^*$ erzwungen wird, dass $b \succ a$, was einen Widerspruch darstellt. 
+	Zum anderen kann $j^*$ auch nicht größer als $j$ sein, da sonst im Profil $\pi_{j}^*$ der gleiche Widerspruch in umgedrehter Form gilt. Somit müssen $j^*$ und $j$ gleich sein.
 	
+	Damit ist der Spieler $j$ Diktator für alle Paare an Alternativen.
 \end{proof}
 
 \subsection{Gibbard-Satterthwaite bei Social Welfare Funktionen}
