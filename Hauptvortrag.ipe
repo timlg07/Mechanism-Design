@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220622224925" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220623004252" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -23641,7 +23641,6 @@ $=v_i(a)-h_i(v_{-i})+\sum_{j\neq i} v_j(a)$</text>
 <text layer="beta" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="22.6408" depth="17.0912" valign="top">Die Bezahlung von $i$ hängt nicht direkt von seiner Entscheidung ab, sondern vom Einfluss auf die Anderen</text>
 <text layer="gamma" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 460.268" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">Das Gesamtergebnis zu verschlechtern kostet, das Verbessern wird belohnt</text>
 <text layer="delta" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 440.954" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">Egoismus führt so zur Wahrheitsaussage</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 440.954" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">Egoismus führt so zur Wahrheitsaussage</text>
 </page>
 <page title="Fazit Mechanism Design">
 <layer name="alpha"/>
