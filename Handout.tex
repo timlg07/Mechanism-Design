@@ -188,8 +188,28 @@ Um Anreizkompatibilität zu erreichen, sorgt die \emph{Vickrey-Auktion} (vgl. Ab
 
 Es ist also möglich Regeln aufzustellen, durch die es, trotz privater Werte und egoistischem Verhalten, in allen Fällen die beste Wahl ist die Wahrheit zu verraten und nicht zu manipulieren.
 
-\subsection{Vickrey-Clarke-Groves Mechanisms}
-\subsection{Beispiel: Öffentliches Projekt, Clarke Pivot Rule}
+\subsection{Vickrey-Clarke-Groves-Mechanismus}
+
+Das Prinzip der Vickrey-Auktion kann auch allgemein angewandt werden. Hierfür wird die Anreizkompatibilität eines Mechanismus benötigt. Diese ist dann gegeben, falls für alle Spieler die Angabe der Wahrheit immer zu einem höheren oder gleichen Nutzen führt, wie die Angabe eines jeden anderen Wertes.
+
+\begin{definition}
+	\label{def:vcg}
+	Ein Mechanismus $(f, p_1,\ldots,p_n)$ ist ein \emph{Vickrey-Clarke-Groves-Mechanismus} (VCG-Mechanismus), falls die folgenden zwei Bedingungen gelten.
+	Zum einen muss das Ergebnis der Social Choice Funktion $f(v_1,\ldots , v_n)$ ein Element von $\text{argmax}_{a\in A} \sum_i v_i(a)$ sein.
+	Zum anderen muss gelten: $\forall v_1 \in V_1,\ldots,v_n\in V_n$: $p_i(v_1,\ldots,v_n)=h_i(v_{-i})) - \sum_{j\neq i}v_j(f(v_1,\ldots,v_n))$. Dabei ist $h_i(v_{-i}))$ ein von $v_i$ unabhängiger Wert.
+\end{definition}
+
+Die erste Bedingung stellt dabei sicher, dass VCG-Mechanismen den Social Welfare maximieren. Mit der zweiten Bedingung wird der Preis, den $i$ für eine Wertzuweisung $v_i$ zahlen muss, von den erzielten Werten der anderen Spieler abhängig gemacht. Somit fällt der Gewinn von $i$ kleiner aus, wenn er das Gesamtergebnis verschlechtert.
+
+\begin{claim}
+	Alle VCG-Mechanismen sind anreizkompatibel.
+\end{claim}
+
+\begin{proof}
+	Zu zeigen ist, dass für alle VCG-Mechanismen gilt: $v_i(a)-p_i(v_i, v_{-i})\geq v_i(a')-p_i(v_i', v_{-i})$. 
+	
+	Durch die Voraussetzung, dass für $a = f(v_1,\ldots,v_n)$ der Gesamtgewinn maximiert wird, gilt für alle $a'=f(v_i',v_{-i})$ folgendes: $\sum_{j} v_j(a) \geq \sum_{j} v_j(a')$. Durch einfaches herauslösen des Wertes $v_i$ erhält man: $v_i(a)+\sum_{j\neq i} v_j(a) \geq v_i(a') + \sum_{j\neq i} v_j(a')$. Da $h_i(v_{-i}))$ unabhängig von $v_i$ ist, kann es als Konstante von beiden Seiten der Ungleichung abgezogen werden: $v_i(a)-(h_i(v_{-i}) - \sum_{j\neq i} v_j(a)) \geq v_i(a') -(h_i(v_{-i}) - \sum_{j\neq i} v_j(a'))$. Die Terme in den Klammern stellen nun den in der zweiten Voraussetzung definierten Preis da, sodass insgesamt gilt: $v_i(a)-p_i(v_i, v_{-i})\geq v_i(a')-p_i(v_i', v_{-i})$. 
+\end{proof}
 
 \section{Zusammenfassung und Ausblick}
 ~\cite{lov21}
