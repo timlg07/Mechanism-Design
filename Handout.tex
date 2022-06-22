@@ -49,7 +49,9 @@
 \maketitle
 
 \begin{abstract}
-	Dieses Handout gibt eine kurze Einführung in das Thema Mechanism Design. Dabei stellt der Designer Regeln auf, um möglichst effiziente und faire Ergebnisse zu erzielen. Es werden soziale Gruppenentscheidung für mehrere egoistische Spieler, basierend auf deren Präferenzen, getroffen. Soll diese Entscheidung möglichst nicht strategisch manipulierbar und nicht diktatorisch durch einen Spieler bestimmbar sein, so ist das im Allgemeinen nicht möglich. Um dem entgegenzuwirken und ein für die Allgemeinheit gutes Ergebnis zu erzielen, werden für die einzelnen Spieler Anreize durch Geld geschaffen.
+	Dieses Handout gibt eine kurze Einführung in das Thema Mechanism Design.
+	Dabei werden soziale Gruppenentscheidung für mehrere Spieler basierend auf deren Präferenzen getroffen. 
+	Mechanism Design ist geprägt von dem Konflikt zwischen egoistischen Spielern, die stets durch Manipulationsversuche ihren Gewinn maximieren wollen, und den entworfenen Mechanismen, die versuchen eine für die Gemeinschaft effiziente Entscheidung zu treffen und Manipulation zu verhindern. Durch Arrow's Theorem erscheint diese Aufgabe der Mechanismen zunächst unmöglich. Mithilfe von Anreizen in Form von Geld kann diese Einschränkung allerdings umgangen werden. Spieler werden durch Beeinflussung des Gewinns dazu gezwungen ihre Auswirkung auf andere zu berücksichtigen.
 \end{abstract}
 
 \setcounter{page}{0}
@@ -60,7 +62,7 @@
 \fancyhead[EL,OR]{\thepage}
 \pagestyle{fancy}
 
-\section{Einleitung, Definitionen}
+\section{Gemeinschaftsentscheidungen treffen}
 Dieses Handout basiert auf dem Kapitel "Introduction to Mechanism Design (for Computer Scientists)" ~\cite{nis07}.
 
 \emph{Mechanism Design} beschäftigt sich mit dem Aufstellen von Regeln um eine soziale Wahl zu erreichen. Diese soziale Wahl ist eine Gruppenentscheidung, die von den privaten Informationen der Spieler abhängig ist und sich auf alle Spieler auswirkt. Sie soll möglichst effizient für die Gemeinschaft ausfallen. Diesem Ziel steht allerdings das egoistische und unkooperative Verhalten der Spieler gegenüber: Ein Spieler unterstützt kein Ergebnis, wenn es nachteilig für ihn ist~\cite{ste08}.
@@ -169,7 +171,7 @@ Analog zu Arrow's Theorem für Social Welfare Funktionen gilt für Social Choice
 
 Dies kann durch Zurückführung auf Arrow's Theorem gezeigt werden. Somit scheinen nur triviale Social Choice Funktionen -- also Diktaturen -- nicht strategisch manipulierbar zu sein. Um trotzdem anreizkompatible Social Choice Funktionen zu entwerfen, können mit anderen Modellen {z. B.} Anreize eingeführt werden, die wahrheitsgemäßes Verhalten fördern.
 
-\section{Mechanism Design mit Geld}
+\section{Mechanism Design mit Geld als Anreiz zur Kooperation}
 Bisher wurde nur die Reihenfolge betrachtet, in der Spieler die Alternativen einordnen. Nicht berücksichtigt wurde dabei, um wie viel eine Alternative anderen bevorzugt wird. Geld ist ein Mittel um dies zu messen und den Alternativen mithilfe einer \emph{Wertungsfunktion} Werte $v_i(a)$ zuzuordnen. 
 
 Der Nutzen des Spielers $i$ ist $u_i(a) = v_i(a) + m$. Er setzt sich zusammen aus dem Wert, den der Spieler dem Ergebnis $a$ zuordnet und dem Geldbetrag, den er vom Mechanismus erhält bzw. an ihn bezahlen muss. Jeder Spieler handelt egoistisch und will seinen Nutzen maximieren.
@@ -188,7 +190,7 @@ Um Anreizkompatibilität zu erreichen, sorgt die \emph{Vickrey-Auktion} (vgl. Ab
 
 Es ist also möglich Regeln aufzustellen, durch die es, trotz privater Werte und egoistischem Verhalten, in allen Fällen die beste Wahl ist die Wahrheit zu verraten und nicht zu manipulieren.
 
-\subsection{Vickrey-Clarke-Groves-Mechanismus}
+\subsection{Vickrey-Clarke-Groves-Mechanismen}
 
 Das Prinzip der Vickrey-Auktion kann auch allgemein angewandt werden. Hierfür wird die Anreizkompatibilität eines Mechanismus benötigt. Diese ist dann gegeben, falls für alle Spieler die Angabe der Wahrheit immer zu einem höheren oder gleichen Nutzen führt, wie die Angabe eines jeden anderen Wertes.
 
@@ -211,10 +213,8 @@ Die erste Bedingung stellt dabei sicher, dass VCG-Mechanismen den Social Welfare
 	Durch die Voraussetzung, dass für $a = f(v_1,\ldots,v_n)$ der Gesamtgewinn maximiert wird, gilt für alle $a'=f(v_i',v_{-i})$ folgendes: $\sum_{j} v_j(a) \geq \sum_{j} v_j(a')$. Durch einfaches herauslösen des Wertes $v_i$ erhält man: $v_i(a)+\sum_{j\neq i} v_j(a) \geq v_i(a') + \sum_{j\neq i} v_j(a')$. Da $h_i(v_{-i}))$ unabhängig von $v_i$ ist, kann es als Konstante von beiden Seiten der Ungleichung abgezogen werden: $v_i(a)-(h_i(v_{-i}) - \sum_{j\neq i} v_j(a)) \geq v_i(a') -(h_i(v_{-i}) - \sum_{j\neq i} v_j(a'))$. Die Terme in den Klammern stellen nun den in der zweiten Voraussetzung definierten Preis da, sodass insgesamt gilt: $v_i(a)-p_i(v_i, v_{-i})\geq v_i(a')-p_i(v_i', v_{-i})$. 
 \end{proof}
 
-\section{Zusammenfassung und Ausblick}
-Mechanism Design ist geprägt von dem Konflikt zwischen egoistischen Spielern, die stets durch Manipulationsversuche ihren Gewinn maximieren wollen, und den entworfenen Mechanismen, die versuchen eine für die Gemeinschaft effiziente Entscheidung zu treffen und Manipulation zu verhindern. Durch Arrow's Theorem erscheint diese Aufgabe der Mechanismen zunächst unmöglich. Mithilfe von Anreizen in Form von Geld kann diese Einschränkung allerdings umgangen werden. Spieler werden durch Beeinflussung des Gewinns dazu gezwungen ihre Auswirkung auf andere zu berücksichtigen.
-
-Die Entscheidungsfindung unter Abhängigkeit der Entscheidungen anderer ist an vielen Stellen vorzufinden. So auch z. B. im Straßenverkehr. So wird in "Lane and speed allocation mechanism for autonomous vehicle agents on a multi-lane highway"~\cite{lov21} die selbstständige Organisation von autonomen Fahrzeugen untersucht. Dazu werden Simulationen durchgeführt, in denen die Fahrzeuge als Spieler ohne Informationen über andere um Spuren und Geschwindigkeiten bieten.
+\section{Anwendungsbeispiel von Mechanism Design in der Forschung}
+Die Entscheidungsfindung unter Abhängigkeit der Entscheidungen anderer ist an vielen Stellen vorzufinden, z. B. auch im Straßenverkehr. So wird in "Lane and speed allocation mechanism for autonomous vehicle agents on a multi-lane highway"~\cite{lov21} die selbstständige Organisation von autonomen Fahrzeugen untersucht. Dazu werden Simulationen durchgeführt, in denen die Fahrzeuge als Spieler ohne Informationen über die anderen Spieler um Spuren und Geschwindigkeiten bieten.
 
 \bibliographystyle{alpha}
 \bibliography{Literatur}
