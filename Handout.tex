@@ -109,6 +109,15 @@ Im folgenden wird bewiesen, dass dies ab $|A| > 2$ auch die einzige Lösung ist.
 \begin{proof}
 	Dieser Beweis basiert auf dem ersten der von John Geanakoplos vorgestellten Beweise~\cite{gea05}.
 	
+	\begin{claim} 
+		\label{claim:extrementsch}
+		Wenn bei einem Spielerprofil $\pi_0$ jeder Spieler eine Alternative $b$ je vor oder nach allen anderen platziert, so muss diese Alternative auch in der gemeinsamen Entscheidung $\succ = F(\pi_0)$ vor oder nach allen stehen.
+	\end{claim}
+
+	Angenommen dies gilt nicht. Dann existieren $a, c$, sodass $a \succ b \succ c$. Betrachte nun ein Profil $\pi_1$ in dem $c \succ_i' a$ und alles andere identisch zu $\pi_0$. Die Präferenzen zwischen $a, b$ und zwischen $a, c$ sind bei beiden Profilen gleich. Durch IIA folgt nun, dass $a \succ' b$ und $b \succ' c$. Transitiv gilt dadurch $a \succ' c$. Nach Definition von $\pi_1$ ist allerdings $c \succ_i' a$ $\forall i$ und daher durch Einstimmigkeit auch $c \succ' a$ -- ein Widerspruch.
+	
+	Betrachte nun die Profile $\pi_i^*$ mit $0 \leq i \leq n$ wobei die ersten $i$ Spieler $b$ an die vorderste Stelle und die letzten $n-i$ Spieler $b$ an die hinterste Stelle setzen. Die Alternative $b$ ist also nur an Extrempositionen vorzufinden. Dadurch muss $b$ laut Behauptung~\ref{claim:extrementsch} auch von der Social Welfare Funktion ganz vorne oder hinten angeordnet werden. Durch Einstimmigkeit gilt für $\pi_n^*$: $b \succ x$ $\forall x \in A$ und für $\pi_0^*$:  $x \succ b$ $\forall x \in A$. Dazwischen muss ein $\pi_j^*$ existieren, für das erstmalig $x \succ b$ gilt. Spieler $j$ kann in dieser Konstellation alleinig das soziale Ergebnis für $b$ entscheiden.
+	
 	
 \end{proof}
 
