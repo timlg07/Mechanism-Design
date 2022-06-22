@@ -150,13 +150,24 @@ Im folgenden wird bewiesen, dass dies ab $|A| > 2$ auch die einzige Lösung ist.
 	Damit ist der Spieler $j$ Diktator für alle Paare an Alternativen.
 \end{proof}
 
-\subsection{Gibbard-Satterthwaite bei Social Welfare Funktionen}
-Analog zu Social Welfare Functions kann strategische Manipulation auch bei Social Choice Functions ausgeschlossen werden.
+\subsection{Gibbard-Satterthwaite Theorem bei Social Welfare Funktionen}
+Analog zu Social Welfare Functionen kann strategische Manipulation auch bei Social Choice Funktionen ausgeschlossen werden.
+
+Strategisch manipulierbar ist eine Social Choice Funktion $f$, wenn $a \prec_i a'$ 
+für einen Spieler $i$, für $\prec_1, \ldots, \prec_n, \prec_i' \in L$ und 
+$a = f(\prec_1, \ldots, \prec_i, \ldots, \prec_n)$, 
+$a' = f(\prec_1, \ldots, \prec_i', \ldots, \prec_n)$ gilt. 
+In diesem Fall bevorzugt Spieler $i$ das Ergebnis $a'$, welches er durch taktisches Abweichen von seiner ursprünglichen Präferenz $\prec_i$ erreichen kann.
+Wenn $f$ nicht strategisch manipulierbar ist, so nennt man es \emph{anreizkompatibel}.
+
+Analog zu Arrow's Theorem für Social Welfare Funktionen gilt für Social Choice Funktionen das \emph{Gibbard-Satterthwaite Theorem}:
+
 \begin{definition}
-	\label{def:anreizkompatibel}
-	$f$ ist \emph{anreizkompatibel}$\iff$$f$ nicht strategisch manipulierbar.
+	\label{def:GibbSatt}
+	Sei $f$ anreizkompatibel auf $A$ mit $|A| \geq 3$, dann ist $f$ eine Diktatur.
 \end{definition}
-Strategisch manipulierbar ist $f$, wenn für einen Spieler $i$, für $\prec_1, \ldots, \prec_n, \prec_i' \in L$ und $a = f(\prec_1, \ldots, \prec_i, \ldots, \prec_n)$, $a' = f(\prec_1, \ldots, \prec_i', \ldots, \prec_n)$ gilt: $a \prec_i a'$. In diesem Fall bevorzugt Spieler $i$ das Ergebnis $a'$, welches er durch taktisches Abweichen von seiner ursprünglichen Präferenz $\prec_i$ erreichen kann.
+
+Dies kann durch Zurückführung auf Arrow's Theorem gezeigt werden. Somit scheinen nur triviale Social Choice Funktionen -- also Diktaturen -- nicht strategisch manipulierbar zu sein. Um trotzdem anreizkompatible Social Choice Funktionen zu entwerfen, können mit anderen Modellen {z. B.} Anreize eingeführt werden, die wahrheitsgemäßes Verhalten fördern.
 
 \section{Mechanism Design mit Geld}
 \subsection{Vickrey's Second Price Auction}
