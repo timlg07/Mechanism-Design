@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220622001937" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220622160702" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{\today}
@@ -23049,10 +23049,22 @@ $\Rightarrow b \succ x$ $\forall x$ $\Rightarrow b \succ a$ $\lightning$</text>
 <text layer="eta" matrix="1 0 0 1 0 -10.3075" pin="h" transformations="translations" pos="0 207.589" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">Fall $\textcolor{UPorange}{j^*} &gt; \textcolor{UPgreen}{j}$</text>
 <text layer="iota" matrix="1 0 0 1 0 -14.6026" pin="h" transformations="translations" pos="0 47.8201" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">$\textcolor{UPgreen}{j} &lt; \textcolor{UPorange}{j^*}$ sowie $\textcolor{UPgreen}{j} &gt; \textcolor{UPorange}{j^*}$ führen zu $\lightning$. $\Rightarrow$ $\textcolor{UPgreen}{j} = \textcolor{UPorange}{j^*}$</text>
 </page>
-<page title="Arrow&apos;s Theorem Beweis (5)">
+<page title="Arrow&apos;s Theorem Zusammenfassung">
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<text layer="alpha" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="11.5237" depth="5.9472" valign="top">----- Beweis zusammenfassen, Fazit ----</text>
+<path layer="alpha" matrix="1 0 0 1.42857 0 -212.57" stroke="UPorange" fill="UPorange20">
+0 496 m
+0 384 l
+768 384 l
+768 496 l
+h
+</path>
+<text matrix="1 0 0 1 16 -22.8718" transformations="translations" pos="0 500" stroke="black" type="minipage" width="736" height="64.7326" depth="59.2928" valign="top">Will man, dass eine Social Welfare Funktion mit $|A| \geq 3$
+\begin{itemize}
+\item \textbf{Einstimmigkeit} erfüllt
+\item Unabhängigkeit von irrelevanten Alternativen (\textbf{IIA}) erfüllt
+\end{itemize}
+muss man Entscheidungen aller Spieler, außer \textbf{Diktator} $i$, ignorieren.</text>
 </page>
 <page title="Anreizkompatibilität">
 <layer name="alpha"/>
