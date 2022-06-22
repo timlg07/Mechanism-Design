@@ -80,8 +80,9 @@ Eine \emph{Social Welfare Function} ist eine Funktion, die die Präferenzen alle
 	Social Choice Function $f : L^n \rightarrow A$
 \end{definition}
 
-\section{Arrow's Theorem, Gibbard-Satterthwaite}
-Zunächst werden Eigenschaften von $F$ betrachtet, die eine gute Social Welfare Function erfüllen sollte:
+\section{Vermeidung von Manipulation führt zur Diktatur}
+\subsection{Arrow's Theorem bei Social Welfare Funktionen}
+Zunächst werden Eigenschaften von $F$ betrachtet, die eine gute Social Welfare Funktion erfüllen sollte:
 \begin{itemize}
 	\item \emph{Einstimmigkeit} $\iff$ $\forall \prec \in L: F(\prec, \ldots,\prec) = \prec$
 	\item \emph{Unabhängigkeit von irrelevanten Alternativen}
@@ -116,11 +117,31 @@ Im folgenden wird bewiesen, dass dies ab $|A| > 2$ auch die einzige Lösung ist.
 
 	Angenommen dies gilt nicht. Dann existieren $a, c$, sodass $a \succ b \succ c$. Betrachte nun ein Profil $\pi_1$ in dem $c \succ_i' a$ und alles andere identisch zu $\pi_0$. Die Präferenzen zwischen $a, b$ und zwischen $a, c$ sind bei beiden Profilen gleich. Durch IIA folgt nun, dass $a \succ' b$ und $b \succ' c$. Transitiv gilt dadurch $a \succ' c$. Nach Definition von $\pi_1$ ist allerdings $c \succ_i' a$ $\forall i$ und daher durch Einstimmigkeit auch $c \succ' a$ -- ein Widerspruch.
 	
-	Betrachte nun die Profile $\pi_i^*$ mit $0 \leq i \leq n$ wobei die ersten $i$ Spieler $b$ an die vorderste Stelle und die letzten $n-i$ Spieler $b$ an die hinterste Stelle setzen. Die Alternative $b$ ist also nur an Extrempositionen vorzufinden. Dadurch muss $b$ laut Behauptung~\ref{claim:extrementsch} auch von der Social Welfare Funktion ganz vorne oder hinten angeordnet werden. Durch Einstimmigkeit gilt für $\pi_n^*$: $b \succ x$ $\forall x \in A$ und für $\pi_0^*$:  $x \succ b$ $\forall x \in A$. Dazwischen muss ein $\pi_j^*$ existieren, für das erstmalig $x \succ b$ gilt. Spieler $j$ kann in dieser Konstellation alleinig das soziale Ergebnis für $b$ entscheiden.
+	Betrachte nun die Profile $\pi_i^*$ mit $0 \leq i \leq n$ wobei die ersten $i$ Spieler $b$ an die vorderste Stelle und die letzten $n-i$ Spieler $b$ an die hinterste Stelle setzen. Die Alternative $b$ ist also nur an Extrempositionen vorzufinden. Dadurch muss $b$ laut Behauptung~\ref{claim:extrementsch} auch von der Social Welfare Funktion ganz vorne oder hinten angeordnet werden. Durch Einstimmigkeit gilt für $\pi_n^*$: $b \succ x$ $\forall x \in A$ und für $\pi_0^*$:  $x \succ b$ $\forall x \in A$. Dazwischen muss ein $\pi_{j-1}^*$ existieren, für das erstmalig $x \succ b$ gilt. Spieler $j$ kann in dieser Konstellation alleinig das soziale Ergebnis für $b$ entscheiden.
+	
+	\begin{claim}
+		\label{claim:jdiktac}
+		Der Spieler $j$ kann auch alleinig die Präferenz aller Paare $a,c$ mit $a, c \in I \setminus \{b\}$ entscheiden. Er ist Diktator über $a,c$.
+	\end{claim}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=.5\textwidth]{img/arrow(3).pdf}
+		\caption{Beweis Arrow's Theorem: Spieler $j$ ist Diktator über alle Paare ohne $b$. Die abgebildeten Profile werden zum Zeigen dieser Aussage verwendet.}
+		\label{fig:arr3}
+	\end{figure}
+
+	Dies wird gezeigt, indem ausgehend vom Profil $\pi_{j-1}^* =: \pi_2$ ein neues, identisches Profil $\pi_3$ (siehe Abbildung~\ref{fig:arr3}) erstellt wird, in dem Spieler $j$ die Alternativen $a,b,c$ neu anordnet und damit die Social Welfare Funktion zur gleichen Änderung zwingt.
+	
+	Da die $b$'s in $\pi_3$ wie bei $\pi_{j}^*$ positioniert sind, gilt $b \succ' x$ $\forall x \in I$ mit $\succ' = F(\pi_3)$. Zu zeigen ist nun, dass die Positionierung von $a$ über $c$ auch zu $a \succ' c$ führt. Gilt dies, kann durch Umbenennung allgemein gesagt werden, dass $j$ Kontrolle über alle Paare ohne $b$ hat.
+	
+	Hierzu werden $\pi_2$ und $\pi_3$ nun mit einem weiteren Profil $\pi_4$ verglichen. Dieses unterscheidet sich wieder nur bei Spieler $j$ von den vorherigen. In diesem Fall ordnet er $a$ über $b$ und $b$ über $c$ an. Analog zu den vorherigen Profilen sei $\succ'' = F(\pi_4)$. Da sich die Präferenzen von $I \setminus \{j\}$ nicht verändert haben und $a \succ_j b \iff a \succ_j'' b$ durch $x \succ_j b$ $\forall x \in I \Rightarrow a \succ_j b$ gilt, muss nach IIA auch $a \succ'' b$ gelten. Analog gilt durch $b \succ_j' c \iff b \succ_j'' c$ nach IIA auch $b \succ'' c$. Transitiv ergibt das $a \succ'' c$ und durch IIA gilt auch $a \succ' c$.
+	
 	
 	
 \end{proof}
 
+\subsection{Gibbard-Satterthwaite bei Social Welfare Funktionen}
 Analog zu Social Welfare Functions kann strategische Manipulation auch bei Social Choice Functions ausgeschlossen werden.
 \begin{definition}
 	\label{def:anreizkompatibel}
