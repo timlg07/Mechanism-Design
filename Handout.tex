@@ -174,8 +174,19 @@ Bisher wurde nur die Reihenfolge betrachtet, in der Spieler die Alternativen ein
 
 Der Nutzen des Spielers $i$ ist $u_i(a) = v_i(a) + m$. Er setzt sich zusammen aus dem Wert, den der Spieler dem Ergebnis $a$ zuordnet und dem Geldbetrag, den er vom Mechanismus erhält bzw. an ihn bezahlen muss. Jeder Spieler handelt egoistisch und will seinen Nutzen maximieren.
 
-\subsection{Vickrey's Second Price Auction}
+\subsection{Vickrey-Auktion}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{img/vickrey-auktion.pdf}
+	\caption{Vergleich von klassischer Auktion und Vickrey-Auktion anhand eines Beispiels mit den Spielern $i,j,k$ und den entsprechenden Werten $w_i,w_j,w_k$.}
+	\label{fig:vickAukt}
+\end{figure}
 
+Eine klassischen Auktion (vgl. Abb.~\ref{fig:vickAukt}, links), bei der der höchstbietende Spieler ein Gut für seinen deklarierten Preis erwirbt, ist nicht anreizkompatibel: es ist von Vorteil sein Gebot unter dem persönlichen Wert zu halten, hoffentlich trotzdem den Zuschlag zu erlangen und dann weniger für das Gut zahlen zu müssen.
+
+Um Anreizkompatibilität zu erreichen, sorgt die \emph{Vickrey-Auktion} (vgl. Abb.~\ref{fig:vickAukt}, rechts) dafür, dass sich kein Vorteil durch Falschaussage erreichen lässt. Dafür nimmt der Mechanismus bereits die bestmögliche Manipulation selbst vor: Der Gewinner muss nur das Gebot des zweithöchsten Gebotes zahlen -- also den Betrag, unter dem er den Zuschlag nicht mehr bekommen hätte. Dadurch lohnt es sich nun immer für alle Spieler ihren echten Wert für das Gut zu verraten.
+
+Es ist also möglich Regeln aufzustellen, durch die es, trotz privater Werte und egoistischem Verhalten, in allen Fällen die beste Wahl ist die Wahrheit zu verraten und nicht zu manipulieren.
 
 \subsection{Vickrey-Clarke-Groves Mechanisms}
 \subsection{Beispiel: Öffentliches Projekt, Clarke Pivot Rule}
