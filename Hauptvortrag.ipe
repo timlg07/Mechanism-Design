@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220623004252" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220623004859" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
-\newcommand{\presdate}{\today}
+\newcommand{\presdate}{27. Juni 2022}
 
 \usepackage{ngerman}
 \usepackage{amssymb}
@@ -22251,7 +22251,7 @@ h
 203.281 16.5284 l
 </path>
 <text matrix="1 0 0 1 264 -137.445" transformations="translations" pos="0 416" stroke="black" type="minipage" width="504" height="15.661" depth="10.0912" valign="top" size="Large">Einführung in Mechanism Design</text>
-<text matrix="1 0 0 1 264 -350.445" transformations="translations" pos="0 416" stroke="0.49 0.514 0.51" type="minipage" width="504" height="10.0677" depth="4.4912" valign="top" size="small">Tim Greller, 30.05.2022</text>
+<text matrix="1 0 0 1 264 -350.445" transformations="translations" pos="0 416" stroke="0.49 0.514 0.51" type="minipage" width="504" height="10.0677" depth="4.4912" valign="top" size="small">Tim Greller, 27.06.2022</text>
 <group matrix="1.65403 0 0 1.65403 -362.879 -203.764" clip="242.98 297.673 m
 242.98 144.288 l
 332.324 144.288 l
@@ -22280,7 +22280,7 @@ h
 <view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta" active="theta"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta iota" active="iota"/>
-<path layer="epsilon" matrix="1.11625 0 0 1.17172 -0.792719 -63.1942" stroke="black" fill="UPgray50">
+<path layer="epsilon" matrix="1.11625 0 0 1.17172 -0.792719 -63.1942" stroke="black" fill="UPgray20">
 0 368 m
 0 240 l
 688 240 l
@@ -22368,7 +22368,7 @@ h
 h
 </path>
 <text matrix="1 0 0 1 16 -32" transformations="translations" pos="0 393.631" stroke="black" type="minipage" width="368" height="10.6848" depth="5.096" valign="top">\textbf{Formal:}</text>
-<text layer="zeta" transformations="translations" pos="0 329.85" stroke="black" type="minipage" width="384" height="15.3149" depth="9.744" valign="top" style="item">Kandidaten/ Alternativen \textcolor{UPblue}{\textbf{$A$}}</text>
+<text layer="zeta" transformations="translations" pos="0 329.85" stroke="black" type="minipage" width="384" height="15.3149" depth="9.744" valign="top" style="item">Kandidaten/Alternativen \textcolor{UPblue}{\textbf{$A$}}</text>
 <text layer="theta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 304.791" stroke="black" type="minipage" width="384" height="14.5074" depth="8.9488" valign="top" style="item">$n$-viele Wähler \textcolor{UPblue}{\textbf{$I$}}</text>
 <text layer="kappa" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 281.335" stroke="black" type="minipage" width="384" height="28.5275" depth="22.9936" valign="top" style="item">Lineare Ordnungen \textcolor{UPblue}{\textbf{$L$}} \\\textit{(= totale Ordnung von \textcolor{UPblue}{\textbf{$A$}})}</text>
 <text layer="eta" matrix="1 0 0 1 397.423 73.9626" transformations="translations" pos="0 253.987" stroke="black" type="minipage" width="352" height="12.8285" depth="7.2464" valign="top">$\{a, b, c\}$</text>
@@ -22434,7 +22434,7 @@ h
 h
 </path>
 <text matrix="1 0 0 1 16 0" transformations="translations" pos="0 500" stroke="black" type="minipage" width="736" height="12.628" depth="7.0448" valign="top"> \textbf{Beispiel:} Wahlen</text>
-<text layer="gamma" matrix="1 0 0 1 16 -6.87179" transformations="translations" pos="0 480.327" stroke="black" type="minipage" width="736" height="16.5122" depth="10.9536" valign="top" style="item">Spieler hat Präferenzen  $\textcolor{UPred}{a}\succ\textcolor{UPgreen}{b}\succ c$</text>
+<text layer="gamma" matrix="1 0 0 1 16 -6.87179" transformations="translations" pos="0 480.327" stroke="black" type="minipage" width="736" height="16.5122" depth="10.9536" valign="top" style="item">Spieler hat Präferenzen $\textcolor{UPred}{a}\succ\textcolor{UPgreen}{b}\succ c$</text>
 <text layer="delta" matrix="1 0 0 1 16 -22.8718" transformations="translations" pos="0 452.861" stroke="black" type="minipage" width="736" height="15.5366" depth="9.968" valign="top" style="item">Er vermutet, dass \textcolor{UPred}{$a$} keine Chance hat</text>
 <text layer="epsilon" matrix="1 0 0 1 16 -38.8718" transformations="translations" pos="0 427.357" stroke="black" type="minipage" width="736" height="16.4506" depth="10.8976" valign="top" style="item">Wählt strategisch  \textcolor{UPgreen}{b}</text>
 <text layer="zeta" matrix="1 0 0 1 16 -23.589" transformations="translations" pos="0 361.137" stroke="black" type="minipage" width="736" height="24.7016" depth="19.1632" valign="top">\textbf{Beispiel:} Auktion. 
@@ -23091,7 +23091,7 @@ muss man Entscheidungen aller Spieler, außer \textbf{Diktator} $i$, ignorieren.
 384 176 l
 h
 </path>
-<text matrix="0.5 0 0 -0.143929 16 507.634" transformations="translations" pos="0 205.987" stroke="UPgray120" type="minipage" width="272" height="10.6848" depth="5.096" valign="top">\textcolor{UPblue}{\textbf{Social Choice Function}}</text>
+<text matrix="0.5 0 0 -0.143929 16 507.634" transformations="translations" pos="0 205.987" stroke="UPgray120" type="minipage" width="272" height="10.6848" depth="5.096" valign="top">\textcolor{UPblue}{\textbf{Social Choice Funktion}}</text>
 <text matrix="1 0 0 1 304 336" transformations="translations" pos="0 142.206" stroke="black" type="minipage" width="112" height="10.416" depth="4.8384" valign="top">\textcolor{UPblue}{\textbf{$f : L^n \rightarrow A$}}</text>
 <text matrix="1 0 0 1 432 368" transformations="translations" pos="0 111.335" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">aggregiert zu gem. Gewinner</text>
 <text matrix="1 0 0 1 16.859 375.731" transformations="translations" pos="0 76.0203" stroke="black" type="minipage" width="736" height="12.8285" depth="7.2464" valign="top">z.B. $f(\{ a \succ_1 b \succ_1 c,{ }..., b \succ_n c \succ_n a \}) = a$</text>
@@ -23167,8 +23167,8 @@ h
 $\forall \prec_1, \ldots, \prec_n \in L; a \in A, \forall b \in A$ mit $b \neq a$: 
 
 $a \succ_i b \Rightarrow f(\prec_1, \ldots, \prec_n) = a$</text>
-<text layer="delta" matrix="1 0 0 1 0 -48" pin="h" transformations="translations" pos="0 288.145" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">$\Rightarrow$ Nur triviale Social Choice Functions sind anreizkompatibel.</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 220.83" stroke="black" type="minipage" width="768" height="22.7584" depth="17.2144" valign="top">\textbf{Beweis:} Social Welfare Function konstruieren und auf Arrow&apos;s Theorem zurückführen.</text>
+<text layer="delta" matrix="1 0 0 1 0 -48" pin="h" transformations="translations" pos="0 288.145" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">$\Rightarrow$ Nur triviale Social Choice Funktionen sind anreizkompatibel.</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 220.83" stroke="black" type="minipage" width="768" height="22.7584" depth="17.2144" valign="top">\textbf{Beweis:} Social Welfare Funktion konstruieren und auf Arrow&apos;s Theorem zurückführen.</text>
 <text layer="zeta" matrix="1 0 0 1 2.65317 -173" transformations="translations" pos="0 297.37" stroke="black" type="minipage" width="683" height="24.5224" depth="18.984" valign="top">$\rightarrow$ Ziel Mechanism Design:
 
 Trotzdem anreizkompatible Social Choice Funktionen entwerfen

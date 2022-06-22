@@ -40,7 +40,7 @@
 \parindent=0ex
 
 
-\title{Einführung in \textit{Mechanism Design} \\ \Large im Seminar ``Algorithmische Spieltheorie''}
+\title{Einführung in Mechanism Design \\ \Large im Seminar ``Algorithmische Spieltheorie''}
 \author{Tim Greller}
 
 
@@ -68,16 +68,16 @@ Dieses Handout basiert auf dem Kapitel "Introduction to Mechanism Design (for Co
 Formal lässt sich die Entscheidung folgendermaßen betrachten:
 Es gibt eine Menge $I$ an $n$-vielen \emph{Spielern}, die sich zwischen den \emph{Alternativen} $A$ entscheiden. Die Präferenzen zwischen den Alternativen stellen eine totale Ordnung von $A$ dar; Die Menge $L$ enthält alle dieser Ordnungen.
 
-Eine \emph{Social Welfare Function} ist eine Funktion, die die Präferenzen aller Spieler zu einer einzigen, gemeinsamen Ordnung aggregiert. Im weiteren Verlauf bezeichnet $F$ immer eine Social Welfare Function.
+Eine \emph{Social Welfare Funktion} ist eine Funktion, die die Präferenzen aller Spieler zu einer einzigen, gemeinsamen Ordnung aggregiert. Im weiteren Verlauf bezeichnet $F$ immer eine Social Welfare Funktion.
 \begin{definition}
 	\label{def:socialwelfarefunc}
-	Social Welfare Function $F : L^n \rightarrow L$
+	Social Welfare Funktion $F : L^n \rightarrow L$
 \end{definition}
 
-\emph{Social Choice Functions} aggregieren die Präferenzen der Spieler zu einem einzigen, gemeinsamen Gewinner. Im weiteren Verlauf bezeichnet $f$ immer eine Social Choice Function.
+\emph{Social Choice Funktionen} aggregieren die Präferenzen der Spieler zu einem einzigen, gemeinsamen Gewinner. Im weiteren Verlauf bezeichnet $f$ immer eine Social Choice Funktion.
 \begin{definition}
 	\label{def:socialchoicefunc}
-	Social Choice Function $f : L^n \rightarrow A$
+	Social Choice Funktion $f : L^n \rightarrow A$
 \end{definition}
 
 \section{Vermeidung von Manipulation führt zur Diktatur}
@@ -93,7 +93,7 @@ Einstimmigkeit ist für ein $F$ erfüllt, wenn in dem Fall, dass alle Spieler mi
 
 Die Unabhängigkeit von irrelevanten Alternativen (englisch: Independence of Irrelevant Alternatives, kurz: IIA) schließt strategisches Manipulieren aus. Gilt für $F$ IIA, so ist die soziale Präferenz für alle Alternativen $a, b \in A$ gleich, so lange auch die Präferenzen der Spieler bezüglich $a, b$ gleich sind. Die Präferenzen bzgl. aller anderen Alternativen untereinander und zu $a, b$ sind irrelevant.
 
-Sucht man ein $F$, sodass diese beiden Eigenschaften erfüllt sind, existiert für alle $I, A, L$ die triviale Social Welfare Function $F(\prec_1, \ldots, \prec_n) = \prec_i$ mit einem beliebigen $i \in I$. Diese Funktion ist eine \emph{Diktatur}, da mit dem Spieler $i$ ein Diktator existiert. 
+Sucht man ein $F$, sodass diese beiden Eigenschaften erfüllt sind, existiert für alle $I, A, L$ die triviale Social Welfare Funktion $F(\prec_1, \ldots, \prec_n) = \prec_i$ mit einem beliebigen $i \in I$. Diese Funktion ist eine \emph{Diktatur}, da mit dem Spieler $i$ ein Diktator existiert. 
 
 \begin{definition}
 	\label{def:diktatur}
@@ -104,7 +104,7 @@ Das soziale Ergebnis ist bei einer Diktatur also -- unabhängig von den Präfere
 Im folgenden wird bewiesen, dass dies ab $|A| > 2$ auch die einzige Lösung ist.
 
 \begin{theorem}
-	Alle Social Welfare Functions über mehr als 2 Kandidaten, die Einstimmigkeit und IIA erfüllen, sind Diktaturen. (Arrow's Theorem)
+	Alle Social Welfare Funktionen über mehr als 2 Kandidaten, die Einstimmigkeit und IIA erfüllen, sind Diktaturen. (Arrow's Theorem)
 \end{theorem}
 
 \begin{proof}
@@ -151,7 +151,7 @@ Im folgenden wird bewiesen, dass dies ab $|A| > 2$ auch die einzige Lösung ist.
 \end{proof}
 
 \subsection{Gibbard-Satterthwaite Theorem bei Social Welfare Funktionen}
-Analog zu Social Welfare Functionen kann strategische Manipulation auch bei Social Choice Funktionen ausgeschlossen werden.
+Analog zu Social Welfare Funktionen kann strategische Manipulation auch bei Social Choice Funktionen ausgeschlossen werden.
 
 Strategisch manipulierbar ist eine Social Choice Funktion $f$, wenn $a \prec_i a'$ 
 für einen Spieler $i$, für $\prec_1, \ldots, \prec_n, \prec_i' \in L$ und 
@@ -178,7 +178,7 @@ Der Nutzen des Spielers $i$ ist $u_i(a) = v_i(a) + m$. Er setzt sich zusammen au
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{img/vickrey-auktion.pdf}
-	\caption{Vergleich von klassischer Auktion und Vickrey-Auktion anhand eines Beispiels mit den Spielern $i,j,k$ und den entsprechenden Werten $w_i,w_j,w_k$.}
+	\caption{Vergleich von klassischer Auktion und Vickrey-Auktion anhand eines Beispiels mit den Spielern $i,j,k$ und den entsprechenden Werten $w_i,w_j,w_k$ (Eigene Darstellung nach Steimle, 2008~\cite{ste08}).}
 	\label{fig:vickAukt}
 \end{figure}
 
