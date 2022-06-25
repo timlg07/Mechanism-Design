@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220625151344" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220625154140" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{27. Juni 2022}
@@ -23351,9 +23351,6 @@ h
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha beta gamma" active="gamma"/>
 <view layers="alpha beta gamma delta" active="delta"/>
-<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
-<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta" active="theta"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta iota" active="iota"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa" active="kappa"/>
@@ -23362,16 +23359,13 @@ h
 <text layer="beta" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="12.1755" depth="6.608" valign="top">betrachte $F:L^n \rightarrow L$, $F(\prec_1,...,\prec_n)=\prec$</text>
 <text layer="gamma" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 480.709" stroke="black" type="minipage" width="768" height="12.7064" depth="7.1232" valign="top">\textbf{\textcolor{UPblue}{Einstimmigkeit:}} $F(\prec,\ldots, \prec) = \prec$ $\forall \prec \in L$</text>
 <text layer="delta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 428.88" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">alle Wähler haben gleiche Präferenzen $\Rightarrow$ diese sind die soziale Präferenzen</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -48" pin="h" transformations="translations" pos="0 393.565" stroke="black" type="minipage" width="768" height="12.628" depth="7.0448" valign="top">\textbf{\textcolor{UPblue}{Dikatur:}} Es existiert ein Spieler $i$, der Diktator ist</text>
-<text layer="zeta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 325.892" stroke="black" type="minipage" width="768" height="12.4365" depth="6.8544" valign="top">$i$ ist Diktator $\iff$ $F(\prec_1, ..., \prec_n) = \prec_i$ $\forall \prec_1, ..., \prec_n \in L$</text>
-<text layer="eta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 290.601" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">soziale Präferenz ist immer die von Wähler $i$: Andere werden ignoriert</text>
-<text layer="theta" matrix="1 0 0 1 0 -48" pin="h" transformations="translations" pos="0 255.169" stroke="black" type="minipage" width="768" height="12.7064" depth="7.1232" valign="top">\textbf{\textcolor{UPblue}{Unabhängigkeit von irrelevanten Alternativen:}} </text>
-<text layer="iota" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 187.34" stroke="black" type="minipage" width="768" height="13.6102" depth="8.0304" valign="top">$\forall a, b \in A; \prec_1,...,\prec_n, \prec_1&apos;, ..., \prec_n&apos; \in L$: </text>
-<text layer="lambda" matrix="1 0 0 1 0 -80" pin="h" transformations="translations" pos="0 165.699" stroke="black" type="minipage" width="768" height="13.8611" depth="8.288" valign="top">Dann gilt: $(a\prec_i b \iff a\prec_i&apos; b) \Rightarrow (a\prec b \iff a\prec&apos; b)$</text>
-<text layer="kappa" matrix="1 0 0 1 0 48" pin="h" transformations="translations" pos="0 79.5501" stroke="black" type="minipage" width="768" height="13.6102" depth="8.0304" valign="top">Sei $\prec = F(\prec_1,..., \prec_n)$ und $\prec&apos; = F(\prec_1&apos;,..., \prec_n&apos;)$</text>
-<text layer="mu" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 63.5501" stroke="black" type="minipage" width="768" height="24.584" depth="19.04" valign="top">Wenn sich die Präferenzen bzgl. $a,b$ nicht ändern, bleibt auch die soziale Präferenz zw. beiden Alternativen gleich.</text>
+<text layer="theta" matrix="1 0 0 1 0 96" pin="h" transformations="translations" pos="0 255.169" stroke="black" type="minipage" width="768" height="12.7064" depth="7.1232" valign="top">\textbf{\textcolor{UPblue}{Unabhängigkeit von irrelevanten Alternativen (IIA):}} </text>
+<text layer="iota" matrix="1 0 0 1 0 128" pin="h" transformations="translations" pos="0 187.34" stroke="black" type="minipage" width="768" height="13.6102" depth="8.0304" valign="top">$\forall a, b \in A; \prec_1,...,\prec_n, \prec_1&apos;, ..., \prec_n&apos; \in L$: </text>
+<text layer="lambda" matrix="1 0 0 1 0 64" pin="h" transformations="translations" pos="0 165.699" stroke="black" type="minipage" width="768" height="13.8611" depth="8.288" valign="top">Dann gilt: $(a\prec_i b \iff a\prec_i&apos; b) \Rightarrow (a\prec b \iff a\prec&apos; b)$</text>
+<text layer="kappa" matrix="1 0 0 1 0 192" pin="h" transformations="translations" pos="0 79.5501" stroke="black" type="minipage" width="768" height="13.6102" depth="8.0304" valign="top">Sei $\prec = F(\prec_1,..., \prec_n)$ und $\prec&apos; = F(\prec_1&apos;,..., \prec_n&apos;)$</text>
+<text layer="mu" matrix="1 0 0 1 0 128" pin="h" transformations="translations" pos="0 63.5501" stroke="black" type="minipage" width="768" height="24.584" depth="19.04" valign="top">Wenn sich die Präferenzen bzgl. $a,b$ nicht ändern, bleibt auch die soziale Präferenz zw. beiden Alternativen gleich.</text>
 </page>
-<page title="Beispiel (Unabh. v. irr. Alternativen)">
+<page title="Beispiel IIA">
 <layer name="alpha"/>
 <layer name="beta"/>
 <layer name="gamma"/>
@@ -23529,6 +23523,38 @@ h
 768.609 503.274 l
 h
 </path>
+</page>
+<page title="Social Welfare Funktionen: Diktatur">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<path layer="delta" stroke="UPorange" fill="UPorange20">
+0 384 m
+0 304 l
+768 304 l
+768 384 l
+h
+</path>
+<text layer="alpha" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="12.628" depth="7.0448" valign="top">\textbf{Gesucht:} Social Welfare Funktion, die IIA und Einstimmigkeit erfüllt</text>
+<text layer="beta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 480.327" stroke="black" type="minipage" width="768" height="12.4365" depth="6.8544" valign="top">$\rightarrow$ Triviale Social Welfare Funktion $F(\prec_1, \ldots, \prec_n) = \prec_i$. </text>
+<text layer="gamma" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 445.036" stroke="black" type="minipage" width="768" height="12.628" depth="7.0448" valign="top">$F$ ist eine \textcolor{UPblue}{\textbf{Diktatur}}, da mit dem Spieler $i$ ein Diktator existiert. </text>
+<text layer="delta" matrix="1 0 0 1 16 48" transformations="translations" pos="0 325.892" stroke="black" type="minipage" width="736" height="12.5541" depth="6.9776" valign="top">$i$ ist \textcolor{UPblue}{\textbf{Diktator}} $\iff$ $F(\prec_1, ..., \prec_n) = \prec_i$ $\forall \prec_1, ..., \prec_n \in L$</text>
+<text matrix="1 0 0 1 16 48" transformations="translations" pos="0 290.601" stroke="black" type="minipage" width="736" height="12.4992" depth="6.9328" valign="top">soziale Präferenz ist immer die von Wähler $i$: Andere werden ignoriert</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 319.169" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">\textcolor{UPblue}{Einstimmigkeit} gilt: Wenn alle einer Meinung sind, ist das auch der Diktator</text>
+<text matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 277.169" stroke="black" type="minipage" width="768" height="48.6461" depth="43.1536" valign="top">\textcolor{UPblue}{IIA} gilt: \begin{itemize}
+\item Wenn ein Diktator gleich entscheidet, bleibt das Ergebnis unverändert.
+\item Wie andere Spieler sich entscheiden, hat keinerlei Auswirkung.
+\end{itemize}</text>
+<text layer="zeta" matrix="1 0 0 1 0 -48" pin="h" transformations="translations" pos="0 153.369" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">Ab $2$ Alternativen ist eine Diktatur die einzige Lösung.</text>
 </page>
 <page title="Arrow&apos;s Theorem">
 <layer name="alpha"/>
