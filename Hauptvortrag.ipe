@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220625183651" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220625214922" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{27. Juni 2022}
@@ -23139,7 +23139,7 @@ h
 <image matrix="0.682052 0 0 0.682052 11.187 115.841" rect="0 0 546 302" bitmap="7"/>
 </group>
 </page>
-<page title="Das Ziel von Mechanism Design" marked="no">
+<page title="Was ist Mechanism Design?" marked="no">
 <layer name="alpha"/>
 <layer name="beta"/>
 <layer name="gamma"/>
@@ -23176,7 +23176,7 @@ h
 \item hat Auswirkungen auf alle Spieler
 \end{itemize}</text>
 <text layer="eta" matrix="1 0 0 1 16 -36.6172" transformations="translations" pos="0 298.203" stroke="black" type="minipage" width="736" height="16.4506" depth="10.8976" valign="top">\begin{itemize}
-\item soll möglichst effizient/ gut für die Gemeinschaft sein
+\item soll möglichst effizient/gut für die Gemeinschaft sein
 \end{itemize}</text>
 <text layer="theta" matrix="1 0 0 1 0 -48" pin="h" transformations="translations" pos="0 234.238" stroke="black" type="minipage" width="768" height="12.628" depth="7.0448" valign="top">\textbf{Problem:} Spieler sind egoistisch, kooperieren nicht</text>
 <text layer="iota" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 166.565" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">$\Rightarrow$ Anreize schaffen, sodass Spieler sich an die Regeln halten</text>
@@ -23255,7 +23255,7 @@ h
 <text layer="mu" matrix="0.5 0 0 -0.143929 16 187.634" transformations="translations" pos="0 205.987" stroke="UPgray120" type="minipage" width="320" height="10.6848" depth="5.096" valign="top">\textcolor{UPblue}{\textbf{Social Welfare Funktion}}</text>
 <text layer="nu" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 142.206" stroke="black" type="minipage" width="320" height="10.2234" depth="4.648" valign="top">\textcolor{UPblue}{\textbf{$F : L^n \rightarrow L$}}</text>
 <text layer="xi" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 111.335" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">aggregiert zu gem. Ordnung</text>
-<text layer="omicron" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 76.0203" stroke="black" type="minipage" width="336" height="12.8285" depth="7.2464" valign="top">$F(\succ_1, \ldots, \succ_n \}) = \succ$</text>
+<text layer="omicron" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 76.0203" stroke="black" type="minipage" width="336" height="12.1755" depth="6.608" valign="top">$F(\succ_1, \ldots, \succ_n) = \succ$</text>
 <path layer="pi" matrix="0.958333 0 0 1.1 400 -17.6" stroke="UPorange70" fill="UPorange20">
 0 176 m
 0 16 l
@@ -23266,9 +23266,9 @@ h
 <text matrix="0.5 0 0 -0.143929 416 187.634" transformations="translations" pos="0 205.987" stroke="UPgray120" type="minipage" width="336" height="10.6848" depth="5.096" valign="top">\textcolor{UPblue}{\textbf{Social Choice Funktion}}</text>
 <text layer="rho" matrix="1 0 0 1 416 -16" transformations="translations" pos="0 142.206" stroke="black" type="minipage" width="320" height="10.416" depth="4.8384" valign="top">\textcolor{UPblue}{\textbf{$f : L^n \rightarrow A$}}</text>
 <text layer="sigma" matrix="1 0 0 1 416 -16" transformations="translations" pos="0 111.335" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">aggregiert zu gem. Gewinner</text>
-<text layer="tau" matrix="1 0 0 1 416 -16" transformations="translations" pos="0 76.0203" stroke="black" type="minipage" width="336" height="12.8285" depth="7.2464" valign="top">$f(\{ \succ_1, \ldots, \succ_n \}) = a$</text>
-<text layer="omicron" matrix="1 0 0 1 0 -11.7051" transformations="translations" pos="16 32" stroke="black" type="label" width="339.447" height="12.7075" depth="4.0208" valign="baseline" size="small">$F(\{ a \succ_1 b \succ_1 c,$ $b \succ_2 c \succ_2 a \}) = \{ b \succ a \succ  c \}$</text>
-<text layer="tau" matrix="1 0 0 1 400.628 -17.1025" transformations="translations" pos="16 32" stroke="black" type="label" width="259.253" height="12.7075" depth="4.0208" valign="baseline" size="small">$f(\{ a \succ_1 b \succ_1 c,$ $b \succ_2 c \succ_2 a \}) = b$</text>
+<text layer="tau" matrix="1 0 0 1 416 -16" transformations="translations" pos="0 76.0203" stroke="black" type="minipage" width="336" height="12.1755" depth="6.608" valign="top">$f(\succ_1, \ldots, \succ_n) = a$</text>
+<text layer="omicron" matrix="1 0 0 1 0 -11.7051" transformations="translations" pos="16 32" stroke="black" type="label" width="307.312" height="12.7176" depth="3.1472" valign="baseline" size="small">$F(a \succ_1 b \succ_1 c,$ $b \succ_2 c \succ_2 a) = b \succ a \succ  c$</text>
+<text layer="tau" matrix="1 0 0 1 400.628 -17.1025" transformations="translations" pos="16 32" stroke="black" type="label" width="243.186" height="12.7176" depth="3.1472" valign="baseline" size="small">$f(a \succ_1 b \succ_1 c,$ $b \succ_2 c \succ_2 a) = b$</text>
 </page>
 <page title="Strategische Manipulation">
 <layer name="alpha"/>
@@ -23315,7 +23315,7 @@ h
 <text layer="gamma" matrix="1 0 0 1 16 -6.87179" transformations="translations" pos="0 480.327" stroke="black" type="minipage" width="736" height="16.5122" depth="10.9536" valign="top" style="item">Spieler hat Präferenzen $\textcolor{UPred}{a}\succ\textcolor{UPgreen}{b}\succ c$</text>
 <text layer="delta" matrix="1 0 0 1 16 -22.8718" transformations="translations" pos="0 452.861" stroke="black" type="minipage" width="736" height="15.5366" depth="9.968" valign="top" style="item">Er vermutet, dass \textcolor{UPred}{$a$} keine Chance hat</text>
 <text layer="epsilon" matrix="1 0 0 1 16 -38.8718" transformations="translations" pos="0 427.357" stroke="black" type="minipage" width="736" height="16.4506" depth="10.8976" valign="top" style="item">Wählt strategisch  \textcolor{UPgreen}{b}</text>
-<text layer="zeta" matrix="1 0 0 1 16 -23.589" transformations="translations" pos="0 361.137" stroke="black" type="minipage" width="736" height="24.7016" depth="19.1632" valign="top">\textbf{Beispiel:} Auktion. 
+<text layer="zeta" matrix="1 0 0 1 16 -23.589" transformations="translations" pos="0 361.137" stroke="black" type="minipage" width="736" height="24.7016" depth="19.1632" valign="top">\textbf{Beispiel:} Auktion
 
 Ziel: Vergabe an Spieler für den das Gut den höchsten Wert hat</text>
 <text layer="eta" matrix="1 0 0 1 16 -41.9707" transformations="translations" pos="0 325.464" stroke="black" type="minipage" width="736" height="16.4506" depth="10.8976" valign="top" style="item">das Gut hat für Spieler i den Wert 50 \euro, für Spieler j 80 \euro</text>
@@ -23334,7 +23334,7 @@ h
 <text layer="nu" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 64" stroke="UPblue" type="label" width="738.883" height="15.4952" depth="4.3344" valign="baseline">\textbf{Mechanismus muss Belohnung als Anreiz zur Kooperation stellen}</text>
 <text layer="mu" matrix="1 0 0 1 -16 -3.79448" transformations="translations" pos="16 64" stroke="black" type="label" width="436.887" height="15.1368" depth="4.1776" valign="baseline">Interessen von Systemdesigner vs. Akteure</text>
 </page>
-<page title="Eigenschaften einer Wohlfahrtsfunktion">
+<page title="Social Welfare Funktion: Eigenschaften">
 <layer name="alpha"/>
 <layer name="beta"/>
 <layer name="gamma"/>
@@ -23387,7 +23387,6 @@ $\forall i \in I; a, b \in A; \prec_1,...,\prec_n, \prec_1&apos;, ..., \prec_n&a
 <view layers="alpha gamma epsilon theta iota kappa nu" active="kappa"/>
 <view layers="alpha gamma epsilon zeta theta iota kappa nu" active="theta"/>
 <view layers="alpha gamma epsilon eta theta iota kappa nu" active="eta"/>
-<view layers="alpha gamma epsilon eta theta iota kappa lambda nu" active="lambda"/>
 <view layers="alpha gamma epsilon eta theta iota kappa lambda mu nu" active="mu"/>
 <text layer="nu" matrix="1 0 0 1 -2.20521 -10.0521" transformations="translations" pos="608 480" stroke="black" type="minipage" width="160" height="24.8405" depth="19.3088" valign="top">\textcolor{UPblue}{Borda Count:}\\ $|A| - \text{Position}$</text>
 <path layer="lambda" matrix="0.94518 0.0390179 -0.0801379 0.460189 338.282 -22.8196" fill="UPdarkred50">
@@ -23532,12 +23531,14 @@ h
 <layer name="delta"/>
 <layer name="epsilon"/>
 <layer name="zeta"/>
+<layer name="eta"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha beta gamma" active="gamma"/>
 <view layers="alpha beta gamma delta" active="delta"/>
 <view layers="alpha beta gamma delta epsilon" active="epsilon"/>
-<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<view layers="alpha beta gamma delta epsilon eta" active="eta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta" active="zeta"/>
 <path layer="delta" stroke="UPorange" fill="UPorange20">
 0 384 m
 0 304 l
@@ -23546,16 +23547,13 @@ h
 h
 </path>
 <text layer="alpha" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="12.628" depth="7.0448" valign="top">\textbf{Gesucht:} Social Welfare Funktion, die IIA und Einstimmigkeit erfüllt</text>
-<text layer="beta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 480.327" stroke="black" type="minipage" width="768" height="12.4365" depth="6.8544" valign="top">$\rightarrow$ Triviale Social Welfare Funktion $F(\prec_1, \ldots, \prec_n) = \prec_i$. </text>
-<text layer="gamma" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 445.036" stroke="black" type="minipage" width="768" height="12.628" depth="7.0448" valign="top">$F$ ist eine \textcolor{UPblue}{\textbf{Diktatur}}, da mit dem Spieler $i$ ein Diktator existiert. </text>
-<text layer="delta" matrix="1 0 0 1 16 48" transformations="translations" pos="0 325.892" stroke="black" type="minipage" width="736" height="12.5541" depth="6.9776" valign="top">$i$ ist \textcolor{UPblue}{\textbf{Diktator}} $\iff$ $F(\prec_1, ..., \prec_n) = \prec_i$ $\forall \prec_1, ..., \prec_n \in L$</text>
-<text matrix="1 0 0 1 16 48" transformations="translations" pos="0 290.601" stroke="black" type="minipage" width="736" height="12.4992" depth="6.9328" valign="top">soziale Präferenz ist immer die von Wähler $i$: Andere werden ignoriert</text>
+<text layer="beta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 480.327" stroke="black" type="minipage" width="768" height="13.8936" depth="8.3216" valign="top">$\rightarrow$ Triviale Social Welfare Funktion $F(\prec_1, \ldots, \prec_n) = \prec_j$. </text>
+<text layer="gamma" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 445.036" stroke="black" type="minipage" width="768" height="12.628" depth="7.0448" valign="top">$F$ ist eine \textcolor{UPblue}{\textbf{Diktatur}}, da mit dem Spieler $j$ ein Diktator existiert. </text>
+<text layer="delta" matrix="1 0 0 1 16 48" transformations="translations" pos="0 325.892" stroke="black" type="minipage" width="736" height="14.0112" depth="8.4448" valign="top">$j$ ist \textcolor{UPblue}{\textbf{Diktator}} $\iff$ $F(\prec_1, ..., \prec_n) = \prec_j$ $\forall \prec_1, ..., \prec_n \in L$</text>
+<text matrix="1 0 0 1 16 48" transformations="translations" pos="0 290.601" stroke="black" type="minipage" width="736" height="12.4992" depth="6.9328" valign="top">soziale Präferenz ist immer die von Wähler $j$: Andere werden ignoriert</text>
 <text layer="epsilon" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 319.169" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">\textcolor{UPblue}{Einstimmigkeit} gilt: Wenn alle einer Meinung sind, ist das auch der Diktator</text>
-<text matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 277.169" stroke="black" type="minipage" width="768" height="48.6461" depth="43.1536" valign="top">\textcolor{UPblue}{IIA} gilt: \begin{itemize}
-\item Wenn ein Diktator gleich entscheidet, bleibt das Ergebnis unverändert.
-\item Wie andere Spieler sich entscheiden, hat keinerlei Auswirkung.
-\end{itemize}</text>
-<text layer="zeta" matrix="1 0 0 1 0 -48" pin="h" transformations="translations" pos="0 153.369" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">Ab $2$ Alternativen ist eine Diktatur die einzige Lösung.</text>
+<text layer="eta" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 277.169" stroke="black" type="minipage" width="768" height="15.3182" depth="9.7552" valign="top">\textcolor{UPblue}{IIA} gilt: $\textcolor{UPblue}{\forall i \in I:}$ $\textcolor{UPblue}{(a\succ_i b \iff a\succ_i&apos; b)} \Rightarrow (a\succ_j b \iff a\succ_j&apos; b) \Rightarrow \textcolor{UPblue}{(a\succ b \iff a\succ&apos; b)}$</text>
+<text layer="zeta" matrix="1 0 0 1 0 32" pin="h" transformations="translations" pos="0 153.369" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">Ab $2$ Alternativen ist eine Diktatur die einzige Lösung.</text>
 </page>
 <page title="Arrow&apos;s Theorem">
 <layer name="alpha"/>
@@ -23581,7 +23579,6 @@ gilt: \textcolor{UPblue}{\textbf{F ist eine Diktatur}}</text>
 <layer name="alpha"/>
 <layer name="beta"/>
 <view layers="alpha beta" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
 <path layer="beta" matrix="1 0 0 1.85714 0 -425.143" stroke="UPorange" fill="UPorange20">
 0 496 m
 0 384 l
@@ -23653,7 +23650,7 @@ a	&amp; \vdots 	&amp; \ldots 	&amp; a 	&amp; \vdots	\\
 704 432 l
 h
 </path>
-<text matrix="1 0 0 1 304 -116.295" transformations="translations" pos="0 343.955" stroke="black" type="minipage" width="416" height="24.584" depth="19.04" valign="top">Präferenzen $a, b$ und $a, c$ sind für alle $i$ bei beiden Profilen gleich.</text>
+<text matrix="1 0 0 1 304 -116.295" transformations="translations" pos="0 343.955" stroke="black" type="minipage" width="416" height="24.584" depth="19.04" valign="top">Präferenzen $a, b$ und $b, c$ sind für alle $i$ bei beiden Profilen gleich.</text>
 <text matrix="1 0 0 1 304 -180.295" transformations="translations" pos="0 343.955" stroke="black" type="minipage" width="416" height="22.8738" depth="17.3264" valign="top">
 Durch \textcolor{UPblue}{IIA} folgt: $a \succ&apos; b$ und $b \succ&apos; c$. Transitiv also auch \textcolor{UPred}{$a \succ&apos; c$}.</text>
 <text layer="eta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 102.372" stroke="black" type="minipage" width="768" height="13.9787" depth="8.4112" valign="top">\textbf{Aber:} Es gilt $c \succ_i&apos; a$ $\forall i \in I$ und daher durch \textcolor{UPblue}{Einstimmigkeit} auch \textcolor{UPred}{$c \succ&apos; a$} </text>
@@ -23769,7 +23766,6 @@ $\Rightarrow$ Wechsel von \textcolor{UPgreen}{$j$} ändert $b \succ x$ zu $x \su
 <view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta" active="theta"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta iota" active="iota"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa" active="kappa"/>
 <path layer="iota" matrix="1.02703 0 0 1.04167 -11.9752 196.162" fill="UPblue20">
 567.631 52.5356 m
 567.631 74.869 l
@@ -23999,7 +23995,7 @@ h
 <text matrix="0.5 0 0 -0.143929 16 507.634" transformations="translations" pos="0 205.987" stroke="UPgray120" type="minipage" width="272" height="10.6848" depth="5.096" valign="top">\textcolor{UPblue}{\textbf{Social Choice Funktion}}</text>
 <text matrix="1 0 0 1 304 336" transformations="translations" pos="0 142.206" stroke="black" type="minipage" width="112" height="10.416" depth="4.8384" valign="top">\textcolor{UPblue}{\textbf{$f : L^n \rightarrow A$}}</text>
 <text matrix="1 0 0 1 432 368" transformations="translations" pos="0 111.335" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">aggregiert zu gem. Gewinner</text>
-<text matrix="1 0 0 1 16.859 375.731" transformations="translations" pos="0 76.0203" stroke="black" type="minipage" width="736" height="12.8285" depth="7.2464" valign="top">z.B. $f(\{ a \succ_1 b \succ_1 c,{ }..., b \succ_n c \succ_n a \}) = a$</text>
+<text matrix="1 0 0 1 16.859 375.731" transformations="translations" pos="0 76.0203" stroke="black" type="minipage" width="736" height="12.1755" depth="6.608" valign="top">z.B. $f(a \succ_1 b \succ_1 c, \ldots, b \succ_n c \succ_n a) = a$</text>
 <path layer="epsilon" matrix="1 0 0 0.1875 0 186.594" stroke="UPblue" fill="UPblue20">
 0 384 m
 0 128 l
