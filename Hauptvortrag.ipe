@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220625154140" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220625155359" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{27. Juni 2022}
@@ -23349,21 +23349,19 @@ h
 <layer name="mu"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
-<view layers="alpha beta gamma" active="gamma"/>
 <view layers="alpha beta gamma delta" active="delta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta" active="theta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta iota" active="iota"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa" active="kappa"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda" active="kappa"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu" active="mu"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta lambda mu" active="mu"/>
 <text layer="beta" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="12.1755" depth="6.608" valign="top">betrachte $F:L^n \rightarrow L$, $F(\prec_1,...,\prec_n)=\prec$</text>
 <text layer="gamma" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 480.709" stroke="black" type="minipage" width="768" height="12.7064" depth="7.1232" valign="top">\textbf{\textcolor{UPblue}{Einstimmigkeit:}} $F(\prec,\ldots, \prec) = \prec$ $\forall \prec \in L$</text>
 <text layer="delta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 428.88" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">alle Wähler haben gleiche Präferenzen $\Rightarrow$ diese sind die soziale Präferenzen</text>
 <text layer="theta" matrix="1 0 0 1 0 96" pin="h" transformations="translations" pos="0 255.169" stroke="black" type="minipage" width="768" height="12.7064" depth="7.1232" valign="top">\textbf{\textcolor{UPblue}{Unabhängigkeit von irrelevanten Alternativen (IIA):}} </text>
-<text layer="iota" matrix="1 0 0 1 0 128" pin="h" transformations="translations" pos="0 187.34" stroke="black" type="minipage" width="768" height="13.6102" depth="8.0304" valign="top">$\forall a, b \in A; \prec_1,...,\prec_n, \prec_1&apos;, ..., \prec_n&apos; \in L$: </text>
-<text layer="lambda" matrix="1 0 0 1 0 64" pin="h" transformations="translations" pos="0 165.699" stroke="black" type="minipage" width="768" height="13.8611" depth="8.288" valign="top">Dann gilt: $(a\prec_i b \iff a\prec_i&apos; b) \Rightarrow (a\prec b \iff a\prec&apos; b)$</text>
-<text layer="kappa" matrix="1 0 0 1 0 192" pin="h" transformations="translations" pos="0 79.5501" stroke="black" type="minipage" width="768" height="13.6102" depth="8.0304" valign="top">Sei $\prec = F(\prec_1,..., \prec_n)$ und $\prec&apos; = F(\prec_1&apos;,..., \prec_n&apos;)$</text>
-<text layer="mu" matrix="1 0 0 1 0 128" pin="h" transformations="translations" pos="0 63.5501" stroke="black" type="minipage" width="768" height="24.584" depth="19.04" valign="top">Wenn sich die Präferenzen bzgl. $a,b$ nicht ändern, bleibt auch die soziale Präferenz zw. beiden Alternativen gleich.</text>
+<text layer="lambda" matrix="1 0 0 1 0 144" pin="h" transformations="translations" pos="0 165.699" stroke="UPblue" type="minipage" width="768" height="13.8611" depth="8.288" valign="top">\textcolor{UPblue}{$(a\prec_i b \iff a\prec_i&apos; b) \Rightarrow (a\prec b \iff a\prec&apos; b)$}
+</text>
+<text layer="mu" matrix="1 0 0 1 0 144" pin="h" transformations="translations" pos="0 63.5501" stroke="black" type="minipage" width="768" height="24.584" depth="19.04" valign="top">Wenn sich die Präferenzen bzgl. $a,b$ nicht ändern, bleibt auch die soziale Präferenz zw. beiden Alternativen gleich.</text>
+<text matrix="1 0 0 1 0 128" pin="h" transformations="translations" pos="0 147.926" stroke="black" type="minipage" width="768" height="25.6838" depth="20.1488" valign="top">mit $\prec = F(\prec_1,..., \prec_n)$ und $\prec&apos; = F(\prec_1&apos;,..., \prec_n&apos;)$
+
+$\forall i \in I; a, b \in A; \prec_1,...,\prec_n, \prec_1&apos;, ..., \prec_n&apos; \in L$.
+</text>
 </page>
 <page title="Beispiel IIA">
 <layer name="alpha"/>
