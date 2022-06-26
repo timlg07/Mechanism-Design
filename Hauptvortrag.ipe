@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220626103039" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220626105422" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{27. Juni 2022}
@@ -23549,7 +23549,7 @@ h
 <text matrix="1 0 0 1 16 48" transformations="translations" pos="0 290.601" stroke="black" type="minipage" width="736" height="12.4992" depth="6.9328" valign="top">soziale Präferenz ist immer die von Wähler $j$: Andere werden ignoriert</text>
 <text layer="epsilon" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 319.169" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">\textcolor{UPblue}{Einstimmigkeit} gilt: Wenn alle einer Meinung sind, ist das auch der Diktator</text>
 <text layer="eta" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 277.169" stroke="black" type="minipage" width="768" height="15.3182" depth="9.7552" valign="top">\textcolor{UPblue}{IIA} gilt: $\textcolor{UPblue}{\forall i \in I:}$ $\textcolor{UPblue}{(a\succ_i b \iff a\succ_i&apos; b)} \Rightarrow (a\succ_j b \iff a\succ_j&apos; b) \Rightarrow \textcolor{UPblue}{(a\succ b \iff a\succ&apos; b)}$</text>
-<text layer="zeta" matrix="1 0 0 1 0 32" pin="h" transformations="translations" pos="0 153.369" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">Ab $2$ Alternativen ist eine Diktatur die einzige Lösung.</text>
+<text layer="zeta" matrix="1 0 0 1 0 32" pin="h" transformations="translations" pos="0 153.369" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">Ab $3$ Alternativen ist eine Diktatur die einzige Lösung.</text>
 </page>
 <page title="Arrow&apos;s Theorem">
 <layer name="alpha"/>
@@ -23946,7 +23946,7 @@ $\Rightarrow b \succ x$ $\forall x$ $\Rightarrow b \succ a$ $\lightning$</text>
 <text layer="eta" matrix="1 0 0 1 0 -10.3075" pin="h" transformations="translations" pos="0 207.589" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">Fall $\textcolor{UPorange}{j^*} &gt; \textcolor{UPgreen}{j}$</text>
 <text layer="iota" matrix="1 0 0 1 0 -14.6026" pin="h" transformations="translations" pos="0 47.8201" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">$\textcolor{UPgreen}{j} &lt; \textcolor{UPorange}{j^*}$ sowie $\textcolor{UPgreen}{j} &gt; \textcolor{UPorange}{j^*}$ führen zu $\lightning$. $\Rightarrow$ $\textcolor{UPgreen}{j} = \textcolor{UPorange}{j^*}$</text>
 </page>
-<page title="Arrow&apos;s Theorem Zusammenfassung">
+<page title="Arrow&apos;s Theorem Fazit">
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
 <path layer="alpha" matrix="1 0 0 1.42857 0 -212.57" stroke="UPorange" fill="UPorange20">
@@ -23975,7 +23975,6 @@ muss man Entscheidungen aller Spieler, außer \textbf{Diktator} $j$, ignorieren.
 <layer name="iota"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
-<view layers="alpha beta gamma delta" active="delta"/>
 <view layers="alpha beta gamma delta epsilon" active="epsilon"/>
 <view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
 <view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
@@ -24061,7 +24060,7 @@ h
 </path>
 <text matrix="1 0 0 1 16 -48" transformations="translations" pos="0 404.06" stroke="black" type="minipage" width="736" height="36.7125" depth="31.2032" valign="top">Spieler $i$ ist \textcolor{UPblue}{\textbf{Diktator}} in \textcolor{UPblue}{$f$}, wenn:
 
-$\forall \prec_1, \ldots, \prec_n \in L; a \in A, \forall b \in A$ mit $b \neq a$: 
+$\forall \prec_1, \ldots, \prec_n \in L; a \in A; \forall b \in A$ mit $b \neq a$: 
 
 $a \succ_i b \Rightarrow f(\prec_1, \ldots, \prec_n) = a$</text>
 <text layer="delta" matrix="1 0 0 1 0 -48" pin="h" transformations="translations" pos="0 288.145" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">$\Rightarrow$ Nur triviale Social Choice Funktionen sind anreizkompatibel.</text>
@@ -24129,9 +24128,9 @@ Jeder Alternative $a$ wird vom Spieler $i$ ein Geldwert $v_{i}(a)$ zugeordnet.</
 <view layers="alpha beta gamma delta" active="delta"/>
 <view layers="alpha beta gamma delta epsilon" active="epsilon"/>
 <view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta" active="theta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta iota" active="iota"/>
+<view layers="alpha beta gamma delta epsilon zeta iota" active="iota"/>
+<view layers="alpha beta gamma delta epsilon zeta eta iota" active="eta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta iota" active="theta"/>
 <path layer="delta" matrix="1.0897 0 0 0.934505 0 44.5751" stroke="black" fill="UPgray20">
 0 384 m
 0 192 l
@@ -24151,12 +24150,12 @@ h
  w_i &amp; falls $i = j$ \\
 0 &amp;  falls $i \neq j$
 \end{cases*}$</text>
-<text layer="eta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 230.207" stroke="black" type="minipage" width="768" height="12.628" depth="7.0448" valign="top">\textbf{Klassische Methode:} wähle Spieler mit höchstem $w_i$. Er muss $p = w_i$ zahlen</text>
-<text matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 230.207" stroke="black" type="minipage" width="768" height="12.628" depth="7.0448" valign="top">\textbf{Klassische Methode:} wähle Spieler mit höchstem $w_i$. Er muss $p = w_i$ zahlen</text>
-<text layer="theta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 194.535" stroke="black" type="minipage" width="768" height="26.0635" depth="20.5184" valign="top">\textcolor{UPred}{\textbf{Problem:}} Nutzen ist ohne Manipulation immer $0$. 
+<text layer="eta" matrix="1 0 0 1 0 -128" pin="h" transformations="translations" pos="0 230.207" stroke="black" type="minipage" width="768" height="12.628" depth="7.0448" valign="top">\textbf{Klassische Methode:} wähle Spieler mit höchstem $w_i$. Er muss $p = w_i$ zahlen</text>
+<text matrix="1 0 0 1 0 -128" pin="h" transformations="translations" pos="0 230.207" stroke="black" type="minipage" width="768" height="12.628" depth="7.0448" valign="top">\textbf{Klassische Methode:} wähle Spieler mit höchstem $w_i$. Er muss $p = w_i$ zahlen</text>
+<text layer="theta" matrix="1 0 0 1 0 -128" pin="h" transformations="translations" pos="0 194.535" stroke="black" type="minipage" width="768" height="26.0635" depth="20.5184" valign="top">\textcolor{UPred}{\textbf{Problem:}} Nutzen ist ohne Manipulation immer $0$. 
 
 Spieler werden ein falsches $w_i&apos; &lt; w_i$ angeben, um Nutzen $w_i - w_i&apos;$ zu erzielen.</text>
-<text layer="iota" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 131.953" stroke="black" type="minipage" width="768" height="26.0635" depth="20.5184" valign="top">\textbf{Keine Zahlung:} wähle Spieler mit höchstem $w_i$. Aber $p = 0$
+<text layer="iota" matrix="1 0 0 1 0 48" pin="h" transformations="translations" pos="0 131.953" stroke="black" type="minipage" width="768" height="26.0635" depth="20.5184" valign="top">\textbf{Keine Zahlung:} wähle Spieler mit höchstem $w_i$. Aber $p = 0$
 
 Jeder wählt ohne Konsequenz ein übertrieben hohes $w_i&apos; \gg w_i$.</text>
 </page>
@@ -24178,91 +24177,91 @@ Jeder wählt ohne Konsequenz ein übertrieben hohes $w_i&apos; \gg w_i$.</text>
 <view layers="alpha beta gamma delta epsilon zeta" active="delta"/>
 <view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta" active="theta"/>
-<path layer="beta" matrix="1 0 0 1 16 -32" fill="UPorange">
+<path layer="beta" matrix="1 0 0 1 16 -48" fill="UPorange">
 32 480 m
 32 352 l
 64 352 l
 64 480 l
 h
 </path>
-<path matrix="1 0 0 1 16 -32" fill="UPorange50">
+<path matrix="1 0 0 1 16 -48" fill="UPorange50">
 96 448 m
 96 352 l
 128 352 l
 128 448 l
 h
 </path>
-<path matrix="1 0 0 1 16 -32" fill="UPorange50">
+<path matrix="1 0 0 1 16 -48" fill="UPorange50">
 160 400 m
 160 352 l
 192 352 l
 192 400 l
 h
 </path>
-<text matrix="1 0 0 1 3.22192 -32" transformations="translations" pos="48 368" stroke="white" type="label" width="25.5562" height="15.1424" depth="0.28" valign="baseline">40</text>
-<text matrix="1 0 0 1 19.2219 -47.72" transformations="translations" pos="96 384" stroke="white" type="label" width="25.5562" height="15.1424" depth="0.28" valign="baseline">30</text>
-<text matrix="1 0 0 1 83.2219 -47.72" transformations="translations" pos="96 384" stroke="white" type="label" width="25.5562" height="14.3763" depth="0.28" valign="baseline">15</text>
-<text matrix="1 0 0 1 13.2101 -40.0658" transformations="translations" pos="48 336" stroke="black" type="label" width="5.57984" height="15.1368" depth="0" valign="baseline">i</text>
-<text matrix="1 0 0 1 77.2101 -37.977" transformations="translations" pos="48 336" stroke="black" type="label" width="5.57984" height="15.1368" depth="4.1776" valign="baseline">j</text>
-<text matrix="1 0 0 1 138.184 -40.0658" transformations="translations" pos="48 336" stroke="black" type="label" width="11.6312" height="15.1368" depth="0" valign="baseline">k</text>
-<image layer="epsilon" matrix="0.0946946 0 0 0.0946946 53.3469 448.16" rect="0 0 225 225" bitmap="2"/>
-<path layer="zeta" matrix="1 0 0 1 -96 -16" stroke="UPdarkred">
+<text matrix="1 0 0 1 3.22192 -48" transformations="translations" pos="48 368" stroke="white" type="label" width="25.5562" height="15.1424" depth="0.28" valign="baseline">40</text>
+<text matrix="1 0 0 1 19.2219 -63.72" transformations="translations" pos="96 384" stroke="white" type="label" width="25.5562" height="15.1424" depth="0.28" valign="baseline">30</text>
+<text matrix="1 0 0 1 83.2219 -63.72" transformations="translations" pos="96 384" stroke="white" type="label" width="25.5562" height="14.3763" depth="0.28" valign="baseline">15</text>
+<text matrix="1 0 0 1 13.2101 -56.0658" transformations="translations" pos="48 336" stroke="black" type="label" width="5.57984" height="15.1368" depth="0" valign="baseline">i</text>
+<text matrix="1 0 0 1 77.2101 -53.977" transformations="translations" pos="48 336" stroke="black" type="label" width="5.57984" height="15.1368" depth="4.1776" valign="baseline">j</text>
+<text matrix="1 0 0 1 138.184 -56.0658" transformations="translations" pos="48 336" stroke="black" type="label" width="11.6312" height="15.1368" depth="0" valign="baseline">k</text>
+<image layer="epsilon" matrix="0.0946946 0 0 0.0946946 53.3469 432.16" rect="0 0 225 225" bitmap="2"/>
+<path layer="zeta" matrix="1 0 0 1 -96 -32" stroke="UPdarkred">
 128 464 m
 320 464 l
 320 464 l
 </path>
-<text matrix="1 0 0 1 137.45 -21.357" transformations="translations" pos="96 464" stroke="UPdarkred" type="label" width="114.278" height="14.8915" depth="4.1776" valign="baseline" style="math">p = w_i = 40</text>
-<text layer="beta" matrix="1 0 0 1 0 240" transformations="translations" pos="0 261.845" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">Klassische, englische Auktion:</text>
-<path layer="gamma" matrix="1 0 0 1 400 -32" fill="UPorange">
+<text matrix="1 0 0 1 137.45 -37.357" transformations="translations" pos="96 464" stroke="UPdarkred" type="label" width="114.278" height="14.8915" depth="4.1776" valign="baseline" style="math">p = w_i = 40</text>
+<text layer="beta" matrix="1 0 0 1 0 224" transformations="translations" pos="0 261.845" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">Klassische, englische Auktion:</text>
+<path layer="gamma" matrix="1 0 0 1 400 -48" fill="UPorange">
 32 480 m
 32 352 l
 64 352 l
 64 480 l
 h
 </path>
-<path matrix="1 0 0 1 400 -32" fill="UPorange50">
+<path matrix="1 0 0 1 400 -48" fill="UPorange50">
 96 448 m
 96 352 l
 128 352 l
 128 448 l
 h
 </path>
-<path matrix="1 0 0 1 400 -32" fill="UPorange50">
+<path matrix="1 0 0 1 400 -48" fill="UPorange50">
 160 400 m
 160 352 l
 192 352 l
 192 400 l
 h
 </path>
-<text matrix="1 0 0 1 387.222 -32" transformations="translations" pos="48 368" stroke="white" type="label" width="25.5562" height="15.1424" depth="0.28" valign="baseline">40</text>
-<text matrix="1 0 0 1 403.222 -47.72" transformations="translations" pos="96 384" stroke="white" type="label" width="25.5562" height="15.1424" depth="0.28" valign="baseline">30</text>
-<text matrix="1 0 0 1 467.222 -47.72" transformations="translations" pos="96 384" stroke="white" type="label" width="25.5562" height="14.3763" depth="0.28" valign="baseline">15</text>
-<text matrix="1 0 0 1 397.21 -40.0658" transformations="translations" pos="48 336" stroke="black" type="label" width="5.57984" height="15.1368" depth="0" valign="baseline">i</text>
-<text matrix="1 0 0 1 461.21 -37.977" transformations="translations" pos="48 336" stroke="black" type="label" width="5.57984" height="15.1368" depth="4.1776" valign="baseline">j</text>
-<text matrix="1 0 0 1 522.184 -40.0658" transformations="translations" pos="48 336" stroke="black" type="label" width="11.6312" height="15.1368" depth="0" valign="baseline">k</text>
-<image matrix="0.0946946 0 0 0.0946946 437.347 448.16" rect="0 0 225 225" bitmap="2"/>
-<text layer="eta" matrix="1 0 0 1 521.219 -53.357" transformations="translations" pos="96 464" stroke="UPdarkred" type="label" width="114.278" height="14.8859" depth="6.9664" valign="baseline" style="math">p = w_j = 30</text>
-<text layer="gamma" matrix="1 0 0 1 384 240" transformations="translations" pos="0 261.845" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">Vickrey-Auktion:</text>
-<path layer="eta" matrix="1 0 0 1 -64 0" fill="UPblue50">
+<text matrix="1 0 0 1 387.222 -48" transformations="translations" pos="48 368" stroke="white" type="label" width="25.5562" height="15.1424" depth="0.28" valign="baseline">40</text>
+<text matrix="1 0 0 1 403.222 -63.72" transformations="translations" pos="96 384" stroke="white" type="label" width="25.5562" height="15.1424" depth="0.28" valign="baseline">30</text>
+<text matrix="1 0 0 1 467.222 -63.72" transformations="translations" pos="96 384" stroke="white" type="label" width="25.5562" height="14.3763" depth="0.28" valign="baseline">15</text>
+<text matrix="1 0 0 1 397.21 -56.0658" transformations="translations" pos="48 336" stroke="black" type="label" width="5.57984" height="15.1368" depth="0" valign="baseline">i</text>
+<text matrix="1 0 0 1 461.21 -53.977" transformations="translations" pos="48 336" stroke="black" type="label" width="5.57984" height="15.1368" depth="4.1776" valign="baseline">j</text>
+<text matrix="1 0 0 1 522.184 -56.0658" transformations="translations" pos="48 336" stroke="black" type="label" width="11.6312" height="15.1368" depth="0" valign="baseline">k</text>
+<image matrix="0.0946946 0 0 0.0946946 437.347 432.16" rect="0 0 225 225" bitmap="2"/>
+<text layer="eta" matrix="1 0 0 1 521.219 -69.357" transformations="translations" pos="96 464" stroke="UPdarkred" type="label" width="114.278" height="14.8859" depth="6.9664" valign="baseline" style="math">p = w_j = 30</text>
+<text layer="gamma" matrix="1 0 0 1 384 224" transformations="translations" pos="0 261.845" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">Vickrey-Auktion:</text>
+<path layer="eta" matrix="1 0 0 1 -64 -16" fill="UPblue50">
 496 448 m
 496 416 l
 528 416 l
 528 448 l
 h
 </path>
-<text layer="delta" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 293.845" stroke="black" type="minipage" width="320" height="25.9784" depth="20.4288" valign="top">Bester Nutzen für $i$: 
+<text layer="delta" matrix="1 0 0 1 0 -48" transformations="translations" pos="0 293.845" stroke="black" type="minipage" width="320" height="25.9784" depth="20.4288" valign="top">Bester Nutzen für $i$: 
 
 $w_i&apos;$ möglichst knapp über $w_j$</text>
-<path layer="eta" matrix="1 0 0 1 288 -48" stroke="UPdarkred">
+<path layer="eta" matrix="1 0 0 1 288 -64" stroke="UPdarkred">
 128 464 m
 320 464 l
 320 464 l
 </path>
-<text layer="theta" matrix="1 0 0 1 384 -96" transformations="translations" pos="0 293.845" stroke="black" type="minipage" width="384" height="13.8611" depth="8.288" valign="top">Bester Nutzen für $i$: $w_i&apos; = w_i$
+<text layer="theta" matrix="1 0 0 1 384 -112" transformations="translations" pos="0 293.845" stroke="black" type="minipage" width="384" height="13.8611" depth="8.288" valign="top">Bester Nutzen für $i$: $w_i&apos; = w_i$
 
 </text>
-<text layer="delta" matrix="1 0 0 1 0 -96" transformations="translations" pos="0 293.845" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">$\Rightarrow$ Nicht anreizkompatibel</text>
-<text layer="eta" matrix="1 0 0 1 384 80" transformations="translations" pos="0 178.531" stroke="black" type="minipage" width="384" height="22.5792" depth="17.0352" valign="top">Spieler mit höchstem Gebot muss nur zweithöchstes zahlen</text>
+<text layer="delta" matrix="1 0 0 1 0 -112" transformations="translations" pos="0 293.845" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">$\Rightarrow$ Nicht anreizkompatibel</text>
+<text layer="eta" matrix="1 0 0 1 384 64" transformations="translations" pos="0 178.531" stroke="black" type="minipage" width="384" height="22.5792" depth="17.0352" valign="top">Spieler mit höchstem Gebot muss nur zweithöchstes zahlen</text>
 </page>
 <page title="Vickrey-Auktion">
 <layer name="alpha"/>
@@ -24471,7 +24470,7 @@ h
 </path>
 <text layer="alpha" matrix="1 0 0 1 16 -32" transformations="translations" pos="0 500" stroke="black" type="minipage" width="736" height="12.7064" depth="7.1232" valign="top">$(f, p_1, \ldots, p_n)$ ist \textbf{\textcolor{UPblue}{Vickrey-Clarke-Groves (VCG) -Mechanismus}} falls:</text>
 <text layer="beta" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 448.17" stroke="black" type="minipage" width="736" height="17.3746" depth="11.8048" valign="top" style="item">$f(v_1,\ldots , v_n) \in \text{argmax}_{a\in A} \sum_i v_i(a)$. (maximale Social Welfare)</text>
-<path layer="epsilon" matrix="1 0 0 1.03704 -2.23186 -15.3988" fill="UPgreen20">
+<path layer="epsilon" matrix="0.979489 0 0 1.14411 4.43433 -52.579" fill="UPgreen20">
 193.191 386.754 m
 193.191 355.508 l
 267.958 355.508 l
