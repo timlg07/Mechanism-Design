@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220626095810" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220626103039" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{27. Juni 2022}
@@ -23289,14 +23289,10 @@ h
 <view layers="alpha beta gamma" active="gamma"/>
 <view layers="alpha beta gamma delta" active="delta"/>
 <view layers="alpha beta gamma delta epsilon" active="epsilon"/>
-<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta" active="theta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta iota" active="iota"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa" active="kappa"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda" active="lambda"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu" active="mu"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu nu" active="zeta"/>
+<view layers="alpha beta gamma delta epsilon kappa" active="kappa"/>
+<view layers="alpha beta gamma delta epsilon kappa lambda" active="lambda"/>
+<view layers="alpha beta gamma delta epsilon kappa lambda mu" active="mu"/>
+<view layers="alpha beta gamma delta epsilon kappa lambda mu nu" active="zeta"/>
 <path layer="zeta" matrix="1.00013 0 0 1.36626 0.640291 -330.267" stroke="UPgray20" fill="UPgray20">
 0 496 m
 0 352 l
@@ -23304,17 +23300,17 @@ h
 768 496 l
 h
 </path>
-<path layer="beta" matrix="1 0 0 1.02022 0.640291 -1.10344" stroke="UPgray20" fill="UPgray20">
+<path layer="beta" matrix="1 0 0 1.25865 0.640291 -119.364" stroke="UPgray20" fill="UPgray20">
 0 496 m
 0 352 l
 768 352 l
 768 496 l
 h
 </path>
-<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 500" stroke="black" type="minipage" width="736" height="12.628" depth="7.0448" valign="top"> \textbf{Beispiel:} Wahlen</text>
-<text layer="gamma" matrix="1 0 0 1 16 -6.87179" transformations="translations" pos="0 480.327" stroke="black" type="minipage" width="736" height="16.5122" depth="10.9536" valign="top" style="item">Spieler hat Präferenzen $\textcolor{UPred}{a}\succ\textcolor{UPgreen}{b}\succ c$</text>
-<text layer="delta" matrix="1 0 0 1 16 -22.8718" transformations="translations" pos="0 452.861" stroke="black" type="minipage" width="736" height="15.5366" depth="9.968" valign="top" style="item">Er vermutet, dass \textcolor{UPred}{$a$} keine Chance hat</text>
-<text layer="epsilon" matrix="1 0 0 1 16 -38.8718" transformations="translations" pos="0 427.357" stroke="black" type="minipage" width="736" height="16.4506" depth="10.8976" valign="top" style="item">Wählt strategisch  \textcolor{UPgreen}{b}</text>
+<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 500" stroke="black" type="minipage" width="736" height="12.628" depth="7.0448" valign="top"> \textbf{Beispiel:} Wahlen</text>
+<text layer="gamma" matrix="1 0 0 1 16 -22.8718" transformations="translations" pos="0 480.327" stroke="black" type="minipage" width="736" height="16.5122" depth="10.9536" valign="top" style="item">Spieler hat Präferenzen $\textcolor{UPred}{a}\succ\textcolor{UPgreen}{b}\succ c$</text>
+<text layer="delta" matrix="1 0 0 1 16 -38.8718" transformations="translations" pos="0 452.861" stroke="black" type="minipage" width="736" height="15.5366" depth="9.968" valign="top" style="item">Er vermutet, dass \textcolor{UPred}{$a$} keine Chance hat</text>
+<text layer="epsilon" matrix="1 0 0 1 16 -54.8718" transformations="translations" pos="0 427.357" stroke="black" type="minipage" width="736" height="16.4506" depth="10.8976" valign="top" style="item">Wählt strategisch  \textcolor{UPgreen}{b}</text>
 <text layer="zeta" matrix="1 0 0 1 16 -23.589" transformations="translations" pos="0 361.137" stroke="black" type="minipage" width="736" height="24.7016" depth="19.1632" valign="top">\textbf{Beispiel:} Auktion
 
 Ziel: Vergabe an Spieler für den das Gut den höchsten Wert hat</text>
@@ -23322,17 +23318,17 @@ Ziel: Vergabe an Spieler für den das Gut den höchsten Wert hat</text>
 <text layer="theta" matrix="1 0 0 1 16 -48.4845" transformations="translations" pos="0 298.116" stroke="black" type="minipage" width="736" height="16.4506" depth="10.8976" valign="top" style="item">j setzt nur 40 \euro, hofft trotzdem auf Zuschlag</text>
 <text layer="iota" matrix="1 0 0 1 16 -60.69" transformations="translations" pos="0 270.768" stroke="black" type="minipage" width="736" height="12.4488" depth="6.8656" valign="top">Gut geht an i. Für i ist das Gut allerdings weniger wert.</text>
 <text matrix="1 0 0 1 16 -76.69" transformations="translations" pos="0 251.453" stroke="black" type="minipage" width="736" height="12.4488" depth="6.8656" valign="top">$\Rightarrow$ Gesamtergbnis schlechter</text>
-<path layer="nu" matrix="0.998448 0 0 0.281627 0 0" stroke="UPorange" fill="UPorange20">
+<path layer="nu" matrix="0.998448 0 0 0.281627 0 160" stroke="UPorange" fill="UPorange20">
 0 160 m
 0 0 l
 768 0 l
 768 160 l
 h
 </path>
-<text layer="kappa" matrix="1 0 0 1 -16 -19.7945" transformations="translations" pos="16 144" stroke="black" type="label" width="567.683" height="15.1368" depth="4.1776" valign="baseline">Regeln sollten robust gegen Manipulationsversuche sein</text>
-<text layer="lambda" matrix="1 0 0 1 -16 -3.79448" transformations="translations" pos="16 96" stroke="black" type="label" width="751.008" height="15.4952" depth="4.1776" valign="baseline">\textbf{Aber:} Egoist unterstützt effizientes Ergebnis nicht, wenn nachteilig für ihn</text>
-<text layer="nu" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 64" stroke="UPblue" type="label" width="738.883" height="15.4952" depth="4.3344" valign="baseline">\textbf{Mechanismus muss Belohnung als Anreiz zur Kooperation stellen}</text>
-<text layer="mu" matrix="1 0 0 1 -16 -3.79448" transformations="translations" pos="16 64" stroke="black" type="label" width="436.887" height="15.1368" depth="4.1776" valign="baseline">Interessen von Systemdesigner vs. Akteure</text>
+<text layer="kappa" matrix="1 0 0 1 -16 140.206" transformations="translations" pos="16 144" stroke="black" type="label" width="567.683" height="15.1368" depth="4.1776" valign="baseline">Regeln sollten robust gegen Manipulationsversuche sein</text>
+<text layer="lambda" matrix="1 0 0 1 -16 156.206" transformations="translations" pos="16 96" stroke="black" type="label" width="751.008" height="15.4952" depth="4.1776" valign="baseline">\textbf{Aber:} Egoist unterstützt effizientes Ergebnis nicht, wenn nachteilig für ihn</text>
+<text layer="nu" matrix="1 0 0 1 0 112" transformations="translations" pos="16 64" stroke="UPblue" type="label" width="738.883" height="15.4952" depth="4.3344" valign="baseline">\textbf{Mechanismus muss Belohnung als Anreiz zur Kooperation stellen}</text>
+<text layer="mu" matrix="1 0 0 1 -16 156.206" transformations="translations" pos="16 64" stroke="black" type="label" width="436.887" height="15.1368" depth="4.1776" valign="baseline">Interessen von Systemdesigner vs. Akteure</text>
 </page>
 <page title="Social Welfare Funktion: Eigenschaften">
 <layer name="alpha"/>
