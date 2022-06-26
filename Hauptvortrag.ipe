@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220626105422" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220626110856" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{27. Juni 2022}
@@ -24035,11 +24035,9 @@ h
 <layer name="eta"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
-<view layers="alpha beta gamma" active="gamma"/>
-<view layers="alpha beta gamma delta" active="delta"/>
-<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
-<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
+<view layers="alpha beta epsilon" active="epsilon"/>
+<view layers="alpha beta epsilon zeta" active="zeta"/>
+<view layers="alpha beta epsilon zeta eta" active="eta"/>
 <text layer="alpha" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">Analog zu Arrow&apos;s Theorem gilt für \textcolor{UPblue}{$f$}:</text>
 <path layer="beta" stroke="UPorange" fill="UPorange20">
 0 464 m
@@ -24063,13 +24061,13 @@ h
 $\forall \prec_1, \ldots, \prec_n \in L; a \in A; \forall b \in A$ mit $b \neq a$: 
 
 $a \succ_i b \Rightarrow f(\prec_1, \ldots, \prec_n) = a$</text>
-<text layer="delta" matrix="1 0 0 1 0 -48" pin="h" transformations="translations" pos="0 288.145" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">$\Rightarrow$ Nur triviale Social Choice Funktionen sind anreizkompatibel.</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 220.83" stroke="black" type="minipage" width="768" height="22.7584" depth="17.2144" valign="top">\textbf{Beweis:} Social Welfare Funktion konstruieren und auf Arrow&apos;s Theorem zurückführen.</text>
-<text layer="zeta" matrix="1 0 0 1 2.65317 -173" transformations="translations" pos="0 297.37" stroke="black" type="minipage" width="683" height="24.5224" depth="18.984" valign="top">$\rightarrow$ Ziel Mechanism Design:
+<text layer="delta" matrix="1 0 0 1 0 64" pin="h" transformations="translations" pos="0 288.145" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">$\Rightarrow$ Nur triviale Social Choice Funktionen sind anreizkompatibel.</text>
+<text layer="epsilon" matrix="1 0 0 1 0 128" pin="h" transformations="translations" pos="0 220.83" stroke="black" type="minipage" width="768" height="22.7584" depth="17.2144" valign="top">\textbf{Beweis:} Social Welfare Funktion konstruieren und auf Arrow&apos;s Theorem zurückführen.</text>
+<text layer="zeta" matrix="1 0 0 1 2.65317 -29" transformations="translations" pos="0 297.37" stroke="black" type="minipage" width="683" height="24.7016" depth="19.1632" valign="top">\textbf{Ziel Mechanism Design:}
 
 Trotzdem anreizkompatible Social Choice Funktionen entwerfen
 </text>
-<text layer="eta" matrix="1 0 0 1 -93.3468 -91.3869" transformations="translations" pos="96 144" stroke="black" type="label" width="703.708" height="15.1368" depth="4.1776" valign="baseline">Wie? Anreize für wahrheitsgemäßes Verhalten schaffen, z. B. mit Geld</text>
+<text layer="eta" matrix="1 0 0 1 -93.3468 36.6131" transformations="translations" pos="96 144" stroke="black" type="label" width="703.708" height="15.1368" depth="4.1776" valign="baseline">Wie? Anreize für wahrheitsgemäßes Verhalten schaffen, z. B. mit Geld</text>
 </page>
 <page title="Mechanism Design mit Geld">
 <layer name="alpha"/>
@@ -24169,10 +24167,8 @@ Jeder wählt ohne Konsequenz ein übertrieben hohes $w_i&apos; \gg w_i$.</text>
 <layer name="eta"/>
 <layer name="theta"/>
 <layer name="iota"/>
-<view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha beta epsilon" active="gamma"/>
-<view layers="alpha beta epsilon zeta" active="zeta"/>
 <view layers="alpha beta delta epsilon zeta" active="epsilon"/>
 <view layers="alpha beta gamma delta epsilon zeta" active="delta"/>
 <view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
@@ -24242,7 +24238,7 @@ h
 <image matrix="0.0946946 0 0 0.0946946 437.347 432.16" rect="0 0 225 225" bitmap="2"/>
 <text layer="eta" matrix="1 0 0 1 521.219 -69.357" transformations="translations" pos="96 464" stroke="UPdarkred" type="label" width="114.278" height="14.8859" depth="6.9664" valign="baseline" style="math">p = w_j = 30</text>
 <text layer="gamma" matrix="1 0 0 1 384 224" transformations="translations" pos="0 261.845" stroke="black" type="minipage" width="320" height="12.4488" depth="6.8656" valign="top">Vickrey-Auktion:</text>
-<path layer="eta" matrix="1 0 0 1 -64 -16" fill="UPblue50">
+<path layer="eta" matrix="1 0 0 1 -64 -16" fill="UPgreen70">
 496 448 m
 496 416 l
 528 416 l
@@ -24424,7 +24420,7 @@ h
 <view layers="alpha beta gamma delta" active="delta"/>
 <view layers="alpha beta gamma delta epsilon" active="epsilon"/>
 <view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
-<path layer="delta" matrix="1 0 0 1 0 -102.696" stroke="UPorange" fill="UPorange20">
+<path layer="delta" matrix="1 0 0 0.716486 0 37.9268" stroke="UPorange" fill="UPorange20">
 0 496 m
 0 320 l
 768 320 l
@@ -24435,10 +24431,9 @@ h
 <text layer="beta" matrix="1 0 0 1 0 208" pin="h" transformations="translations" pos="0 290.991" stroke="black" type="minipage" width="768" height="13.4602" depth="7.8848" valign="top">mögliche Wertungsfunktionen $v_i$ sind in $V_i \subset \mathbb{R}^A$</text>
 <text layer="gamma" matrix="1 0 0 1 0 176" pin="h" transformations="translations" pos="0 290.991" stroke="black" type="minipage" width="768" height="12.1755" depth="6.608" valign="top">\textcolor{UPblue}{Social Choice Funktion} $f : V_1 \times \ldots \times V_n \rightarrow A$</text>
 <text matrix="1 0 0 1 0 144" pin="h" transformations="translations" pos="0 290.991" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">\textcolor{UPblue}{Zahlungsfunktion} $p_i : V_1 \times \ldots \times V_n \rightarrow \mathbb{R}$</text>
-<text layer="epsilon" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 352.327" stroke="black" type="minipage" width="736" height="13.8611" depth="8.288" valign="top">\textcolor{UPblue}{$v_i(a)-p_i(v_i, v_{-i})\geq v_i(a&apos;)-p_i(v_i&apos;, v_{-i})$}</text>
-<text matrix="1 0 0 1 16 -48" transformations="translations" pos="0 352.327" stroke="black" type="minipage" width="736" height="13.8611" depth="8.288" valign="top">$\forall i \in I, v_1\in V_1,\ldots,v_n\in V_n, v_i&apos;\in V_i$</text>
-<text matrix="1 0 0 1 16 -80" transformations="translations" pos="0 352.327" stroke="black" type="minipage" width="736" height="13.8611" depth="8.288" valign="top">mit $a=f(v_i,v_{-i})$ und $a&apos;=f(v_i&apos;,v_{-i})$</text>
-<text layer="zeta" matrix="1 0 0 1 0 -48" pin="h" transformations="translations" pos="0 250.178" stroke="black" type="minipage" width="768" height="13.8611" depth="8.288" valign="top">$\forall i$ führt die Wahrheit $v_i$ zu einem höheren Nutzen als jede Lüge $v_i&apos;$</text>
+<text layer="epsilon" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 352.327" stroke="black" type="minipage" width="736" height="12.4365" depth="6.8544" valign="top">\textcolor{UPblue}{$u_i(a)\geq u_i(a&apos;)$} $\forall i \in I$</text>
+<text matrix="1 0 0 1 16 -48" transformations="translations" pos="0 352.327" stroke="black" type="minipage" width="736" height="13.8611" depth="8.288" valign="top">mit $a=f(v_i,v_{-i})$ und $a&apos;=f(v_i&apos;,v_{-i})$</text>
+<text layer="zeta" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 250.178" stroke="black" type="minipage" width="768" height="13.8611" depth="8.288" valign="top">$\forall i$ führt die Wahrheit $v_i$ zu einem höheren Nutzen als jede Lüge $v_i&apos;$</text>
 </page>
 <page title="Vickrey-Clarke-Groves-Mechanismen">
 <layer name="alpha"/>
@@ -24469,7 +24464,7 @@ h
 h
 </path>
 <text layer="alpha" matrix="1 0 0 1 16 -32" transformations="translations" pos="0 500" stroke="black" type="minipage" width="736" height="12.7064" depth="7.1232" valign="top">$(f, p_1, \ldots, p_n)$ ist \textbf{\textcolor{UPblue}{Vickrey-Clarke-Groves (VCG) -Mechanismus}} falls:</text>
-<text layer="beta" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 448.17" stroke="black" type="minipage" width="736" height="17.3746" depth="11.8048" valign="top" style="item">$f(v_1,\ldots , v_n) \in \text{argmax}_{a\in A} \sum_i v_i(a)$. (maximale Social Welfare)</text>
+<text layer="beta" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 448.17" stroke="black" type="minipage" width="736" height="17.3746" depth="11.8048" valign="top" style="item">$f(v_1,\ldots , v_n) \in \text{argmax}_{a\in A} \sum_i v_i(a)$. (maximaler Social Welfare)</text>
 <path layer="epsilon" matrix="0.979489 0 0 1.14411 4.43433 -52.579" fill="UPgreen20">
 193.191 386.754 m
 193.191 355.508 l
@@ -24508,7 +24503,7 @@ h
 h
 </path>
 <text matrix="1 0 0 1 16 -32" transformations="translations" pos="0 500" stroke="black" type="minipage" width="736" height="12.7064" depth="7.1232" valign="top">$(f, p_1, \ldots, p_n)$ ist \textbf{\textcolor{UPblue}{Vickrey-Clarke-Groves (VCG) -Mechanismus}} falls:</text>
-<text layer="beta" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 448.17" stroke="black" type="minipage" width="736" height="17.3746" depth="11.8048" valign="top" style="item">$f(v_1,\ldots , v_n) \in \text{argmax}_{a\in A} \sum_i v_i(a)$. (maximale Social Welfare)</text>
+<text layer="beta" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 448.17" stroke="black" type="minipage" width="736" height="17.3746" depth="11.8048" valign="top" style="item">$f(v_1,\ldots , v_n) \in \text{argmax}_{a\in A} \sum_i v_i(a)$. (maximaler Social Welfare)</text>
 <text layer="gamma" matrix="1 0 0 1 16 80" transformations="translations" pos="0 306.991" stroke="black" type="minipage" width="736" height="33.0915" depth="27.5744" valign="top" style="item">$p_i(v_1,\ldots,v_n)=h_i(v_{-i})) - \sum_{j\neq i}v_j(f(v_1,\ldots,v_n))$ gilt für
 
  manche $h_1,\ldots,h_n$ mit $h_i:V_{-i}\rightarrow\mathbb{R}$ und $\forall v_1 \in V_1,\ldots,v_n\in V_n$</text>
@@ -24535,7 +24530,7 @@ $=v_i(a)-h_i(v_{-i})+\sum_{j\neq i} v_j(a)$</text>
 <view layers="alpha beta gamma delta" active="delta"/>
 <text layer="beta" pin="h" transformations="translations" pos="0 500" stroke="black" type="minipage" width="768" height="22.6408" depth="17.0912" valign="top">Die Bezahlung von $i$ hängt nicht direkt von seiner Entscheidung ab, sondern vom Einfluss auf die Anderen</text>
 <text layer="gamma" matrix="1 0 0 1 0 -16" pin="h" transformations="translations" pos="0 460.268" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">Das Gesamtergebnis zu verschlechtern kostet, das Verbessern wird belohnt</text>
-<text layer="delta" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 440.954" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">Egoismus führt so zur Wahrheitsaussage</text>
+<text layer="delta" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 440.954" stroke="black" type="minipage" width="768" height="12.7064" depth="7.1232" valign="top">\textbf{Egoismus führt so zur Wahrheitsaussage}</text>
 </page>
 <page title="Fazit Mechanism Design">
 <layer name="alpha"/>
