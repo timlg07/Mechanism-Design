@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20180221134821" modified="D:20220626192738" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
+<info created="D:20180221134821" modified="D:20220626234746" title="Einführung in Mechanism Design" author="Tim Greller" subject="Mechanism Design - Game Theory" numberpages="yes"/>
 <preamble>\newcommand{\presenter}{Tim Greller}
 \newcommand{\prestitle}{Einführung in Mechanism Design}
 \newcommand{\presdate}{27. Juni 2022}
@@ -24489,12 +24489,16 @@ h
 <layer name="theta"/>
 <layer name="iota"/>
 <layer name="kappa"/>
+<layer name="lambda"/>
+<layer name="mu"/>
+<layer name="nu"/>
 <view layers="alpha beta gamma delta epsilon" active="epsilon"/>
-<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta" active="theta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta iota" active="iota"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa" active="kappa"/>
+<view layers="alpha beta gamma delta epsilon zeta eta mu" active="eta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta mu" active="theta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta iota mu" active="iota"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa mu" active="kappa"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa mu nu" active="nu"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu nu" active="lambda"/>
 <path layer="alpha" matrix="1 0 0 1 0 -6.696" stroke="UPorange" fill="UPorange20">
 0 496 m
 0 320 l
@@ -24507,16 +24511,15 @@ h
 <text layer="gamma" matrix="1 0 0 1 16 80" transformations="translations" pos="0 306.991" stroke="black" type="minipage" width="736" height="33.0915" depth="27.5744" valign="top" style="item">$p_i(v_1,\ldots,v_n)=h_i(v_{-i})) - \sum_{j\neq i}v_j(f(v_1,\ldots,v_n))$ gilt für
 
  manche $h_1,\ldots,h_n$ mit $h_i:V_{-i}\rightarrow\mathbb{R}$ und $\forall v_1 \in V_1,\ldots,v_n\in V_n$</text>
-<text layer="zeta" matrix="1 0 0 1 0 64" pin="h" transformations="translations" pos="0 239.579" stroke="black" type="minipage" width="768" height="10.6848" depth="5.096" valign="top">\textbf{Beweis:}</text>
-<text layer="eta" matrix="1 0 0 1 0 64" pin="h" transformations="translations" pos="0 207.798" stroke="black" type="minipage" width="768" height="12.4992" depth="6.9328" valign="top">Nutzen $u_i(a)=v_i(a) -p_i(a)$
+<text layer="zeta" matrix="1 0 0 1 0 56.4758" pin="h" transformations="translations" pos="0 239.579" stroke="black" type="minipage" width="768" height="10.6848" depth="5.096" valign="top">\textbf{Beweis:}</text>
+<text layer="theta" matrix="1 0 0 1 0 136.476" pin="h" transformations="translations" pos="0 135.174" stroke="UPblue" type="minipage" width="768" height="12.992" depth="7.4144" valign="top">Da $a=f(v_i, v_{-i})$ Social Welfare maximiert, gilt:
 </text>
-<text matrix="1 0 0 1 0 64" transformations="translations" pos="128 160" stroke="black" type="label" width="263.995" height="15.2443" depth="8.8256" valign="baseline">
-$=v_i(a)-h_i(v_{-i})+\sum_{j\neq i} v_j(a)$</text>
-<text layer="theta" matrix="1 0 0 1 0 48" pin="h" transformations="translations" pos="0 135.174" stroke="black" type="minipage" width="768" height="12.992" depth="7.4144" valign="top">Da $a=f(v_i, v_{-i})$ Social Welfare maximiert, gilt:
-</text>
-<text layer="iota" matrix="1 0 0 1 96 0" transformations="translations" pos="0 98.768" stroke="black" type="minipage" width="368" height="14.8187" depth="9.2512" valign="top">$v_i(a)+\sum_{j\neq i} v_j(a) \geq v_i(a&apos;) + \sum_{j\neq i} v_j(a&apos;)$</text>
-<text layer="theta" matrix="1 0 0 1 184 46.8841" transformations="translations" pos="0 98.768" stroke="black" type="minipage" width="192" height="14.8187" depth="9.2512" valign="top">$\sum_{j} v_j(a) \geq \sum_{j} v_j(a&apos;)$</text>
-<text layer="kappa" matrix="1 0 0 1 16 -48" transformations="translations" pos="0 98.768" stroke="black" type="minipage" width="528" height="14.8187" depth="9.2512" valign="top">$v_i(a)+\sum_{j\neq i} v_j(a) - h_i(v_{-i}) \geq v_i(a&apos;) + \sum_{j\neq i} v_j(a&apos;) - h_i(v_{-i}) $</text>
+<text layer="iota" matrix="1 0 0 1 96 88.4758" transformations="translations" pos="0 98.768" stroke="black" type="minipage" width="368" height="14.8187" depth="9.2512" valign="top">$v_i(a)+\sum_{j\neq i} v_j(a) \geq v_i(a&apos;) + \sum_{j\neq i} v_j(a&apos;)$</text>
+<text layer="theta" matrix="1 0 0 1 184 135.36" transformations="translations" pos="0 98.768" stroke="black" type="minipage" width="192" height="14.8187" depth="9.2512" valign="top">$\sum_{j} v_j(a) \geq \sum_{j} v_j(a&apos;)$</text>
+<text layer="kappa" matrix="1 0 0 1 16.6612 48.41" transformations="translations" pos="0 98.768" stroke="black" type="minipage" width="528" height="14.8187" depth="9.2512" valign="top">$v_i(a)+\sum_{j\neq i} v_j(a) - h_i(v_{-i}) \geq v_i(a&apos;) + \sum_{j\neq i} v_j(a&apos;) - h_i(v_{-i}) $</text>
+<text layer="lambda" matrix="1 0 0 1 146.711 -37.2832" transformations="translations" pos="0 98.768" stroke="black" type="minipage" width="256" height="12.4992" depth="6.9328" valign="top">$v_i(a) - p_i(a) \geq v_i(a&apos;) - p_i(a&apos;) $</text>
+<text layer="mu" matrix="1 0 0 1 212.422 -73.6499" transformations="translations" pos="0 98.768" stroke="black" type="minipage" width="124.577" height="12.4365" depth="6.8544" valign="top">$u_i(a) \geq u_i(a&apos;) $</text>
+<text layer="nu" matrix="1 0 0 1 0 -38.0776" pin="h" transformations="translations" pos="0 135.174" stroke="UPblue" type="minipage" width="768" height="14.8187" depth="9.2512" valign="top">Da Preis definiert als $p_i(a)=h_i(v_{-i})) - \sum_{j\neq i}v_j(a)$, gilt:</text>
 </page>
 <page title="Fazit VCG-Mechanismen">
 <layer name="alpha"/>
