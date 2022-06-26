@@ -88,21 +88,21 @@ Zunächst werden Eigenschaften von $F$ betrachtet, die eine gute Social Welfare 
 \begin{itemize}
 	\item \emph{Einstimmigkeit} $\iff$ $\forall \prec \in L: F(\prec, \ldots,\prec) = \prec$
 	\item \emph{Unabhängigkeit von irrelevanten Alternativen}
-	$\iff$ $\forall a, b \in A; \prec_1,\ldots,\prec_n, \prec_1', \ldots, \prec_n' \in L:	(a\prec_i b \iff a\prec_i' b) \Rightarrow (a\prec b \iff a\prec' b)$	mit $\prec = F(\prec_1, \ldots, \prec_n)$, $\prec' = F(\prec_1', \ldots, \prec_n')$
+	$\iff$ $\forall a, b \in A; \forall \prec_1,\ldots,\prec_n, \prec_1', \ldots, \prec_n' \in L:	(a\prec_i b \iff a\prec_i' b) \Rightarrow (a\prec b \iff a\prec' b)$	mit $\prec = F(\prec_1, \ldots, \prec_n)$, $\prec' = F(\prec_1', \ldots, \prec_n')$
 \end{itemize}
 
 Einstimmigkeit ist für ein $F$ erfüllt, wenn in dem Fall, dass alle Spieler mit einer gleichen, aber beliebigen Ordnung $\prec \in L$ abstimmen, das Ergebnis genau diese Ordnung ist. 
 
-Die Unabhängigkeit von irrelevanten Alternativen (englisch: Independence of Irrelevant Alternatives, kurz: IIA) schließt strategisches Manipulieren aus. Gilt für $F$ IIA, so ist die soziale Präferenz für alle Alternativen $a, b \in A$ gleich, so lange auch die Präferenzen der Spieler bezüglich $a, b$ gleich sind. Die Präferenzen bzgl. aller anderen Alternativen untereinander und zu $a, b$ sind irrelevant.
+Die Unabhängigkeit von irrelevanten Alternativen (englisch: Independence of Irrelevant Alternatives, kurz: IIA) schließt strategisches Manipulieren aus. Gilt für $F$ IIA, so ist die soziale Präferenz für alle Alternativen $a, b \in A$ gleich, so lange auch die Präferenzen aller Spieler bzgl. $a, b$ gleich sind. Die Präferenzen bzgl. aller anderen Alternativen untereinander und zu $a, b$ sind irrelevant.
 
-Sucht man ein $F$, sodass diese beiden Eigenschaften erfüllt sind, existiert für alle $I, A, L$ die triviale Social Welfare Funktion $F(\prec_1, \ldots, \prec_n) = \prec_i$ mit einem beliebigen $i \in I$. Diese Funktion ist eine \emph{Diktatur}, da mit dem Spieler $i$ ein Diktator existiert. 
+Sucht man ein $F$, sodass diese beiden Eigenschaften erfüllt sind, existiert für alle $I, A, L$ die triviale Social Welfare Funktion $F(\prec_1, \ldots, \prec_n) = \prec_j$ mit einem beliebigen $j \in I$. Diese Funktion ist eine \emph{Diktatur}, da mit dem Spieler $j$ ein Diktator existiert. 
 
 \begin{definition}
 	\label{def:diktatur}
-	$F$ ist Diktatur$\iff\exists i \in I: \forall \prec_1, \ldots, \prec_n \in L: F(\prec_1, \ldots, \prec_n) = \prec_i$
+	$F$ ist Diktatur$\iff\exists j \in I: \forall \prec_1, \ldots, \prec_n \in L: F(\prec_1, \ldots, \prec_n) = \prec_j$
 \end{definition}
 
-Das soziale Ergebnis ist bei einer Diktatur also -- unabhängig von den Präferenzen anderer Spieler -- immer die Präferenz eines Spielers $i$.
+Das soziale Ergebnis ist bei einer Diktatur also -- unabhängig von den Präferenzen anderer Spieler -- immer die Präferenz eines Spielers $j$.
 Im folgenden wird bewiesen, dass dies ab $|A| > 2$ auch die einzige Lösung ist.
 
 \begin{theorem}
@@ -137,7 +137,7 @@ Im folgenden wird bewiesen, dass dies ab $|A| > 2$ auch die einzige Lösung ist.
 	
 	Da die $b$'s in $\pi_3$ wie bei $\pi_{j}^*$ positioniert sind, gilt $b \succ' x$ $\forall x \in I$ mit $\succ' = F(\pi_3)$. Zu zeigen ist nun, dass die Positionierung von $a$ über $c$ auch zu $a \succ' c$ führt. Gilt dies, kann durch Umbenennung allgemein gesagt werden, dass $j$ Kontrolle über alle Paare ohne $b$ hat.
 	
-	Hierzu werden $\pi_2$ und $\pi_3$ nun mit einem weiteren Profil $\pi_4$ verglichen. Dieses unterscheidet sich wieder nur bei Spieler $j$ von den vorherigen. In diesem Fall ordnet er $a$ über $b$ und $b$ über $c$ an. Analog zu den vorherigen Profilen sei $\succ'' = F(\pi_4)$. Da sich die Präferenzen von $I \setminus \{j\}$ nicht verändert haben und $a \succ_j b \iff a \succ_j'' b$ durch $x \succ_j b$ $\forall x \in I \Rightarrow a \succ_j b$ gilt, muss nach IIA auch $a \succ'' b$ gelten. Analog gilt durch $b \succ_j' c \iff b \succ_j'' c$ nach IIA auch $b \succ'' c$. Transitiv ergibt das $a \succ'' c$ und durch IIA gilt auch $a \succ' c$.
+	Hierzu werden $\pi_2$ und $\pi_3$ nun mit einem weiteren Profil $\pi_4$ verglichen. Dieses unterscheidet sich wieder nur bei Spieler $j$ von den vorherigen. In diesem Fall ordnet er $a$ über $b$ und $b$ über $c$ an. Analog zu den vorherigen Profilen sei $\succ'' = F(\pi_4)$. Da sich die Präferenzen von $I \setminus \{j\}$ nicht verändert haben und $a \succ_j b \iff a \succ_j'' b$ durch $x \succ_j b$ $\forall x \in A \Rightarrow a \succ_j b$ gilt, muss nach IIA auch $a \succ'' b$ gelten. Analog gilt durch $b \succ_j' c \iff b \succ_j'' c$ nach IIA auch $b \succ'' c$. Transitiv ergibt das $a \succ'' c$ und durch IIA gilt auch $a \succ' c$.
 	
 	\begin{claim}
 		Der Spieler $j$ ist auch Diktator für beliebiges Paar $a, b$.
@@ -169,7 +169,7 @@ Analog zu Arrow's Theorem für Social Welfare Funktionen gilt für Social Choice
 	Sei $f$ anreizkompatibel auf $A$ mit $|A| \geq 3$, dann ist $f$ eine Diktatur.
 \end{definition}
 
-Dies kann durch Zurückführung auf Arrow's Theorem gezeigt werden. Somit scheinen nur triviale Social Choice Funktionen -- also Diktaturen -- nicht strategisch manipulierbar zu sein. Um trotzdem anreizkompatible Social Choice Funktionen zu entwerfen, können mit anderen Modellen {z. B.} Anreize eingeführt werden, die wahrheitsgemäßes Verhalten fördern.
+Dies kann durch Zurückführung auf Arrow's Theorem gezeigt werden. Somit scheinen nur triviale Social Choice Funktionen -- also Diktaturen -- nicht strategisch manipulierbar zu sein. Um trotzdem anreizkompatible Social Choice Funktionen zu entwerfen, können mit anderen Modellen Anreize, {z. B.} in Form von Geldzahlungen, eingeführt werden, die wahrheitsgemäßes Verhalten fördern.
 
 \section{Mechanism Design mit Geld als Anreiz zur Kooperation}
 Bisher wurde nur die Reihenfolge betrachtet, in der Spieler die Alternativen einordnen. Nicht berücksichtigt wurde dabei, um wie viel eine Alternative anderen bevorzugt wird. Geld ist ein Mittel um dies zu messen und den Alternativen mithilfe einer \emph{Wertungsfunktion} Werte $v_i(a)$ zuzuordnen. 
