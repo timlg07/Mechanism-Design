@@ -88,7 +88,12 @@ Zunächst werden Eigenschaften von $F$ betrachtet, die eine gute Social Welfare 
 \begin{itemize}
 	\item \emph{Einstimmigkeit} $\iff$ $\forall \prec \in L: F(\prec, \ldots,\prec) = \prec$
 	\item \emph{Unabhängigkeit von irrelevanten Alternativen}
-	$\iff$ $\forall a, b \in A; \forall \prec_1,\ldots,\prec_n, \prec_1', \ldots, \prec_n' \in L:	(a\prec_i b \iff a\prec_i' b) \Rightarrow (a\prec b \iff a\prec' b)$	mit $\prec = F(\prec_1, \ldots, \prec_n)$, $\prec' = F(\prec_1', \ldots, \prec_n')$
+	$\iff$ 
+	\begin{flalign*}
+		&\forall a, b \in A;\space{}\forall \prec_1,\ldots,\prec_n, \prec_1', \ldots, \prec_n' \in L:&\\
+		&(a\prec_i b \iff a\prec_i' b) \Rightarrow (a\prec b \iff a\prec' b)&\\
+		&\text{mit}\space{}\prec = F(\prec_1, \ldots, \prec_n),\space{}\prec' = F(\prec_1', \ldots, \prec_n') 
+	\end{flalign*}
 \end{itemize}
 
 Einstimmigkeit ist für ein $F$ erfüllt, wenn in dem Fall, dass alle Spieler mit einer gleichen, aber beliebigen Ordnung $\prec \in L$ abstimmen, das Ergebnis genau diese Ordnung ist. 
