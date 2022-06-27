@@ -24679,7 +24679,7 @@ h
 <text layer="gamma" matrix="1 0 0 1 0 -48" pin="h" transformations="translations" pos="0 456.237" stroke="black" type="minipage" width="576" height="24.5224" depth="18.984" valign="top">Autonome Fahrzeuge müssen sich selbst untereinander organisieren</text>
 <image layer="beta" matrix="1.12038 0 0 1.12038 642.758 333.942" rect="0 0 110 150" bitmap="1"/>
 <text layer="gamma" matrix="1 0 0 1 0 -107.691" pin="h" transformations="translations" pos="0 456.237" stroke="black" type="minipage" width="576" height="10.5056" depth="4.9168" valign="top">Verschiedene Interessen</text>
-<text matrix="1 0 0 1 0 -140.082" pin="h" transformations="translations" pos="0 456.237" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">Entscheidungen sind abhängig von Entscheidungen der Anderen</text>
+<text matrix="1 0 0 1 0 -140.082" pin="h" transformations="translations" pos="0 456.237" stroke="black" type="minipage" width="768" height="12.4488" depth="6.8656" valign="top">Entscheidungen sind abhängig von Entscheidungen der anderen</text>
 <text layer="delta" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 296.84" stroke="black" type="minipage" width="768" height="10.6848" depth="5.096" valign="top">\textbf{Simulation:}</text>
 <text pin="h" transformations="translations" pos="0 249.059" stroke="black" type="minipage" width="385.236" height="16.4506" depth="10.8976" valign="top" style="item">Jedes Auto ist ein Spieler</text>
 <text matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 249.059" stroke="black" type="minipage" width="385.236" height="14.5074" depth="8.9488" valign="top" style="item">keine Informationen über Andere</text>
